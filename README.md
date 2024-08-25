@@ -7,7 +7,7 @@
 ## PROYECTO: Sistema de detección de fugas de agua en parques usando IA
 <p align="center" style="margin-top: 50px; margin-bottom: 50px; font-family: Arial, sans-serif;">
   <p align="center">
-    <img src="https://i.postimg.cc/Vkd8WvcG/fugas-de-agua-en-Madrid.jpg)](https://postimg.cc/zyZ6JJvK)" width="400" alt="Fugas">
+    <img src="https://i.postimg.cc/Vkd8WvcG/fugas-de-agua-en-Madrid.jpg)(https://postimg.cc/zyZ6JJvK)" width="400" alt="Fugas">
   </p>  
   
 > Dirigido a municipalidades para optimizar el uso del agua en áreas con escasez de recursos hídricos.
