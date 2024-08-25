@@ -1,5 +1,5 @@
 # CrackDetect
-: Sistema de detección de fugas de agua en parques usando IA. 
+
   <img src="https://semanadelcannabis.cayetano.edu.pe/assets/img/logo-upch.png" width="210">
  
 </p>
