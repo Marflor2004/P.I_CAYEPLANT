@@ -14,8 +14,8 @@
 <p align="left">
 
 ### Menu
-1. [Presentación](https://github.com/Michale1235/proyecto)
-2. [Imagenes](https://github.com/Michale1235/proyecto/tree/main/imgen)
-2. [Excels](https://github.com/Michale1235/proyecto/tree/main/excels)
-3. [Pdfs](https://github.com/Michale1235/proyecto/tree/main/pdfs)
-1. [Código del proyecto](https://github.com/Michale1235/proyecto/blob/main/proyecto.py)
+1. [Documentación](https://github.com/Michale1235/proyecto)
+2. [Hadware](https://github.com/Michale1235/proyecto/tree/main/imgen)
+3. [PL1-Entregables](https://github.com/Michale1235/proyecto/tree/main/excels)
+4. [Sofware](https://github.com/Michale1235/proyecto/tree/main/pdfs)
+5. [Código del proyecto](misterio)
