@@ -15,7 +15,7 @@
 
 ### Menu
 1. [Documentación](https://github.com/Marflor2004/CrackDetect/tree/main/DOCUMENTACI%C3%93N)
-2. [Hadware](https://github.com/Michale1235/proyecto/tree/main/imgen)
+2. [Hadware](https://github.com/Marflor2004/CrackDetect/tree/main/HADWARE)
 3. [PL1-Entregables](https://github.com/Marflor2004/CrackDetect/tree/main/PI1%20_ENTREGABLES)
 4. [Sofware](https://github.com/Michale1235/proyecto/tree/main/pdfs)
 5. [Código del proyecto](misterio)
