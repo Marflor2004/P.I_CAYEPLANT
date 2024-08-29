@@ -91,9 +91,13 @@ _ **Site Longitude:** Longitud del sitio de monitoreo.
 El modelo de regresión lineal mostró los siguientes resultados en el conjunto de prueba:
 
 Mean Squared Error (MSE): 0.1588
+
 Mean Absolute Error (MAE): 0.3275
+
 R-squared (R²): 0.9976
+
 Root Mean Squared Error (RMSE): 0.3985
+
 La gráfica generada comparó las concentraciones de NO₂ reales y predichas a lo largo del tiempo, mostrando una alta correspondencia entre los valores observados y predichos, lo que indica que el modelo pudo capturar de manera precisa la variación en las concentraciones de NO₂.
 
 ## **4. Discución:**
