@@ -5,7 +5,8 @@
 
 # **"Entregable 01: Predicción de la concentración de dióxido de nitrógeno en el Condado de Alameda, California, utilizando aprendizaje automático: Un análisis de los datos de 2022-2023"**
 
-Integrantes:
+**Integrantes:**
+
 - Flores Mescco Fiorella Ingrid
 - Guitierrez Mamani Lizzeth Rossmery
 - Quispe Mamani Lizzeth Rossmery 
