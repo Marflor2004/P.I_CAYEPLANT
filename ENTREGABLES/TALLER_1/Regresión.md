@@ -183,7 +183,7 @@ Los resultados indican que la regresión lineal es una herramienta efectiva para
 ## **5. Referencias:**
 
 <p align="justify">
-- [1] N. author found, “El impacto del dióxido de nitrógeno en la calidad del aire interior | US EPA.” [Online]. Available: https://espanol.epa.gov/cai/el-impacto-del-dioxido-de-nitrogeno-en-la-calidad-del-aire-interior
+[1] N. author found, “El impacto del dióxido de nitrógeno en la calidad del aire interior | US EPA.” [Online]. Available: https://espanol.epa.gov/cai/el-impacto-del-dioxido-de-nitrogeno-en-la-calidad-del-aire-interior
 
 <p align="justify">
 [2] N. author found, “Funding and Financing the Electrification of Low- and ModerateIncome Residential Buildings in the City of Alameda.” [Online]. Available: https://casa-alameda.org/wp-content/uploads/2022/06/funding-and-financing-building-electrification.pdf
