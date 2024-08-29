@@ -24,3 +24,7 @@ El Condado de Alameda, en la región de la Bahía de San Francisco, incluye a la
 
 <p align="justify">
 En este contexto, el presente estudio se centra en el uso de técnicas de aprendizaje automático, específicamente la regresión lineal, para predecir las concentraciones diarias máximas de NO₂ en el Condado de Alameda durante los años 2022 y 2023. El objetivo es evaluar la precisión del modelo predictivo, utilizando como variables el índice de calidad del aire (AQI) y el tiempo. Este análisis no solo pretende contribuir a la comprensión de las tendencias de contaminación en la región, sino también a proporcionar una herramienta útil para la toma de decisiones en la gestión de la calidad del aire.
+
+<div align="center"; style="display: flex; justify-content: space-between;">
+  <img src=https://github.com/user-attachments/assets/58c4f557-9cae-4e6f-b0b5-3195177be86d width="600px"/>
+</div>
