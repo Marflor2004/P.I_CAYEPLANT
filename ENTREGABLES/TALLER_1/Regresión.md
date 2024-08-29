@@ -84,10 +84,10 @@ _ **Site Latitude:** Latitud del sitio de monitoreo.
 
 _ **Site Longitude:** Longitud del sitio de monitoreo.
 
-**Uniendo data:**
+## **Uniendo data:** ##
 Acceder al sitio web de la EPA para descargar los datos de calidad del aire para el condado de Alameda, California, de los años 2022 y 2023. Una ves accedida a dicha informacion se compila la data
 
-**Exploración del conjunto de datos**
+## **Exploración del conjunto de datos** ##
 El rango de índices (RangeIndex: 683 entries, 0 to 682) proporciona información sobre la cantidad total de filas en tu DataFrame, que es 683.
 
 
