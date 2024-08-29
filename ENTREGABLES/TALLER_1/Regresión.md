@@ -28,3 +28,5 @@ En este contexto, el presente estudio se centra en el uso de técnicas de aprend
 <div align="center"; style="display: flex; justify-content: space-between;">
   <img src=https://github.com/user-attachments/assets/58c4f557-9cae-4e6f-b0b5-3195177be86d width="600px"/>
 </div>
+
+<p align="center">Imagen 01: Una central de carbón en Utah, Estados Unidos, en una imagen de noviembre de 2019 © George Frey / AFP/Archivos</p>
