@@ -32,3 +32,9 @@ En este contexto, el presente estudio se centra en el uso de técnicas de aprend
 <p align="center">Imagen 01: Una central de carbón en Utah, Estados Unidos, en una imagen de noviembre de 2019 © George Frey / AFP/Archivos</p>
 
 ## **2. Metodología:**
+
+<p align="justify">
+Los datos se obtuvieron de dos archivos CSV correspondientes a los años 2022 y 2023. Estos datos fueron combinados en un solo DataFrame para facilitar el análisis. Se realizó un preprocesamiento de los datos, que incluyó la conversión de las fechas a un formato numérico ('Time') que representa los días desde la fecha mínima.
+
+<p align="justify">
+Para la construcción del modelo, se utilizó regresión lineal, con la concentración máxima diaria de NO₂ como la variable dependiente y el valor del AQI diario y 'Time' como variables independientes. El conjunto de datos se dividió en 80% para entrenamiento y 20% para prueba. Posteriormente, se calcularon las métricas de rendimiento, como el error cuadrático medio (MSE), el error absoluto medio (MAE), el coeficiente de determinación (R²), y la raíz del error cuadrático medio (RMSE), tanto para el conjunto de entrenamiento como para el conjunto de prueba.
