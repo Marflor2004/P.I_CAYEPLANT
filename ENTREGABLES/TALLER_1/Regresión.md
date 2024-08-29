@@ -40,3 +40,17 @@ Los datos se obtuvieron de dos archivos CSV correspondientes a los años 2022 y 
 Para la construcción del modelo, se utilizó regresión lineal, con la concentración máxima diaria de NO₂ como la variable dependiente y el valor del AQI diario y 'Time' como variables independientes. El conjunto de datos se dividió en 80% para entrenamiento y 20% para prueba. Posteriormente, se calcularon las métricas de rendimiento, como el error cuadrático medio (MSE), el error absoluto medio (MAE), el coeficiente de determinación (R²), y la raíz del error cuadrático medio (RMSE), tanto para el conjunto de entrenamiento como para el conjunto de prueba.
 
 ## **3. Resultados:**
+
+<p align="justify">
+El modelo de regresión lineal mostró los siguientes resultados en el conjunto de prueba:
+
+Mean Squared Error (MSE): 0.1588
+Mean Absolute Error (MAE): 0.3275
+R-squared (R²): 0.9976
+Root Mean Squared Error (RMSE): 0.3985
+La gráfica generada comparó las concentraciones de NO₂ reales y predichas a lo largo del tiempo, mostrando una alta correspondencia entre los valores observados y predichos, lo que indica que el modelo pudo capturar de manera precisa la variación en las concentraciones de NO₂.
+
+## **4. Discución:**
+
+<p align="justify">
+Los resultados indican que la regresión lineal es una herramienta efectiva para predecir las concentraciones de NO₂ a partir de los valores del AQI y del tiempo. El valor de R² cercano a 1 sugiere que el modelo explica casi toda la variabilidad en los datos. Sin embargo, el modelo podría beneficiarse de la inclusión de otras variables, como datos meteorológicos o el tráfico vehicular, para mejorar la precisión de las predicciones. Se recomienda también explorar modelos de aprendizaje automático más complejos, como Random Forest o Redes Neuronales, para una comparación más detallada.
