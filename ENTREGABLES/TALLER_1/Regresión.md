@@ -156,6 +156,12 @@ train_df = train_df[['Date', 'Daily AQI Value', 'Daily Max 1-hour NO2 Concentrat
 
 ## **3. Resultados:**
 
+<div align="center"; style="display: flex; justify-content: space-between;">
+  <img src=https://github.com/user-attachments/assets/71222cff-5b26-4a99-9f21-8c569ecafd70 width="600px"/>
+</div>
+
+<p align="center">Gráfico 01: Representación de la predicción NO2 2022-2023
+
 <p align="justify">
 El modelo de regresión lineal mostró los siguientes resultados en el conjunto de prueba:
 
