@@ -8,7 +8,7 @@
 **Integrantes:**
 
 - Flores Mescco Fiorella Ingrid
-- Guitierrez Mamani Lizzeth Rossmery
+- Guitierrez Mamani Mar Flor
 - Quispe Mamani Lizzeth Rossmery 
 - Yalli Espinoza Milena Nicol
 
