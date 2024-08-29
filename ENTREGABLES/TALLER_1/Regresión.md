@@ -8,7 +8,7 @@
 **Integrantes:**
 
 - Flores Mescco Fiorella Ingrid
-- Guitierrez Mamani Mar Flor
+- Guitierrez Huaman Mar Flor
 - Quispe Mamani Lizzeth Rossmery 
 - Yalli Espinoza Milena Nicol
 
@@ -17,10 +17,10 @@
 ## **1. Introducción:**
 
 <p align="justify">
-En la actualidad, la calidad de aire se ha convertido en una preocupación a nivel mundial debido a sus impactos profundos en la salud pública y el medio ambiente. Uno de los contaminantes clave en este contexto es el dióxido de nitrógeno (NO2). Este gas, producido principalmente por la quema de combustibles fósiles en vehículos y plantas industriales, es conocido por sus efectos adversos tanto en la salud humana como en el medio ambiente (1). El NO₂ no solo tiene impactos directos, como la exacerbación de enfermedades respiratorias como el asma, sino que también contribuye a la formación de otros contaminantes peligrosos, como el ozono troposférico y las partículas finas (PM2.5) (2).
+En la actualidad, la calidad de aire se ha convertido en una preocupación a nivel mundial debido a sus impactos profundos en la salud pública y el medio ambiente. Uno de los contaminantes clave en este contexto es el dióxido de nitrógeno (NO2). Este gas, producido principalmente por la quema de combustibles fósiles en vehículos y plantas industriales, es conocido por sus efectos adversos tanto en la salud humana como en el medio ambiente (1). El NO₂ no solo tiene impactos directos, como la exacerbación de enfermedades respiratorias como el asma, sino que también contribuye a la formación de otros contaminantes peligrosos, como el ozono troposférico y las partículas finas (PM2.5) (1).
 
 <p align="justify">
-El Condado de Alameda, en la región de la Bahía de San Francisco, incluye a la ciudad de Alameda, que, con una densidad de aproximadamente 2,600 personas por kilómetro cuadrado, presenta un entorno urbano significativo con una alta concentración de tráfico y actividad industrial (3). Aunque la densidad poblacional de Alameda no es la más alta en el área metropolitana, la combinación de su densidad moderada y las fuentes de emisión de NO₂ hace que sea un área relevante para el monitoreo de la calidad del aire.
+El Condado de Alameda, en la región de la Bahía de San Francisco, incluye a la ciudad de Alameda, que, con una densidad de aproximadamente 2,600 personas por kilómetro cuadrado, presenta un entorno urbano significativo con una alta concentración de tráfico y actividad industrial (2). Aunque la densidad poblacional de Alameda no es la más alta en el área metropolitana, la combinación de su densidad moderada y las fuentes de emisión de NO₂ hace que sea un área relevante para el monitoreo de la calidad del aire.
 
 <p align="justify">
 En este contexto, el presente estudio se centra en el uso de técnicas de aprendizaje automático, específicamente la regresión lineal, para predecir las concentraciones diarias máximas de NO₂ en el Condado de Alameda durante los años 2022 y 2023. El objetivo es evaluar la precisión del modelo predictivo, utilizando como variables el índice de calidad del aire (AQI) y el tiempo. Este análisis no solo pretende contribuir a la comprensión de las tendencias de contaminación en la región, sino también a proporcionar una herramienta útil para la toma de decisiones en la gestión de la calidad del aire.
@@ -175,7 +175,15 @@ Root Mean Squared Error (RMSE): 0.3985
 
 La gráfica generada comparó las concentraciones de NO₂ reales y predichas a lo largo del tiempo, mostrando una alta correspondencia entre los valores observados y predichos, lo que indica que el modelo pudo capturar de manera precisa la variación en las concentraciones de NO₂.
 
-## **4. Discución:**
+## **4. Discusión:**
 
 <p align="justify">
 Los resultados indican que la regresión lineal es una herramienta efectiva para predecir las concentraciones de NO₂ a partir de los valores del AQI y del tiempo. El valor de R² cercano a 1 sugiere que el modelo explica casi toda la variabilidad en los datos. Sin embargo, el modelo podría beneficiarse de la inclusión de otras variables, como datos meteorológicos o el tráfico vehicular, para mejorar la precisión de las predicciones. Se recomienda también explorar modelos de aprendizaje automático más complejos, como Random Forest o Redes Neuronales, para una comparación más detallada.
+
+## **5. Referencias:**
+
+<p align="justify">
+- [1] N. author found, “El impacto del dióxido de nitrógeno en la calidad del aire interior | US EPA.” [Online]. Available: https://espanol.epa.gov/cai/el-impacto-del-dioxido-de-nitrogeno-en-la-calidad-del-aire-interior
+
+<p align="justify">
+[2] N. author found, “Funding and Financing the Electrification of Low- and ModerateIncome Residential Buildings in the City of Alameda.” [Online]. Available: https://casa-alameda.org/wp-content/uploads/2022/06/funding-and-financing-building-electrification.pdf
