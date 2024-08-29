@@ -90,6 +90,78 @@ Acceder al sitio web de la EPA para descargar los datos de calidad del aire para
 ## **Exploración del conjunto de datos** ##
 El rango de índices (RangeIndex: 683 entries, 0 to 682) proporciona información sobre la cantidad total de filas en tu DataFrame, que es 683.
 
+Aquí tienes una versión mejorada y detallada de la metodología para tu informe:
+
+---
+
+### Metodología
+
+#### 1. **Unión de Datos**
+
+Se accedió al sitio web de la Agencia de Protección Ambiental de los Estados Unidos (EPA) para descargar los datos de calidad del aire correspondientes al condado de Alameda, California, para los años 2022 y 2023. Los datos fueron extraídos en formato CSV desde los enlaces proporcionados por la EPA. Una vez descargados, se unieron ambos conjuntos de datos en un único DataFrame utilizando la función `pd.concat()` de la biblioteca pandas en Python. Esta etapa consolidó la información para un análisis integral y continuo.
+
+```python
+import pandas as pd
+
+# Cargar los datos de los años 2022 y 2023
+data2022 = pd.read_csv("https://raw.githubusercontent.com/Marflor2004/CrackDetect/main/ENTREGABLES/TALLER_1/California_data2022.csv")
+data2023 = pd.read_csv("https://raw.githubusercontent.com/Marflor2004/CrackDetect/main/ENTREGABLES/TALLER_1/California_data2023.csv")
+
+# Unir ambos DataFrames
+data_df = pd.concat([data2022, data2023], ignore_index=True)
+```
+
+#### 2. **Exploración del Conjunto de Datos**
+
+Se realizó una inspección inicial del DataFrame combinado para comprender la estructura y el contenido de los datos. El DataFrame resultante incluye un rango de índices de 683 entradas, que representa el total de filas en el conjunto de datos. Se utilizó el método `info()` para obtener una visión general de las columnas disponibles y el número de entradas.
+
+```python
+data_df.info()
+```
+
+#### 3. **Visualización de Relaciones en los Datos**
+
+Se creó un conjunto de aproximadamente 169 gráficos utilizando la función `sns.pairplot()` para explorar las relaciones entre las variables. Esta visualización ayudó a identificar correlaciones entre el Índice de Calidad del Aire (AQI VALUE) y la concentración de dióxido de nitrógeno (NO₂). Se observó una relación directa entre el AQI VALUE y la concentración de NO₂, lo que indica que el AQI VALUE es una variable relevante para la modelización. La variable "Date" también fue incluida para capturar las tendencias temporales.
+
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Visualización de relaciones
+sns.pairplot(data_df)
+plt.show()
+```
+
+#### 4. **Separación entre Entrenamiento y Prueba**
+
+Se procedió a dividir el conjunto de datos en conjuntos de entrenamiento y prueba. El DataFrame se particionó en un 80% para entrenamiento y un 20% para prueba utilizando la proporción calculada. Esta separación permite evaluar el desempeño del modelo en datos no vistos durante el entrenamiento.
+
+```python
+# Separar el DataFrame en conjuntos de entrenamiento y prueba
+indice_particion = int(0.8 * len(data_df))
+train_df = data_df[:indice_particion]
+test_df = data_df[indice_particion:]
+```
+
+#### 5. **Extracción y Preparación de Características**
+
+Se seleccionaron las columnas clave del DataFrame de entrenamiento, que incluyen 'Date', 'Daily AQI Value' y 'Daily Max 1-hour NO2 Concentration'. La columna 'Date' se convirtió al formato datetime utilizando `pd.to_datetime()` para facilitar el manejo de fechas. Se creó una nueva columna 'Time' que calcula el número de días desde la fecha mínima, transformando las fechas en una variable numérica útil para el análisis de regresión. Finalmente, se reorganizó el DataFrame para incluir las columnas necesarias en el orden adecuado.
+
+```python
+# Convertir 'Date' al formato datetime
+train_df['Date'] = pd.to_datetime(train_df['Date'])
+
+# Crear la columna 'Time'
+train_df['Time'] = (train_df['Date'] - train_df['Date'].min()).dt.days
+
+# Seleccionar las columnas necesarias
+train_df = train_df[['Date', 'Daily AQI Value', 'Daily Max 1-hour NO2 Concentration', 'Time']]
+```
+
+---
+
+Esta metodología proporciona una descripción detallada del proceso, desde la recopilación de datos hasta la preparación para el análisis, facilitando la comprensión y replicación del estudio.
+
 
 ## **3. Resultados:**
 
