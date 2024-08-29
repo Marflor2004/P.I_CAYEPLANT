@@ -45,25 +45,45 @@ Descripción de los Datos
 
 _ Columnas de los Datos: Explica brevemente qué significa cada columna:
 _ Date: Fecha en que se tomó la medición.
+
 _ Source: Fuente de los datos.
+
 _ Site ID: Identificador único del sitio de monitoreo.
+
 _ POC: Código de Operación del Parámetro, un identificador único para el método de monitoreo utilizado en un sitio específico.
+
 _ Daily Max 1-hour NO2 Concentration: Concentración máxima diaria de NO2 (dióxido de nitrógeno) en una hora.
+
 _ Units: Unidades de medida de la concentración de NO2, generalmente partes por mil millones (ppb).
+
 _ Daily AQI Value: Valor diario del Índice de Calidad del Aire (AQI).
+
 _ Local Site Name: Nombre del sitio local donde se tomaron las mediciones.
+
 _ Daily Obs Count: Número de observaciones diarias.
+
 _ Percent Complete: Porcentaje de los datos completos para ese día.
+
 _ AQS Parameter Code: Código del parámetro de calidad del aire en el sistema AQS.
+
 _ AQS Parameter Description: Descripción del parámetro de calidad del aire.
+
 _ Method Code: Código del método utilizado para la medición.
+
 _ CBSA Code: Código de la área estadística metropolitana/micropolitana.
+
 _ CBSA Name: Nombre de la área estadística metropolitana/micropolitana.
+
 _ State FIPS Code: Código FIPS del estado.
+
 _ State: Nombre del estado.
+
 _ County FIPS Code: Código FIPS del condado.
+
 _ County: Nombre del condado.
+
 _ Site Latitude: Latitud del sitio de monitoreo.
+
 _ Site Longitude: Longitud del sitio de monitoreo.
 
 
