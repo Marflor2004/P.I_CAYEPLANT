@@ -41,60 +41,52 @@ Para la construcción del modelo, se utilizó regresión lineal, con la concentr
 
 ### **Descripción de los datos**
 
-_ **Columnas de los Datos:** Explica brevemente qué significa cada columna:
-_ Date: Fecha en que se tomó la medición.
+A continuación, se muestra una descripción detallanada de cada columna de las tablas.
 
-_ **Source:** Fuente de los datos.
+**Columnas de los Datos:** Explica brevemente qué significa cada columna:
+**Date:** Fecha en que se tomó la medición.
 
-_ **Site ID:** Identificador único del sitio de monitoreo.
+**Source:** Fuente de los datos.
 
-_ **POC:** Código de Operación del Parámetro, un identificador único para el método de monitoreo utilizado en un sitio específico.
+**Site ID:** Identificador único del sitio de monitoreo.
 
-_ **Daily Max 1-hour NO2 Concentration:** Concentración máxima diaria de NO2 (dióxido de nitrógeno) en una hora.
+**POC:** Código de Operación del Parámetro, un identificador único para el método de monitoreo utilizado en un sitio específico.
 
-_ **Units:** Unidades de medida de la concentración de NO2, generalmente partes por mil millones (ppb).
+**Daily Max 1-hour NO2 Concentration:** Concentración máxima diaria de NO2 (dióxido de nitrógeno) en una hora.
 
-_ **Daily AQI Value**: Valor diario del Índice de Calidad del Aire (AQI).
+**Units:** Unidades de medida de la concentración de NO2, generalmente partes por mil millones (ppb).
 
-_ **Local Site Name:** Nombre del sitio local donde se tomaron las mediciones.
+**Daily AQI Value**: Valor diario del Índice de Calidad del Aire (AQI).
 
-_ **Daily Obs Count:** Número de observaciones diarias.
+**Local Site Name:** Nombre del sitio local donde se tomaron las mediciones.
 
-_ **Percent Complete:** Porcentaje de los datos completos para ese día.
+**Daily Obs Count:** Número de observaciones diarias.
 
-_ **AQS Parameter Code:** Código del parámetro de calidad del aire en el sistema AQS.
+**Percent Complete:** Porcentaje de los datos completos para ese día.
 
-_ **AQS Parameter Description** Descripción del parámetro de calidad del aire.
+**AQS Parameter Code:** Código del parámetro de calidad del aire en el sistema AQS.
 
-_ **Method Code**: Código del método utilizado para la medición.
+**AQS Parameter Description** Descripción del parámetro de calidad del aire.
 
-_ **CBSA Code:** Código de la área estadística metropolitana/micropolitana.
+**Method Code**: Código del método utilizado para la medición.
 
-_ **CBSA Name**: Nombre de la área estadística metropolitana/micropolitana.
+**CBSA Code:** Código de la área estadística metropolitana/micropolitana.
 
-_ *State FIPS Code:** Código FIPS del estado.
+**CBSA Name**: Nombre de la área estadística metropolitana/micropolitana.
 
-_ **State:** Nombre del estado.
+**State FIPS Code:** Código FIPS del estado.
 
-_ **County FIPS Code:** Código FIPS del condado.
+**State:** Nombre del estado.
 
-_ **County:** Nombre del condado.
+**County FIPS Code:** Código FIPS del condado.
 
-_ **Site Latitude:** Latitud del sitio de monitoreo.
+**County:** Nombre del condado.
 
-_ **Site Longitude:** Longitud del sitio de monitoreo.
+**Site Latitude:** Latitud del sitio de monitoreo.
 
-## **Uniendo data:** ##
-Acceder al sitio web de la EPA para descargar los datos de calidad del aire para el condado de Alameda, California, de los años 2022 y 2023. Una ves accedida a dicha informacion se compila la data
-
-## **Exploración del conjunto de datos** ##
-El rango de índices (RangeIndex: 683 entries, 0 to 682) proporciona información sobre la cantidad total de filas en tu DataFrame, que es 683.
-
-Aquí tienes una versión mejorada y detallada de la metodología para tu informe:
+**Site Longitude:** Longitud del sitio de monitoreo.
 
 ---
-
-### Metodología
 
 #### 1. **Unión de Datos**
 
@@ -160,7 +152,6 @@ train_df = train_df[['Date', 'Daily AQI Value', 'Daily Max 1-hour NO2 Concentrat
 
 ---
 
-Esta metodología proporciona una descripción detallada del proceso, desde la recopilación de datos hasta la preparación para el análisis, facilitando la comprensión y replicación del estudio.
 
 
 ## **3. Resultados:**
