@@ -3,17 +3,17 @@
  
 </p>
 
-# * Subir los entregables*🫠👩‍🎓📌
+# *Subir los entregables*🫠👩‍🎓📌
 
-- Mg. U. Lewis de la Cruz Rodríguez
+- Mg.U. Lewis de la Cruz Rodríguez
 > umbert.de.la.cruz@upch.pe
-- Dr. Harry Rivera Tito
+- Dr.Harry Rivera Tito
 > harry.rivera@upch.pe
-- Mg. Moisés Meza Rodríguez
+- Mg.Moisés Meza Rodríguez
 > moises.meza@upch.pe
-- Mg. Marcos Retamozo Ramos
+- Mg.Marcos Retamozo Ramos
 > marcos.retamozo@upch.pe
-- Dr. Pierre Ramos Apestegui
+- Dr.Pierre Ramos Apestegui
 > pierre.ramos@upch.pe
 
 **Integrantes:**
