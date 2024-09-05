@@ -77,7 +77,6 @@ Finalmente, evaluamos el rendimiento del modelo mediante gráficos:
 
 Este enfoque estructurado permite que cada sección sea comprensible y didáctica, facilitando la interpretación de los resultados y su ajuste.
 
-[Codigo_flores_y_tulipanes](ENTREGABLES/TALLER_2/TAREA _ GRUPAL/Tulipanes vs rosas.ipynb)
 ## *La actividad consistió en dos tareas principales:*
 
 ### Modificación y Corrección del Código de Imágenes de Perros y Gatos:
