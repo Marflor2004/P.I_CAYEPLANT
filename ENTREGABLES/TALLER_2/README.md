@@ -15,7 +15,7 @@
 > **Objetivo General**
 El objetivo principal de esta actividad es desarrollar y optimizar una red neuronal convolucional (CNN) para la clasificación de imágenes de rosas y tulipanes, utilizando herramientas modernas de Python y librerías como TensorFlow y Keras. Este proceso es crucial para mejorar las tecnologías de visión por computadora aplicadas al reconocimiento de objetos específicos. El enfoque incluye comprender el funcionamiento de las CNNs para analizar cómo estas redes pueden clasificar imágenes de flores, prestando especial atención a los detalles visuales que diferencian cada categoría, y optimizar los métodos, mejorando las capas convolucionales y densas para alcanzar una mayor precisión en la clasificación de imágenes.
 
-## **1. Introducción:**
+## ** - Introducción:**
 
 
 
@@ -25,9 +25,9 @@ El objetivo principal de esta actividad es desarrollar y optimizar una red neuro
 
 
 
-## **2. Metodología del codigo de perros y gatos:**
+## ** - Metodología del codigo de perros y gatos:**
 
-## **3. Metodología del codigo de rosas vs tulipanes:**
+## ** -  Metodología del codigo de rosas vs tulipanes:**
 
 #### 1. **Importación de Bibliotecas y Configuración del Entorno**
 
