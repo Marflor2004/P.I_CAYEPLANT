@@ -151,132 +151,168 @@ plot_compare(history)
 
 ## **III. Metodología del codigo de rosas vs tulipanes:**
 
-#### **1. Descarga y preparación del conjunto de datos**
+### 1. **Obtención de datos**
 
-Para la clasificación de imágenes de **rosas** y **tulipanes**, se utilizó un conjunto de datos específico, que fue previamente cargado y organizado en carpetas. El proceso de descarga y organización de los datos es similar al usado para los perros y gatos, pero enfocado en estas dos categorías de flores.
+1. **Clonación del repositorio**: 
+   Se clonó el repositorio de GitHub que contiene el conjunto de datos de imágenes de rosas y tulipanes usando el siguiente comando:
+   ```python
+   !git clone https://github.com/Marflor2004/Tulipan-RoseS.git
+   ```
+   Posteriormente, se cambió el directorio de trabajo a la carpeta que contiene las imágenes:
+   ```python
+   import os
+   os.chdir('Tulipan-Roses/flowers')
+   ```
 
-```python
-!pip install kaggle
-from google.colab import files
-files.upload()
+2. **Exploración de datos**: 
+   Se verificó la estructura del directorio para asegurar que las imágenes estaban correctamente organizadas:
+   ```python
+   print(os.listdir("../flowers"))
+   ```
 
-# Configuración de la API de Kaggle para descargar los datos de flores
-!mkdir ~/.kaggle
-!cp kaggle.json ~/.kaggle/
-!chmod 600 ~/.kaggle/kaggle.json
-!kaggle datasets download -d user/flowersdataset
-!unzip flowersdataset.zip -d roses_and_tulips
-```
+### 2. **Preprocesamiento de imágenes**
 
-Este conjunto de datos contiene imágenes organizadas en dos carpetas: una para las **rosas** y otra para los **tulipanes**, divididas en conjuntos de entrenamiento, validación y prueba.
+1. **Definición de parámetros**: 
+   Se estableció el tamaño de las imágenes de entrada como 150x150 píxeles y se definieron las rutas a los directorios que contienen las imágenes de rosas y tulipanes:
+   ```python
+   IMG_SIZE = 150
+   FLOWER_ROSE_DIR = "../flowers/rose"
+   FLOWER_TULIP_DIR = "../flowers/tulip"
+   ```
 
-#### **2. Instalación de TensorFlow y verificación de entorno**
+2. **Carga y etiquetado de imágenes**:
+   Se implementaron funciones para cargar y etiquetar las imágenes. Las imágenes fueron redimensionadas a 150x150 píxeles y almacenadas en listas:
+   ```python
+   def assign_label(img, flower_type):
+       return flower_type
 
-Se utilizó **TensorFlow** y **Keras** para crear la arquitectura de la red neuronal convolucional (CNN), verificando la disponibilidad de **GPU** para optimizar el entrenamiento.
+   def make_train_data(flower_type, DIR):
+       for img in tqdm(os.listdir(DIR)):
+           label = assign_label(img, flower_type)
+           path = os.path.join(DIR, img)
+           img = cv2.imread(path, cv2.IMREAD_COLOR)
+           img = cv2.resize(img, (IMG_SIZE, IMG_SIZE))
+           X.append(np.array(img))
+           Z.append(str(label))
+   ```
 
-```python
-!pip install --upgrade tensorflow
+   Se procesaron las imágenes de ambos tipos (rosas y tulipanes) y se visualizó una muestra para verificar la correcta carga de datos:
+   ```python
+   make_train_data('Tulip', FLOWER_TULIP_DIR)
+   make_train_data('Rose', FLOWER_ROSE_DIR)
 
-import tensorflow as tf
-print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
-```
+   # Visualización de imágenes
+   fig, ax = plt.subplots(5, 2, figsize=(15, 15))
+   for i in range(5):
+       for j in range(2):
+           l = np.random.randint(0, len(Z))
+           ax[i, j].imshow(X[l])
+           ax[i, j].set_title('Flower: ' + Z[l])
+   plt.tight_layout()
+   plt.show()
+   ```
 
-#### **3. Creación del modelo de red neuronal convolucional (CNN)**
+3. **Normalización y codificación**:
+   Las imágenes fueron normalizadas para que los valores de los píxeles estén en el rango [0, 1]. Las etiquetas se codificaron numéricamente y se transformaron en una representación one-hot:
+   ```python
+   le = LabelEncoder()
+   Y = le.fit_transform(Z)
+   Y = to_categorical(Y, 2)
+   X = np.array(X)
+   X = X / 255.0
+   ```
 
-El modelo de CNN para la clasificación de **rosas** y **tulipanes** se diseñó con varias capas convolucionales y de agrupamiento, seguidas de capas densas completamente conectadas. La arquitectura se diseñó específicamente para detectar características visuales importantes en las imágenes de flores.
+### 3. **División del conjunto de datos**
 
-```python
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
+1. **Separación de datos**:
+   Se dividieron los datos en conjuntos de entrenamiento y prueba utilizando una proporción del 75% para entrenamiento y 25% para prueba:
+   ```python
+   x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.25, random_state=42)
+   ```
 
-model = Sequential([
-    Conv2D(32, (3, 3), activation='relu', input_shape=(150, 150, 3)),
-    MaxPooling2D(2, 2),
-    Conv2D(64, (3, 3), activation='relu'),
-    MaxPooling2D(2, 2),
-    Conv2D(128, (3, 3), activation='relu'),
-    MaxPooling2D(2, 2),
-    Conv2D(128, (3, 3), activation='relu'),
-    MaxPooling2D(2, 2),
-    Flatten(),
-    Dropout(0.5),
-    Dense(512, activation='relu'),
-    Dense(1, activation='sigmoid')
-])
+### 4. **Diseño del modelo de red neuronal convolucional (CNN)**
 
-model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
-```
+1. **Arquitectura del modelo**:
+   Se construyó un modelo CNN con la siguiente arquitectura:
+   - **Capas Convolucionales**: Cuatro capas convolucionales con filtros y tamaños de kernel definidos.
+   - **Capas de Max-Pooling**: Reducción dimensional después de cada capa convolucional.
+   - **Capas de Flatten y Densas**: Conversión de la salida a una forma unidimensional seguida de capas densas con activación ReLU y una capa final con activación softmax para clasificación:
+   ```python
+   model = Sequential()
+   model.add(Conv2D(filters=32, kernel_size=(5, 5), padding='Same', activation='relu', input_shape=(IMG_SIZE, IMG_SIZE, 3)))
+   model.add(MaxPooling2D(pool_size=(2, 2)))
+   model.add(Conv2D(filters=64, kernel_size=(3, 3), padding='Same', activation='relu'))
+   model.add(MaxPooling2D(pool_size=(2, 2)))
+   model.add(Conv2D(filters=96, kernel_size=(3, 3), padding='Same', activation='relu'))
+   model.add(MaxPooling2D(pool_size=(2, 2)))
+   model.add(Conv2D(filters=96, kernel_size=(3, 3), padding='Same', activation='relu'))
+   model.add(MaxPooling2D(pool_size=(2, 2)))
+   model.add(Flatten())
+   model.add(Dense(512, activation='relu'))
+   model.add(Dense(2, activation='softmax'))
+   ```
 
-La arquitectura incluye cuatro capas convolucionales que procesan las imágenes para identificar características clave de **rosas** y **tulipanes**, tales como patrones de pétalos, color y textura.
+2. **Compilación del modelo**:
+   Se utilizó el optimizador Adam y la función de pérdida categorical_crossentropy. También se configuró una reducción de tasa de aprendizaje:
+   ```python
+   model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+   ```
 
-#### **4. Preparación de los datos y generación de imágenes**
+3. **Prevención de overfitting**:
+   Se empleó `ImageDataGenerator` para realizar aumentos de datos que ayudan a mejorar la generalización del modelo:
+   ```python
+   datagen = ImageDataGenerator(
+       rotation_range=10,
+       zoom_range=0.1,
+       width_shift_range=0.2,
+       height_shift_range=0.2,
+       horizontal_flip=True,
+       vertical_flip=False
+   )
+   datagen.fit(x_train)
+   ```
 
-Se utilizó el **ImageDataGenerator** de Keras para escalar las imágenes y generar lotes para el entrenamiento y la validación. La preparación incluyó una **normalización** de los valores de píxeles para mejorar el rendimiento del modelo.
+### 5. **Entrenamiento del modelo**
 
-```python
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
+1. **Configuración de entrenamiento**:
+   Se entrenó el modelo durante 50 épocas utilizando el generador de datos y la validación de datos de prueba. Se utilizó el callback `ReduceLROnPlateau` para ajustar la tasa de aprendizaje durante el entrenamiento:
+   ```python
+   history = model.fit(
+       datagen.flow(x_train, y_train, batch_size=128),
+       epochs=50,
+       validation_data=(x_test, y_test),
+       verbose=1,
+       steps_per_epoch=x_train.shape[0] // 128,
+       callbacks=[red_lr]
+   )
+   ```
 
-train_datagen = ImageDataGenerator(rescale=1./255)
-validation_datagen = ImageDataGenerator(rescale=1./255)
+### 6. **Evaluación del modelo**
 
-train_generator = train_datagen.flow_from_directory(
-    'roses_and_tulips/train',
-    target_size=(150, 150),
-    batch_size=20,
-    class_mode='binary'
-)
+1. **Visualización del rendimiento**:
+   Se generaron gráficos para evaluar la pérdida y precisión del modelo durante el entrenamiento y la validación:
+   ```python
+   plt.figure(figsize=(12, 6))
+   plt.subplot(1, 2, 1)
+   plt.plot(history.history['loss'])
+   plt.plot(history.history['val_loss'])
+   plt.title('Model Loss')
+   plt.ylabel('Loss')
+   plt.xlabel('Epochs')
+   plt.legend(['train', 'test'])
 
-validation_generator = validation_datagen.flow_from_directory(
-    'roses_and_tulips/validation',
-    target_size=(150, 150),
-    batch_size=20,
-    class_mode='binary'
-)
-```
+   plt.subplot(1, 2, 2)
+   plt.plot(history.history['accuracy'])
+   plt.plot(history.history['val_accuracy'])
+   plt.title('Accuracy Performance')
+   plt.ylabel('Accuracy')
+   plt.xlabel('Epochs')
+   plt.legend(['train', 'test'])
+   plt.show()
+   ```
 
-#### **5. Entrenamiento del modelo**
+---
 
-El modelo fue entrenado con un conjunto de datos de **rosas** y **tulipanes** utilizando un enfoque de clasificación binaria. Se ajustó el modelo durante varias épocas para maximizar su precisión.
-
-```python
-history = model.fit(
-    train_generator,
-    steps_per_epoch=100,
-    epochs=30,
-    validation_data=validation_generator,
-    validation_steps=50
-)
-```
-
-#### **6. Evaluación del modelo**
-
-Se creó un gráfico para visualizar el rendimiento del modelo en términos de precisión y pérdida durante el entrenamiento y la validación.
-
-```python
-def plot_compare(history):
-    acc = history.history['accuracy']
-    val_acc = history.history['val_accuracy']
-    loss = history.history['loss']
-    val_loss = history.history['val_loss']
-
-    plt.figure(figsize=(12, 6))
-    plt.subplot(1, 2, 1)
-    plt.plot(acc, label='Training Accuracy')
-    plt.plot(val_acc, label='Validation Accuracy')
-    plt.title('Training and Validation Accuracy')
-    plt.legend()
-
-    plt.subplot(1, 2, 2)
-    plt.plot(loss, label='Training Loss')
-    plt.plot(val_loss, label='Validation Loss')
-    plt.title('Training and Validation Loss')
-    plt.legend()
-    plt.show()
-
-plot_compare(history)
-```
-
-Este análisis permite observar si el modelo está **sobreajustándose** o si la precisión continúa mejorando con el tiempo.
 
 
 ## **IV. Referencias:**
