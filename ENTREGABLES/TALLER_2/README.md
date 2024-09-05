@@ -3,7 +3,7 @@
  
 </p>
 
-# "Redes Neuronales Convolucionales en Python: Clasificación de imágenes con perros vs. gatos y tulipanes vs. rosas
+# " Entregable 02: Redes Neuronales Convolucionales en Python: Clasificación de imágenes con perros vs. gatos y tulipanes vs. rosas
 ## Objetivo General
 El objetivo principal de esta actividad es desarrollar y optimizar una red neuronal convolucional (CNN) para la clasificación de imágenes de rosas y tulipanes, utilizando herramientas modernas de Python y librerías como TensorFlow y Keras. Este proceso es crucial para mejorar las tecnologías de visión por computadora aplicadas al reconocimiento de objetos específicos. El enfoque incluye comprender el funcionamiento de las CNNs para analizar cómo estas redes pueden clasificar imágenes de flores, prestando especial atención a los detalles visuales que diferencian cada categoría, y optimizar los métodos, mejorando las capas convolucionales y densas para alcanzar una mayor precisión en la clasificación de imágenes.
 
