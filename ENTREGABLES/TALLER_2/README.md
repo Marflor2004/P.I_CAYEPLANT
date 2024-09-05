@@ -91,4 +91,4 @@ Se realizaron correcciones y mejoras en el código para actualizarlo con nuevas 
 ### *Visualización de Imágenes:*
 Se ajustó el código para permitir la visualización de todas las imágenes generadas por los filtros convolucionales, ahora aplicadas a las imágenes de rosas y tulipanes.
 
--	[Codigo_flores_y_tulipanes](https://github.com/JefHuiza/Fundamentos-de-Dise-o/tree/main/Hardware): xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[Codigo_flores_y_tulipanes](ENTREGABLES/TALLER_2/TAREA _ GRUPAL/Tulipanes vs rosas.ipynb)
