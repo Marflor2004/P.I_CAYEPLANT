@@ -23,7 +23,7 @@ El objetivo principal de esta actividad es desarrollar y optimizar una red neuro
 
 
 
-##Metodología de rosas vs tulipanes:
+# Metodología del codigo de rosas vs tulipanes:
 
 #### 1. **Importación de Bibliotecas y Configuración del Entorno**
 
