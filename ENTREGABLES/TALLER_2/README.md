@@ -3,11 +3,79 @@
  
 </p>
 
-# " Entregable 02: Redes Neuronales Convolucionales en Python: Clasificación de imágenes con perros vs. gatos y tulipanes vs. rosas
+# "Entregable 02: Redes Neuronales Convolucionales en Python: Clasificación de imágenes con perros vs. gatos y tulipanes vs. rosas"
 ## Objetivo General
 El objetivo principal de esta actividad es desarrollar y optimizar una red neuronal convolucional (CNN) para la clasificación de imágenes de rosas y tulipanes, utilizando herramientas modernas de Python y librerías como TensorFlow y Keras. Este proceso es crucial para mejorar las tecnologías de visión por computadora aplicadas al reconocimiento de objetos específicos. El enfoque incluye comprender el funcionamiento de las CNNs para analizar cómo estas redes pueden clasificar imágenes de flores, prestando especial atención a los detalles visuales que diferencian cada categoría, y optimizar los métodos, mejorando las capas convolucionales y densas para alcanzar una mayor precisión en la clasificación de imágenes.
 
 # INTRODUCCIÓN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##Metodología de rosas vs tulipanes:
+
+#### 1. **Importación de Bibliotecas y Configuración del Entorno**
+
+En esta sección, importamos todas las bibliotecas necesarias para la manipulación de datos, visualización y construcción de nuestro modelo CNN:
+
+- **`warnings`**: Suprimimos advertencias innecesarias para que el código sea más limpio.
+- **`numpy` y `pandas`**: Manipulamos y organizamos los datos con estas bibliotecas.
+- **`matplotlib` y `seaborn`**: Las usamos para visualizar gráficos de manera clara y ordenada.
+- **`sklearn`**: Incluimos herramientas para dividir los datos y medir el rendimiento del modelo.
+- **`tensorflow` y `keras`**: Son esenciales para construir y entrenar el modelo de red neuronal convolucional.
+
+#### 2. **Preparación de Datos**
+
+Aquí preparamos y etiquetamos las imágenes que usaremos para entrenar el modelo:
+
+- **Función `make_train_data`**: Cargamos las imágenes desde el directorio, redimensionándolas a 150x150 píxeles y asignando etiquetas (por ejemplo, "Tulip" o "Rose").
+  
+- **Visualización de imágenes**: Mostramos algunas imágenes aleatorias con sus etiquetas para asegurarnos de que la asignación es correcta.
+
+- **Codificación de etiquetas**: Convertimos las etiquetas de texto en valores numéricos y las transformamos en una representación binaria para el modelo.
+
+#### 3. **División del Conjunto de Datos**
+
+Usamos `train_test_split` para dividir los datos en entrenamiento (75%) y prueba (25%). Esto nos permite evaluar el rendimiento del modelo con datos no vistos durante el entrenamiento.
+
+#### 4. **Construcción del Modelo CNN**
+
+Creamos nuestra red neuronal convolucional con las siguientes capas:
+
+- **Capas convolucionales (`Conv2D`)**: Detectan características importantes de las imágenes, como bordes y texturas.
+- **Capas de pooling (`MaxPooling2D`)**: Reducen el tamaño de los datos manteniendo la información más relevante, lo que ayuda a disminuir la complejidad.
+- **Capa densa**: Después de "aplanar" los datos, utilizamos una capa completamente conectada que realiza la clasificación final.
+
+#### 5. **Prevención del Sobreajuste**
+
+Para evitar que el modelo se "memorice" el conjunto de entrenamiento y no generalice bien:
+
+- Usamos **aumento de datos** con `ImageDataGenerator`, que aplica transformaciones aleatorias a las imágenes (rotaciones, desplazamientos, zooms) para crear variaciones que el modelo no ha visto.
+- Implementamos **ReduceLROnPlateau**, que ajusta la tasa de aprendizaje si el modelo deja de mejorar, lo que permite un ajuste más preciso.
+
+#### 6. **Entrenamiento del Modelo**
+
+Compilamos el modelo con el optimizador `adam` y la función de pérdida `categorical_crossentropy`, que es ideal para la clasificación de múltiples categorías. Entrenamos el modelo durante 50 épocas con los datos de entrenamiento.
+
+#### 7. **Evaluación del Modelo**
+
+Finalmente, evaluamos el rendimiento del modelo mediante gráficos:
+
+- **Gráfico de pérdida**: Nos muestra cómo evoluciona la pérdida del modelo tanto en los datos de entrenamiento como en los de validación a lo largo del tiempo.
+- **Gráfico de precisión**: Compara la precisión en los conjuntos de entrenamiento y validación, ayudándonos a visualizar si el modelo está mejorando.
+
+Este enfoque estructurado permite que cada sección sea comprensible y didáctica, facilitando la interpretación de los resultados y su ajuste.
 ## *La actividad consistió en dos tareas principales:*
 
 ### Modificación y Corrección del Código de Imágenes de Perros y Gatos:
