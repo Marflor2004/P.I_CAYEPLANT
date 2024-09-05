@@ -22,6 +22,133 @@ En la actualidad, las redes neuronales convolucionales (CNN) se han convertido e
 
 ## **II. Metodología del codigo de perros y gatos:**
 
+#### **1. Descarga y preparación del conjunto de datos**
+
+Para entrenar el modelo de clasificación de perros y gatos, se utilizó el conjunto de datos "Cat and Dog Small" disponible en **Kaggle**. Este contiene imágenes de gatos y perros distribuidas en carpetas de entrenamiento, validación y prueba. Los pasos detallados para la descarga y organización del conjunto de datos son:
+
+```python
+!pip install kaggle
+from google.colab import files
+files.upload()
+
+# Configuración de Kaggle API para descargar los datos
+!mkdir ~/.kaggle
+!cp kaggle.json ~/.kaggle/
+!chmod 600 ~/.kaggle/kaggle.json
+!kaggle datasets download -d hongweicao/catanddogsmall
+!unzip catanddogsmall.zip -d cats_and_dogs_small
+```
+
+En este paso, las imágenes fueron descargadas y organizadas en carpetas específicas, lo que permite que el modelo de red neuronal acceda fácilmente a los datos durante el proceso de entrenamiento y validación.
+
+#### **2. Instalación de tensorFlow y verificación de entorno**
+
+La biblioteca **TensorFlow**, junto con **Keras**, se utilizó para construir la CNN. Se verificó la presencia de una **GPU** para mejorar el rendimiento en el entrenamiento.
+
+```python
+!pip install --upgrade tensorflow
+
+import tensorflow as tf
+print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
+```
+
+#### **3. Creación del modelo de red neuronal convolucional**
+
+Se construyó una CNN con varias capas convolucionales y de agrupamiento, seguidas de capas densas totalmente conectadas para la clasificación binaria (perro vs. gato). El modelo utiliza la función de activación **ReLU** y el optimizador **Adam** para mejorar la precisión del modelo.
+
+```python
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
+
+model = Sequential([
+    Conv2D(32, (3, 3), activation='relu', input_shape=(150, 150, 3)),
+    MaxPooling2D(2, 2),
+    Conv2D(64, (3, 3), activation='relu'),
+    MaxPooling2D(2, 2),
+    Conv2D(128, (3, 3), activation='relu'),
+    MaxPooling2D(2, 2),
+    Conv2D(128, (3, 3), activation='relu'),
+    MaxPooling2D(2, 2),
+    Flatten(),
+    Dropout(0.5),
+    Dense(512, activation='relu'),
+    Dense(1, activation='sigmoid')
+])
+
+model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+```
+
+El modelo tiene cuatro capas convolucionales, seguidas de capas de agrupamiento para reducir la dimensionalidad. Se usa la función **sigmoide** en la capa de salida para clasificar las imágenes en una de dos categorías.
+
+#### **4. Preparación de los datos y generación de imágenes**
+
+Se utilizaron generadores de datos de **Keras** para preparar los conjuntos de entrenamiento y validación, aplicando **escalado de imágenes**.
+
+```python
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+train_datagen = ImageDataGenerator(rescale=1./255)
+validation_datagen = ImageDataGenerator(rescale=1./255)
+
+train_generator = train_datagen.flow_from_directory(
+    'cats_and_dogs_small/train',
+    target_size=(150, 150),
+    batch_size=20,
+    class_mode='binary'
+)
+
+validation_generator = validation_datagen.flow_from_directory(
+    'cats_and_dogs_small/validation',
+    target_size=(150, 150),
+    batch_size=20,
+    class_mode='binary'
+)
+```
+
+#### **5. Entrenamiento del modelo**
+
+El modelo fue entrenado utilizando el conjunto de datos procesado, con un número fijo de épocas y pasos por época.
+
+```python
+history = model.fit(
+    train_generator,
+    steps_per_epoch=100,
+    epochs=30,
+    validation_data=validation_generator,
+    validation_steps=50
+)
+```
+
+#### **6. Evaluación del modelo**
+
+Se utilizó un gráfico para visualizar el progreso del entrenamiento y la precisión del modelo a lo largo de las épocas.
+
+```python
+def plot_compare(history):
+    acc = history.history['accuracy']
+    val_acc = history.history['val_accuracy']
+    loss = history.history['loss']
+    val_loss = history.history['val_loss']
+
+    plt.figure(figsize=(12, 6))
+    plt.subplot(1, 2, 1)
+    plt.plot(acc, label='Training Accuracy')
+    plt.plot(val_acc, label='Validation Accuracy')
+    plt.title('Training and Validation Accuracy')
+    plt.legend()
+
+    plt.subplot(1, 2, 2)
+    plt.plot(loss, label='Training Loss')
+    plt.plot(val_loss, label='Validation Loss')
+    plt.title('Training and Validation Loss')
+    plt.legend()
+    plt.show()
+
+plot_compare(history)
+```
+
+---
+
 ## **III. Metodología del codigo de rosas vs tulipanes:**
 
 #### 1. **Importación de Bibliotecas y Configuración del Entorno**
