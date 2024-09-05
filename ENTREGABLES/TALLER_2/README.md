@@ -76,6 +76,8 @@ Finalmente, evaluamos el rendimiento del modelo mediante gráficos:
 
 
 Este enfoque estructurado permite que cada sección sea comprensible y didáctica, facilitando la interpretación de los resultados y su ajuste.
+
+[Codigo_flores_y_tulipanes](ENTREGABLES/TALLER_2/TAREA _ GRUPAL/Tulipanes vs rosas.ipynb)
 ## *La actividad consistió en dos tareas principales:*
 
 ### Modificación y Corrección del Código de Imágenes de Perros y Gatos:
@@ -91,4 +93,4 @@ Se realizaron correcciones y mejoras en el código para actualizarlo con nuevas 
 ### *Visualización de Imágenes:*
 Se ajustó el código para permitir la visualización de todas las imágenes generadas por los filtros convolucionales, ahora aplicadas a las imágenes de rosas y tulipanes.
 
-[Codigo_flores_y_tulipanes](ENTREGABLES/TALLER_2/TAREA _ GRUPAL/Tulipanes vs rosas.ipynb)
+
