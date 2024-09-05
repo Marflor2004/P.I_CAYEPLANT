@@ -17,6 +17,7 @@ El objetivo principal de esta actividad es desarrollar y optimizar una red neuro
 
 ## **I. Introducción:**
 
+<p align="justify">
 En la actualidad, las redes neuronales convolucionales (CNN) se han convertido en una herramienta fundamental en el campo de la visión por computadora, siendo utilizadas ampliamente para la clasificación y reconocimiento de objetos en imágenes. Este entregable tiene como objetivo aplicar y optimizar una CNN para la clasificación de imágenes, específicamente para diferenciar entre dos tipos de flores: tulipanes y rosas, además de explorar la distinción entre perros y gatos. Utilizando bibliotecas modernas como TensorFlow y Keras en Python, este trabajo busca comprender cómo las CNNs son capaces de identificar características visuales clave que permiten distinguir entre diferentes categorías, optimizando la arquitectura de las redes para mejorar la precisión en la clasificación de estos objetos.
 
 ## **II. Metodología del codigo de perros y gatos:**
