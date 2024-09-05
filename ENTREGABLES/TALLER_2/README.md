@@ -90,3 +90,5 @@ Se realizaron correcciones y mejoras en el código para actualizarlo con nuevas 
 ## Aplicación del Modelo a la Clasificación de Rosas y Tulipanes:
 ### *Visualización de Imágenes:*
 Se ajustó el código para permitir la visualización de todas las imágenes generadas por los filtros convolucionales, ahora aplicadas a las imágenes de rosas y tulipanes.
+
+-	[Codigo_flores_y_tulipanes](https://github.com/JefHuiza/Fundamentos-de-Dise-o/tree/main/Hardware): xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
