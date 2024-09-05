@@ -18,7 +18,7 @@ El objetivo principal de esta actividad es desarrollar y optimizar una red neuro
 ## **I. Introducción:**
 
 <p align="justify">
-En la actualidad, las redes neuronales convolucionales (CNN) se han convertido en una herramienta fundamental en el campo de la visión por computadora, siendo utilizadas ampliamente para la clasificación y reconocimiento de objetos en imágenes. Este entregable tiene como objetivo aplicar y optimizar una CNN para la clasificación de imágenes, específicamente para diferenciar entre dos tipos de flores: tulipanes y rosas, además de explorar la distinción entre perros y gatos. Utilizando bibliotecas modernas como TensorFlow y Keras en Python, este trabajo busca comprender cómo las CNNs son capaces de identificar características visuales clave que permiten distinguir entre diferentes categorías, optimizando la arquitectura de las redes para mejorar la precisión en la clasificación de estos objetos.
+En la actualidad, las redes neuronales convolucionales (CNN) se han convertido en una herramienta fundamental en el campo de la visión por computadora, siendo utilizadas ampliamente para la clasificación y reconocimiento de objetos en imágenes. Este entregable tiene como objetivo aplicar y optimizar una CNN para la clasificación de imágenes, específicamente para diferenciar entre dos tipos de flores: tulipanes y rosas, además de explorar la distinción entre perros y gatos. Utilizando bibliotecas modernas como TensorFlow y Keras en Python, este trabajo busca comprender cómo las CNNs son capaces de identificar características visuales clave que permiten distinguir entre diferentes categorías, optimizando la arquitectura de las redes para mejorar la precisión en la clasificación de estos objetos [1].
 
 ## **II. Metodología del codigo de perros y gatos:**
 
@@ -92,4 +92,6 @@ Se realizaron correcciones y mejoras en el código para actualizarlo con nuevas 
 ### *Visualización de Imágenes:*
 Se ajustó el código para permitir la visualización de todas las imágenes generadas por los filtros convolucionales, ahora aplicadas a las imágenes de rosas y tulipanes.
 
+## **IV. Referencias:**
 
+- [1] A. T. Martín, "Investigación de Detección de Bordes a Radiografías con Deep Learning," Trabajo Fin de Grado, Universidad Politécnica de Madrid, Escuela Técnica Superior de Ingenieros Informáticos, Madrid, mayo 2023. [Enlace: https://oa.upm.es/74981/1/TFG_ALBERTO_TOMAS_MARTIN.pdf]
