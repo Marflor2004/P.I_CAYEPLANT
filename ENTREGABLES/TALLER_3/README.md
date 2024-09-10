@@ -16,7 +16,9 @@ Dentro del cual descargaremos lo siguiente :
 5. Y si el Arduino Cli no se encontrara en su carpeta lo pueden instalar aparte y luego añadirlo el cual lo pueden conseguir en el siguiente link donde tendra que descargar el que mas se adecue a su computadora: https://github.com/arduino/arduino-cli/releases/tag/0.33.1
    
 
-Después de haber todo ello empezamos con la configuracion en Edge Impulse :
-Abrimos un nuevo proyecto, dando click en New Proyect.
-El siguiente paso es dar click
+Después de haber instalado todo ello en nuestro arduino IDE empezamos con la configuracion en Edge Impulse paso a paso :
+1. Abrimos un nuevo proyecto, dando click en "New Proyect".
+2. Dar click en "Add existing data".
+3. Dar click en "Connect device" que esta dentro de la caja de texto de collect data. En este mismo paso debemos de darnos una pantalla de confirmación que el sensor se ha conectado correctamente.
+4. 
 
