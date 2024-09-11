@@ -1,11 +1,12 @@
-# Modelo TinyML en Arduino Nano 33 BLE SENSE
+# TEMA: Modelo TinyML en Arduino Nano 33 BLE SENSE para el reconocimiento de formas y números 
 
 ## INTEGRANTES: 
 * Milena Yally
 * Fiorella Flores
 * Mar Gutierrez
 * Lizeth Mamani
-
+  
+# 1). INTRUDUCCIÓN
 
 
 
