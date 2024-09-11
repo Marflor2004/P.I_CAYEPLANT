@@ -1,4 +1,4 @@
-### Modelo TinyML en Arduino Nano 33 BLE SENSE###
+## Modelo TinyML en Arduino Nano 33 BLE SENSE
 
 
 
