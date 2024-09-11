@@ -1,6 +1,6 @@
 # Modelo TinyML en Arduino Nano 33 BLE SENSE
 
-##INTEGRANTES: 
+## INTEGRANTES: 
 * Milena Yally
 * Fiorella Flores
 * Mar Gutierrez
