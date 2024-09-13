@@ -6,7 +6,7 @@
 * Mar Gutierrez
 * Lizeth Mamani
   
-## 1). INTRUDUCCIÓN
+## 1). INTRODUCCIÓN
 
 
 
