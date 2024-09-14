@@ -31,7 +31,7 @@ Para entrenar el modelo de reconocimiento de gestos, se inició con la captura d
 
 [![Whats-App-Image-2024-09-10-at-6-58-09-PM.jpg](https://i.postimg.cc/qMc1W0z8/Whats-App-Image-2024-09-10-at-6-58-09-PM.jpg)](https://postimg.cc/TpwjWzjw)
 
-## 2.3) Desarrollo del Mdelo 
+## 2.3) Desarrollo del Modelo 
 
 ## 2). REFERENCIAS
 
