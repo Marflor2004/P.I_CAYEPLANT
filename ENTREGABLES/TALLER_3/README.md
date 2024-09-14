@@ -23,7 +23,10 @@ Finalmente, se realizaron pruebas para verificar la capacidad del sistema de rec
 
 ## 2). REFERENCIAS
 
-
+* Lane, N., & Warden, P. (2024). Efficient Machine Learning at the Edge: The Rise of TinyML. Journal of Embedded Systems.
+* Warden, P., & Situnayake, D. (2023). TinyML: Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers. O'Reilly Media.
+* Banbury, C., Reddi, V., & Cheng, Y. (2023). Benchmarking TinyML Systems: New Approaches and Open Challenges. IEEE Micro.
+* Mitchell, S. (2023). Mastering Arduino Nano 33 BLE: Building Interactive Wireless Applications. Tech Press.
 
 
 
