@@ -13,7 +13,7 @@ La placa Nano 33 BLE Sense incorpora sensores y capacidades de conectividad medi
 
 Este proyecto tiene como objetivo implementar un modelo TinyML en un Arduino Nano 33 BLE Sense para el reconocimiento de gestos, específicamente movimientos que forman un círculo o representan los números "3" y "1", activando diferentes LED en respuesta a cada gesto. A través de los sensores integrados del Arduino, se demostrará cómo la inteligencia artificial puede aplicarse en dispositivos con recursos limitados. Se detallarán los pasos necesarios para entrenar el modelo, implementarlo en el dispositivo y comprobar su correcto funcionamiento.
 
-## 3).METODOLOGÍA 
+## 2).METODOLOGÍA 
 Durante la realización del proyecto,se consultaron artículos especializados utilizando Google Scholar, para comprender la implementación de TinyML en el Arduino Nano 33 BLE Sense. Empleamos términos de búsqueda como “Machine Learning en dispositivos embebidos” y “redes neuronales en hardware limitado,”. El proyecto se dividió en fases que incluyeron desde la recolección de datos de movimiento con los sensores del Arduino hasta la carga e implementación del modelo TinyML en el dispositivo.
 
 El modelo de reconocimiento de gestos fue entrenado con TensorFlow Lite, ajustando los parámetros necesarios para alcanzar la precisión requerida. Posteriormente, el modelo se cargó en el Arduino Nano 33 BLE Sense usando la plataforma Arduino IDE, asegurando su correcta integración con el hardware del dispositivo.
