@@ -25,6 +25,11 @@ Finalmente, se realizaron pruebas para verificar la capacidad del sistema de rec
 
 Registrar una Cuenta en Edge Impulse: Crea una cuenta en Edge Impulse
 
+## 2.2) Adquisición de Datos de Movimiento: 
+
+[![Whats-App-Image-2024-09-10-at-6-58-09-PM.jpg](https://i.postimg.cc/qMc1W0z8/Whats-App-Image-2024-09-10-at-6-58-09-PM.jpg)](https://postimg.cc/TpwjWzjw)
+
+
 
 ## 2). REFERENCIAS
 
