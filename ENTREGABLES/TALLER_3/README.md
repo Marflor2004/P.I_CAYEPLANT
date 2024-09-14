@@ -11,6 +11,8 @@
 TinyML es una tecnología que permite la implementación de modelos de Machine Learning en dispositivos de bajo consumo, como microcontroladores, posibilitando análisis en tiempo real de datos sensoriales, como visión y audio, directamente en el dispositivo, lo que reduce la dependencia de la nube y mejora la privacidad y seguridad de los datos (Lane et al., 2024; Warden et al., 2023). Su crecimiento ha impulsado el desarrollo de herramientas, como frameworks y bibliotecas, facilitando su uso en diversas industrias, desde la salud hasta la agricultura (Banbury et al., 2023).
 La placa Nano 33 BLE Sense incorpora sensores y capacidades de conectividad mediante Bluetooth de baja energía, lo cual la hace ideal para aplicaciones que necesitan interactuar con el entorno y establecer comunicación inalámbrica eficiente (Mitchell, 2023).
 
+Este proyecto tiene como objetivo implementar un modelo TinyML en un Arduino Nano 33 BLE Sense para el reconocimiento de gestos, específicamente movimientos que forman un círculo o representan los números "3" y "1", activando diferentes LED en respuesta a cada gesto. A través de los sensores integrados del Arduino, se demostrará cómo la inteligencia artificial puede aplicarse en dispositivos con recursos limitados. Se detallarán los pasos necesarios para entrenar el modelo, implementarlo en el dispositivo y comprobar su correcto funcionamiento.
+
 
 ## 2). REFERENCIAS
 
