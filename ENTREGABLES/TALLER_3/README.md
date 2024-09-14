@@ -12,11 +12,8 @@ TinyML es una tecnología que permite la implementación de modelos de Machine L
 La placa Nano 33 BLE Sense incorpora sensores y capacidades de conectividad mediante Bluetooth de baja energía, lo cual la hace ideal para aplicaciones que necesitan interactuar con el entorno y establecer comunicación inalámbrica eficiente (Mitchell, 2023).
 
 
+## 2). REFERENCIAS
 
-<p align="left">
-  <img src="https://semanadelcannabis.cayetano.edu.pe/assets/img/logo-upch.png" width="250">
- 
-</p>
 
 
 
