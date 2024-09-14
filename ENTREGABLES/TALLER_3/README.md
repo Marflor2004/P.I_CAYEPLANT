@@ -21,6 +21,11 @@ El modelo de reconocimiento de gestos fue entrenado con TensorFlow Lite, ajustan
 Finalmente, se realizaron pruebas para verificar la capacidad del sistema de reconocer los gestos específicos y activar los LED correspondientes. Cada etapa del proceso fue cuidadosamente documentada y ajustada para garantizar la eficacia del modelo y el funcionamiento adecuado del proyecto.
 
 
+## 2.1). Configuración del Entorno:
+
+Registrar una Cuenta en Edge Impulse: Crea una cuenta en Edge Impulse
+
+
 ## 2). REFERENCIAS
 
 * Lane, N., & Warden, P. (2024). Efficient Machine Learning at the Edge: The Rise of TinyML. Journal of Embedded Systems.
