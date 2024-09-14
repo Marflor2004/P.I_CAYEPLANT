@@ -32,6 +32,27 @@ Para entrenar el modelo de reconocimiento de gestos, se inició con la captura d
 [![Whats-App-Image-2024-09-10-at-6-58-09-PM.jpg](https://i.postimg.cc/qMc1W0z8/Whats-App-Image-2024-09-10-at-6-58-09-PM.jpg)](https://postimg.cc/TpwjWzjw)
 
 ## 2.3) Desarrollo del Modelo 
+Recolección de Datos:
+
+Utilizamos el Arduino Nano 33 BLE Sense para captar datos de sus sensores integrados, que incluyen el acelerómetro, el giroscopio y el magnetómetro.
+Registramos datos en los ejes AccX, AccY, AccZ (acelerómetro); GyrX, GyrY, GyrZ (giroscopio); y MagX, MagY, MagZ (magnetómetro).
+Dividimos los datos en segmentos de 3 segundos para facilitar su análisis.
+
+Procesamiento:
+Configuramos el bloque de procesamiento para aplicar el análisis espectral a los datos, asegurándonos de manejar adecuadamente todos los ejes de entrada.
+
+Entrenamiento del Modelo:
+
+Utilizamos un bloque de clasificación para el aprendizaje automático.
+Entrenamos el modelo con las características espectrales extraídas, con el objetivo de clasificar los datos en tres categorías: "círculo", "tres" y "uno".
+
+Resultados del Modelo:
+
+El modelo entrenado debe ser capaz de distinguir entre las tres clases especificadas ("círculo", "tres" y "uno") basándose en las características extraídas.
+
+[![Whats-App-Image-2024-09-10-at-6-58-05-PM.jpg](https://i.postimg.cc/nrNf5xr8/Whats-App-Image-2024-09-10-at-6-58-05-PM.jpg)](https://postimg.cc/ZvPQB16j)
+
+Recopilación de datos de los sensores del Arduino Nano 33 BLE Sense, en intervalos de 3 segundos, con identificación de gestos en "círculo", "tres" y "uno".
 
 ## 2). REFERENCIAS
 
