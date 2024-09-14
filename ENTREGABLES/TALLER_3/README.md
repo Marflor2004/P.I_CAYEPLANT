@@ -27,6 +27,8 @@ Registrar una Cuenta en Edge Impulse: Crea una cuenta en Edge Impulse
 
 ## 2.2) Adquisición de Datos de Movimiento: 
 
+Para entrenar el modelo de reconocimiento de gestos, se inició con la captura de datos utilizando los sensores del Arduino Nano 33 BLE Sense. Se recolectaron 100 muestras de cada gesto: el dibujo de un círculo, el número 3 y el número 1, en diferentes condiciones para garantizar que el modelo pudiera generalizar eficazmente.
+
 [![Whats-App-Image-2024-09-10-at-6-58-09-PM.jpg](https://i.postimg.cc/qMc1W0z8/Whats-App-Image-2024-09-10-at-6-58-09-PM.jpg)](https://postimg.cc/TpwjWzjw)
 
 
