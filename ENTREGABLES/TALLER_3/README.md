@@ -9,7 +9,7 @@
 ## 1). INTRODUCCIÓN
 
 TinyML es una tecnología que permite la implementación de modelos de Machine Learning en dispositivos de bajo consumo, como microcontroladores, posibilitando análisis en tiempo real de datos sensoriales, como visión y audio, directamente en el dispositivo, lo que reduce la dependencia de la nube y mejora la privacidad y seguridad de los datos (Lane et al., 2024; Warden et al., 2023). Su crecimiento ha impulsado el desarrollo de herramientas, como frameworks y bibliotecas, facilitando su uso en diversas industrias, desde la salud hasta la agricultura (Banbury et al., 2023).
-
+La placa Nano 33 BLE Sense incorpora sensores y capacidades de conectividad mediante Bluetooth de baja energía, lo cual la hace ideal para aplicaciones que necesitan interactuar con el entorno y establecer comunicación inalámbrica eficiente (Mitchell, 2023).
 
 
 
