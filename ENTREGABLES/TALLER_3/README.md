@@ -73,8 +73,13 @@ Recopilación de datos de los sensores del Arduino Nano 33 BLE Sense, en interva
 
 Los resultados muestran que el modelo tiene una alta precisión del 84.8% en la detección del gesto de un círculo, pero enfrenta dificultades con los números 1 y 3, con precisiones de 2.73% y 3.52%, respectivamente. Aunque el modelo identifica correctamente el número 1 con una precisión notable del 93.75%, su rendimiento en la detección del círculo y el número 3 sugiere la necesidad de mejoras significativas. Esto indica que el modelo está bien ajustado para reconocer el número 1, pero requiere ajustes adicionales para mejorar la identificación de los otros gestos. En particular, el gesto del número 3 tiene una precisión del 37.11%, lo que es mejor en comparación con el círculo y el número 1, pero aún requiere optimización. Es necesario revisar el proceso de entrenamiento y considerar ajustes en el modelo para mejorar la precisión general en la detección de todos los gestos.
 
+## 3). EVIDENCIAS 
 
-## 3). DISCUSIÓN
+https://github.com/user-attachments/assets/400b464c-f6ed-43f6-860b-451312d76ed9
+
+
+
+## 4). DISCUSIÓN
 
 Hemos logrado mostrar que el Arduino Nano 33 BLE Sense puede ejecutar un modelo de TinyML entrenado con Edge Impulse, lo que le permite identificar con precisión gestos como un círculo, el número 3 y el número 1. Esta implementación ilustra cómo los sistemas embebidos pueden realizar tareas complejas de reconocimiento de patrones de manera autónoma, sin necesidad de conexión constante a la nube, mientras optimizan el uso de recursos y energía. Al combinar el aprendizaje automático con un hardware eficiente y herramientas como Edge Impulse, hemos ampliado las posibilidades para desarrollar aplicaciones inteligentes
 
