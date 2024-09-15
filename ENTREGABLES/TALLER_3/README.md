@@ -76,6 +76,8 @@ Los resultados muestran que el modelo tiene una alta precisión del 84.8% en la 
 
 ## 3). DISCUSIÓN
 
+Hemos logrado mostrar que el Arduino Nano 33 BLE Sense puede ejecutar un modelo de TinyML entrenado con Edge Impulse, lo que le permite identificar con precisión gestos como un círculo, el número 3 y el número 1. Esta implementación ilustra cómo los sistemas embebidos pueden realizar tareas complejas de reconocimiento de patrones de manera autónoma, sin necesidad de conexión constante a la nube, mientras optimizan el uso de recursos y energía. Al combinar el aprendizaje automático con un hardware eficiente y herramientas como Edge Impulse, hemos ampliado las posibilidades para desarrollar aplicaciones inteligentes
+
 ## 5). REFERENCIAS
 
 * Lane, N., & Warden, P. (2024). Efficient Machine Learning at the Edge: The Rise of TinyML. Journal of Embedded Systems.
