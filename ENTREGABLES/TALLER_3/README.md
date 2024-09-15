@@ -59,6 +59,142 @@ Los resultados obtenidos, con una precisión del 91.7% y una pérdida de 0.52, i
   </p>  
 
 El modelo entrenado debe ser capaz de distinguir entre las tres clases especificadas ("círculo", "tres" y "uno") basándose en las características extraídas.
+
+### *2.4)  Implementación y pruebas del código:*
+
+Para implementar el modelo en el Arduino Nano 33 BLE Sense, desarrollamos un código específico que gestionó la lectura de datos del sensor, la inferencia del modelo y el control de los LEDs.
+
+Vamos a describir el código en primera persona del plural, explicando lo que hacemos en cada parte.
+
+### 1. Inclusión de bibliotecas
+```cpp
+#include <Wire.h>
+#include <SparkFunLSM9DS1.h>
+#include <a33_inferencing.h>
+```
+Lo primero que hacemos es incluir las bibliotecas necesarias para nuestro proyecto. Utilizamos la biblioteca `Wire.h` para la comunicación I2C con el sensor, `SparkFunLSM9DS1.h` para manejar las funciones del sensor LSM9DS1, y `a33_inferencing.h` para realizar inferencias con la ayuda de Edge Impulse.
+
+### 2. Inicialización del sensor y configuración de pines
+```cpp
+LSM9DS1 imu;
+const int RED_LED_PIN = 2;
+const int BLUE_LED_PIN = 3;
+const int GREEN_LED_PIN = 4;
+```
+Aquí, creamos un objeto `imu` para interactuar con el sensor LSM9DS1 y definimos los pines que utilizaremos para controlar los LEDs rojo, azul y verde.
+
+### 3. Almacenamiento de características
+```cpp
+static float features[EI_CLASSIFIER_DSP_INPUT_FRAME_SIZE];
+```
+Este array es donde almacenamos las características que extraemos del sensor (como los valores de aceleración en los ejes X, Y y Z). El tamaño del array es definido por el valor `EI_CLASSIFIER_DSP_INPUT_FRAME_SIZE`, que corresponde al número de características que espera la biblioteca de Edge Impulse.
+
+### 4. Función `raw_feature_get_data`
+```cpp
+int raw_feature_get_data(size_t offset, size_t length, float *out_ptr) {
+    memcpy(out_ptr, features + offset, length * sizeof(float));
+    return 0;
+}
+```
+En esta función, nos encargamos de copiar los datos de nuestro array `features` al puntero `out_ptr`, que la biblioteca de inferencia utilizará para procesar los datos. Aquí especificamos un desplazamiento (`offset`) y una longitud (`length`) para controlar qué porción de datos queremos copiar.
+
+### 5. Función `print_inference_result`
+```cpp
+void print_inference_result(ei_impulse_result_t result) {
+    ei_printf("Timing: DSP %d ms, inference %d ms, anomaly %d ms\r\n", result.timing.dsp, result.timing.classification, result.timing.anomaly);
+```
+Aquí mostramos los resultados de la inferencia. Imprimimos el tiempo que tomó cada etapa del proceso: el procesamiento DSP, la clasificación y la detección de anomalías, si las hay.
+
+#### Control de los LEDs:
+```cpp
+    if (result.classification[0].value > 0.5) {
+        digitalWrite(RED_LED_PIN, HIGH);  
+        digitalWrite(BLUE_LED_PIN, LOW);
+        digitalWrite(GREEN_LED_PIN, LOW);
+    } else if (result.classification[1].value > 0.5) {
+        digitalWrite(RED_LED_PIN, LOW);
+        digitalWrite(BLUE_LED_PIN, HIGH);  
+    } else if (result.classification[2].value > 0.5) {
+        digitalWrite(GREEN_LED_PIN, HIGH);
+    } else {
+        digitalWrite(RED_LED_PIN, LOW);
+        digitalWrite(BLUE_LED_PIN, LOW);
+        digitalWrite(GREEN_LED_PIN, LOW);
+    }
+```
+Dependiendo de los resultados de la inferencia, controlamos los LEDs. Si el valor de una clase supera el 50%, encendemos el LED correspondiente. De lo contrario, apagamos los LEDs.
+
+### 6. Función `setup`
+```cpp
+void setup() {
+    Serial.begin(115200);  
+    Wire.begin();  
+
+    if (imu.begin() != 0) {
+        Serial.println("Error al inicializar el LSM9DS1.");
+        while (1);  
+    }
+
+    pinMode(RED_LED_PIN, OUTPUT);  
+    pinMode(BLUE_LED_PIN, OUTPUT);
+    pinMode(GREEN_LED_PIN, OUTPUT);
+
+    Serial.println("LSM9DS1 inicializado correctamente.");
+}
+```
+En la función `setup`, inicializamos la comunicación serial y la comunicación I2C para poder interactuar con el sensor. Intentamos inicializar el sensor LSM9DS1 y, si falla, mostramos un mensaje de error y detenemos el programa. Configuramos los pines de los LEDs como salidas para poder controlarlos más adelante.
+
+### 7. Función `loop`
+```cpp
+void loop() {
+    ei_printf("Edge Impulse standalone inferencing (Arduino)\n");
+
+    imu.readAccel();  
+    features[0] = imu.calcAccel(imu.ax);  
+    features[1] = imu.calcAccel(imu.ay);  
+    features[2] = imu.calcAccel(imu.az);  
+```
+En el `loop`, leemos los datos del acelerómetro en cada iteración. Extraemos las aceleraciones en los ejes X, Y y Z, y las almacenamos en el array `features` para utilizarlas en la inferencia.
+
+#### Verificación de tamaño
+```cpp
+    if (sizeof(features) / sizeof(float) != EI_CLASSIFIER_DSP_INPUT_FRAME_SIZE) {
+        ei_printf("The size of your 'features' array is not correct. Expected %lu items, but had %lu\n", EI_CLASSIFIER_DSP_INPUT_FRAME_SIZE, sizeof(features) / sizeof(float));
+        delay(1000);
+        return;
+    }
+```
+Aquí verificamos que el tamaño de nuestro array de características coincida con lo esperado por la biblioteca. Si no es así, mostramos un mensaje de error y pausamos la ejecución durante un segundo antes de reintentarlo.
+
+#### Preparación de la señal para la inferencia
+```cpp
+    ei_impulse_result_t result = { 0 };
+    signal_t features_signal;
+    features_signal.total_length = sizeof(features) / sizeof(features[0]);
+    features_signal.get_data = &raw_feature_get_data;
+```
+Luego, preparamos una estructura `signal_t` que contiene nuestros datos de características. Esta estructura será utilizada por la función de inferencia para procesar los datos y generar un resultado.
+
+#### Ejecución de la inferencia
+```cpp
+    EI_IMPULSE_ERROR res = run_classifier(&features_signal, &result, false);
+    if (res != EI_IMPULSE_OK) {
+        ei_printf("ERR: Failed to run classifier (%d)\n", res);
+        return;
+    }
+```
+Llamamos a la función `run_classifier` para ejecutar la inferencia. Si ocurre un error durante el proceso, lo imprimimos y detenemos la ejecución temporalmente.
+
+### 8. Control de LEDs y nueva iteración
+```cpp
+    print_inference_result(result);
+    delay(1000);  
+}
+```
+Finalmente, mostramos los resultados de la inferencia y ajustamos los LEDs en consecuencia. Hacemos una pausa de un segundo antes de repetir el proceso.
+
+Este código nos permite leer datos del sensor, ejecutar una inferencia y controlar los LEDs según los resultados obtenidos.
+
 ## 3). RESULTADOS
 <p align="center">
     <img src="https://i.postimg.cc/qvcC0hxV/final.jpg)" width="800" alt="Modelo">
