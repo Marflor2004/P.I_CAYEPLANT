@@ -21,40 +21,64 @@ El modelo de reconocimiento de gestos fue entrenado con TensorFlow Lite, ajustan
 Finalmente, se realizaron pruebas para verificar la capacidad del sistema de reconocer los gestos específicos y activar los LED correspondientes. Cada etapa del proceso fue cuidadosamente documentada y ajustada para garantizar la eficacia del modelo y el funcionamiento adecuado del proyecto.
 
 
-## 2.1). Configuración del Entorno:
+### *2.1). Configuración del Entorno:*
 
 Registrar una Cuenta en Edge Impulse: Crea una cuenta en Edge Impulse
 
-## 2.2) Adquisición de Datos de Movimiento: 
+ <p align="center">
+    <img src="https://i.postimg.cc/RhnNYNZY/INICIo.jpg" width="900" alt="logo">
+  </p>  
+  
+### *2.2) Adquisición de Datos de Movimiento:*
 
 Para entrenar el modelo de reconocimiento de gestos, se inició con la captura de datos utilizando los sensores del Arduino Nano 33 BLE Sense. Se recolectaron 100 muestras de cada gesto: el dibujo de un círculo, el número 3 y el número 1, en diferentes condiciones para garantizar que el modelo pudiera generalizar eficazmente.
 
-[![Whats-App-Image-2024-09-10-at-6-58-09-PM.jpg](https://i.postimg.cc/qMc1W0z8/Whats-App-Image-2024-09-10-at-6-58-09-PM.jpg)](https://postimg.cc/TpwjWzjw)
+ <p align="center">
+    <img src="https://i.postimg.cc/PJ62SVNy/Datos1.jpg" width="800" alt="logo">
+  </p>  
 
-## 2.3) Desarrollo del Modelo 
-Recolección de Datos:
+### *2.3) Desarrollo del Modelo*
+#### Recolección de Datos:
 
 Utilizamos el Arduino Nano 33 BLE Sense para captar datos de sus sensores integrados, que incluyen el acelerómetro, el giroscopio y el magnetómetro.
 Registramos datos en los ejes AccX, AccY, AccZ (acelerómetro); GyrX, GyrY, GyrZ (giroscopio); y MagX, MagY, MagZ (magnetómetro).
 Dividimos los datos en segmentos de 3 segundos para facilitar su análisis.
 
-Procesamiento:
+#### Procesamiento:
 Configuramos el bloque de procesamiento para aplicar el análisis espectral a los datos, asegurándonos de manejar adecuadamente todos los ejes de entrada.
+<p align="center">
+    <img src="https://i.postimg.cc/dQS2Sy45/caracter-sticas.png" width="800" alt="logo">
+  </p>  
 
-Entrenamiento del Modelo:
+#### Entrenamiento del Modelo:
 
-Utilizamos un bloque de clasificación para el aprendizaje automático.
-Entrenamos el modelo con las características espectrales extraídas, con el objetivo de clasificar los datos en tres categorías: "círculo", "tres" y "uno".
+Los resultados obtenidos, con una precisión del 91.7% y una pérdida de 0.52, indican que el modelo es eficaz y adecuado para la tarea de reconocimiento de gestos. La alta precisión sugiere que el modelo clasifica correctamente la mayoría de los gestos, mientras que la pérdida relativamente baja indica un buen ajuste general del modelo.
 
-Resultados del Modelo:
+ <p align="center">
+    <img src="https://i.postimg.cc/6qz1D5bd/Entrenamiento.png" width="800" alt="Modelo">
+  </p>  
 
 El modelo entrenado debe ser capaz de distinguir entre las tres clases especificadas ("círculo", "tres" y "uno") basándose en las características extraídas.
-
-[![Whats-App-Image-2024-09-10-at-6-58-05-PM.jpg](https://i.postimg.cc/nrNf5xr8/Whats-App-Image-2024-09-10-at-6-58-05-PM.jpg)](https://postimg.cc/ZvPQB16j)
+## 3). RESULTADOS
+<p align="center">
+    <img src="https://i.postimg.cc/qvcC0hxV/final.jpg)" width="800" alt="Modelo">
+  </p>  
 
 Recopilación de datos de los sensores del Arduino Nano 33 BLE Sense, en intervalos de 3 segundos, con identificación de gestos en "círculo", "tres" y "uno".
+| INTERPRETACIÓN |  IMAGEN | 
+| :------------ |:---------------:| 
+| Tres| [![P-I1.jpg](https://i.postimg.cc/vT1QmkRx/P-I1.jpg)](https://postimg.cc/K32Xq98m)|
+| Círculo| [![P-I2.jpg](https://i.postimg.cc/TYDdMzqZ/P-I2.jpg)](https://postimg.cc/GHbwvSfQ) |
+| Uno| [![P-I3.jpg](https://i.postimg.cc/TPRfbpM6/P-I3.jpg)](https://postimg.cc/gxBCFc2S)| 
 
-## 2). REFERENCIAS
+Los resultados muestran que el modelo es altamente preciso en la detección del gesto de un círculo, con una precisión de 0.84766, mientras que tiene dificultades con los números 1 (0.05859) y 3 (0.09365). La precisión general de 84.8% sugiere que, aunque el modelo identifica correctamente el círculo, necesita mejoras para distinguir mejor los números. Esto puede indicar la necesidad de ajustar el entrenamiento o recopilar más datos.
+El modelo muestra una precisión notable en la detección del número 1 (93.75%), pero presenta desafíos significativos con el círculo (2.73%) y el número 3 (3.52%). Esto sugiere que el modelo está muy bien ajustado para reconocer el número 1, pero requiere mejoras sustanciales para identificar correctamente los otros gestos. Es necesario revisar el proceso de entrenamiento y considerar ajustes en el modelo para mejorar la detección de los gestos menos precisos.
+El modelo tiene una precisión del 37.11% para el gesto del número 3, destacándose en comparación con el círculo (0.37109) y el número 1 (0.37109). Aunque el número 3 es mejor identificado que los otros gestos, el desempeño general aún sugiere áreas para mejorar.
+
+
+## 3). DISCUSIÓN
+
+## 5). REFERENCIAS
 
 * Lane, N., & Warden, P. (2024). Efficient Machine Learning at the Edge: The Rise of TinyML. Journal of Embedded Systems.
 * Warden, P., & Situnayake, D. (2023). TinyML: Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers. O'Reilly Media.
