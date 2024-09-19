@@ -41,7 +41,10 @@ A continuación, presentamos el diagrama eléctrico de la planta interactiva. El
 
 Para el diseño estructural de la planta interactiva, hemos desarrollado un modelo en 3D que incluye lo siguiente:
 
-Carcasa en PLA: La estructura de la planta será impresa en 3D utilizando PLA. Hemos diseñado la carcasa de manera que los sensores y luces estén integrados de forma discreta y estética.
+Carcasa de nuestro macetero: La estructura de la planta será impresa en 3D. Hemos diseñado la carcasa de manera que los sensores y luces estén integrados de forma discreta y estética.
+
+![image](https://github.com/user-attachments/assets/8daa80e4-0d0e-47fd-b62b-8136dee99bd6)
+
 
 El modelo ha sido diseñado en ONSHAPE y se realizo el pase a Sketchfab
 
