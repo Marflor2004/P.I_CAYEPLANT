@@ -20,7 +20,10 @@ En este proyecto, nuestro objetivo es desarrollar una planta interactiva intelig
 <p align="justify">
 La idea principal es que nuestra planta se comporte como una compañera emocional que, al igual que una mascota, fomente una relación cercana con el usuario, ayudándolo a reducir su estrés. A largo plazo, esperamos que esta tecnología se convierta en un producto de consumo masivo que beneficie tanto a la salud emocional de las personas como al medio ambiente.
 
-
+## 2) LISTA DE REQUERIMIENTOS:
+   
+Objetivo Principal:
+El objetivo principal de este proyecto es crear una planta interactiva con la capacidad de monitorear su entorno y responder de manera "emocional" al usuario, con un impacto positivo en la absorción de CO2.
 
 
 
