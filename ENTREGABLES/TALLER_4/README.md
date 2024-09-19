@@ -43,7 +43,11 @@ Para el diseño estructural de la planta interactiva, hemos desarrollado un mode
 
 Carcasa de nuestro macetero: La estructura de la planta será impresa en 3D. Hemos diseñado la carcasa de manera que los sensores y luces estén integrados de forma discreta y estética.
 
-![image](https://github.com/user-attachments/assets/8daa80e4-0d0e-47fd-b62b-8136dee99bd6)
+<div align="center"; style="display: flex; justify-content: space-between;">
+  <img src=https://github.com/user-attachments/assets/8daa80e4-0d0e-47fd-b62b-8136dee99bd6 width="600px"/>
+</div>
+
+<p align="center">Imagen 01: Diseño de la carcasa del macetero
 
 
 El modelo ha sido diseñado en ONSHAPE y se realizo el pase a Sketchfab
