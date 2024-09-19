@@ -47,8 +47,7 @@ Carcasa de nuestro macetero: La estructura de la planta será impresa en 3D. Hem
   <img src=https://github.com/user-attachments/assets/8daa80e4-0d0e-47fd-b62b-8136dee99bd6 width="600px"/>
 </div>
 
-<p align="center">Imagen 01: Diseño de la carcasa del macetero
+<p align="center">Imagen 01: Diseño de la carcasa del macetero, realizado en Onshape.
 
 
-El modelo ha sido diseñado en ONSHAPE y se realizo el pase a Sketchfab
 
