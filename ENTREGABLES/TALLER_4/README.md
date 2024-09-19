@@ -22,7 +22,7 @@ La idea principal es que nuestra planta se comporte como una compañera emociona
 
 ## 2) LISTA DE REQUERIMIENTOS:
    
-Objetivo Principal:
+> Objetivo Principal:
 El objetivo principal de este proyecto es crear una planta interactiva con la capacidad de monitorear su entorno y responder de manera "emocional" al usuario, con un impacto positivo en la absorción de CO2.
 
 
