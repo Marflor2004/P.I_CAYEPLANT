@@ -42,7 +42,7 @@ El objetivo principal de este proyecto es crear una planta interactiva con la ca
 |         Costos                 | Moderado| Dentro del presupuesto para materiales y componentes necesarios, buscando equilibrio entre calidad y costo. |                                                                                                  |
 
 ---
-<div align="center">
+
 
 # *Diseño/estructura*
 
@@ -58,7 +58,7 @@ El objetivo principal de este proyecto es crear una planta interactiva con la ca
 | Ergonomía                | Interacción humano-dispositivo                              | Pantalla frontal que muestra las "emociones" de la planta basadas en las condiciones actuales. Uso intuitivo con indicadores claros para el estado de luz y humedad. |
 
 ---
-<div align="center">
+
 
 # *Realización y Producción*
 
@@ -68,7 +68,7 @@ El objetivo principal de este proyecto es crear una planta interactiva con la ca
 | Fabricación               | Impresión 3D para estuche del componente | Se realizará la impresión con material PETG, debido a su resistencia a la humedad, otra opción a considerar, sería el Nylon, pero es más difícil de imprimir debido a su tendencia a deformarse, y también requiere un ambiente controlado durante la impresión. |                                                                     
 
 ---
-<div align="center">
+
 
 # *Uso/Reciclando*
 
@@ -82,7 +82,6 @@ El objetivo principal de este proyecto es crear una planta interactiva con la ca
 |                          | Fiabilidad| Vida prolongada de uso , con garantia en su compra para mantenimiento del producto 
 | Reciclaje                | Desecho| los componentes electrónicos del macetero inteligente, tendrían segundo uso de funcionamiento para su posible reciclaje-reuso.|                                                                                                   
 ---
-<div align="center">
 
 # *Organización*
 
@@ -114,7 +113,7 @@ Carcasa de nuestro macetero: La estructura de la planta será impresa en 3D. Hem
   <img src=https://github.com/user-attachments/assets/8daa80e4-0d0e-47fd-b62b-8136dee99bd6 width="600px"/>
 </div>
 
-<p align="center">Imagen 01: Diseño de la carcasa del macetero, realizado en Onshape.
+<p align="center"> Imagen 01: Diseño de la carcasa del macetero, realizado en Onshape.
 
 
 ---
