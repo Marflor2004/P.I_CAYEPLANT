@@ -30,7 +30,7 @@ La idea principal es que nuestra planta se comporte como una compañera emociona
 El objetivo principal de este proyecto es crear una planta interactiva con la capacidad de monitorear su entorno y responder de manera "emocional" al usuario, con un impacto positivo en la absorción de CO2.
 
 
-## *Función*
+# *Función*
 
 | Característica principal | Característica secundaria                          | Estudio del caso industrial                                                                                   |
 |--------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -44,8 +44,7 @@ El objetivo principal de este proyecto es crear una planta interactiva con la ca
 ---
 <div align="center">
 
-## Diseño/estructura
-</div>
+# *Diseño/estructura*
 
 
 | Característica principal | Característica secundaria                                    | Estudio del caso industrial                                                                                   |
@@ -61,8 +60,7 @@ El objetivo principal de este proyecto es crear una planta interactiva con la ca
 ---
 <div align="center">
 
-## Realización y Producción
-</div>
+# *Realización y Producción*
 
 
 | Característica principal  | Característica secundaria                                           | Estudio del caso industrial                                                                                   |
@@ -72,9 +70,7 @@ El objetivo principal de este proyecto es crear una planta interactiva con la ca
 ---
 <div align="center">
 
-## USO/RECICLANDO
-</div>
-
+# *Uso/Reciclando*
 
 | Característica principal | Característica secundaria                          | Estudio del caso industrial                                                                                   |
 |--------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -88,8 +84,7 @@ El objetivo principal de este proyecto es crear una planta interactiva con la ca
 ---
 <div align="center">
 
-## ORGANIZACIÓN
-</div>
+# *Organización*
 
 
 | Característica principal | Característica secundaria                           | Estudio del caso industrial                                                                                   |
