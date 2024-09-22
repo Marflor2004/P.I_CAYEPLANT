@@ -22,43 +22,51 @@
 * Yalli Espinoza Milena Nicol
 
   
-## 1). INTRODUCCIÓN:
+### 1). INTRODUCCIÓN:
 
 
 
-## 2). MATERIALES UTILIZADOS: 
-## 3). CONFIGURACIÓN DEL SISTEMA
+### 2). MATERIALES UTILIZADOS: 
 
 
-## 4). RESULTADOS OBTENIDOS
+
+### 3). CONFIGURACIÓN DEL SISTEMA
+
+
+
+### 4). RESULTADOS 
 
 ###### Código
-```
+```cpp
 #include "thingProperties.h"
 #include <Arduino_MKRIoTCarrier.h>
+#include <ArduinoIoTCloud.h>
+#include <Arduino_ConnectionHandler.h>
 
 MKRIoTCarrier carrier;
 
 int moistPin = A5;
+const int externalLedPin = A6; // Pin para el LED externo
 
 String relayState1 = "";
 String relayState2 = "";
 
 void setup() {
-  // Initialize serial and wait for port to open:
   Serial.begin(9600);
-  // Defined in thingProperties.h
-  initProperties();
-  
+  initProperties();  // Asegúrate de que thingProperties.h está bien incluido
+
+  // Configurar la conexión a IoT Cloud
   ArduinoCloud.begin(ArduinoIoTPreferredConnection);
   
-  CARRIER_CASE = true;
-  carrier.begin();
+  CARRIER_CASE = true;  // Activa el uso del estuche del MKR IoT Carrier
+  carrier.begin();      // Inicializa el carrier
   
-  setDebugMessageLevel(4);   // Get Cloud Info/errors, 0 (only errors) up to 4
+  pinMode(externalLedPin, OUTPUT);  // Definir el pin del LED externo como salida
+  
+  setDebugMessageLevel(4);   // Obtener información y errores de la nube
   ArduinoCloud.printDebugInfo();
   
-  while (ArduinoCloud.connected() != 1) {
+  while (!ArduinoCloud.connected()) {
     ArduinoCloud.update();
     carrier.display.setTextSize(3);
     carrier.display.setCursor(20, 70);
@@ -71,61 +79,40 @@ void setup() {
 
 void loop() {
   ArduinoCloud.update();
- 
-  if (rele_1) {
-    carrier.Relay1.open();
-    relayState1 = "ON";
-  } else {
-    carrier.Relay1.close();
-    relayState1 = "OFF";
-  }
- 
-  if (rele_2) {
-    carrier.Relay2.open();
-    relayState2 = "ON";
-  } else {
-    carrier.Relay2.close();
-    relayState2 = "OFF";
-  }
-  
+
   if (carrier.Light.colorAvailable()) {
-    int none; // not gonna be used
+    int none; // Variable temporal
     carrier.Light.readColor(none, none, none, luz);
   }
-  
+
   temperatura = carrier.Env.readTemperature();
   humedad = carrier.Env.readHumidity();
- 
+
   int rawMoistValue = analogRead(moistPin);
   humedadValor = map(rawMoistValue, 0, 1023, 100, 0);
 }
 
 void onHumedadChange() {
-  // Do something when humedad changes
   Serial.print("Humedad changed to: ");
   Serial.println(humedad);
 }
 
 void onTemperaturaChange() {
-  // Do something when temperatura changes
   Serial.print("Temperatura changed to: ");
   Serial.println(temperatura);
 }
 
 void onHumedadValorChange() {
-  // Do something when humedadValor changes
   Serial.print("HumedadValor changed to: ");
   Serial.println(humedadValor);
 }
 
 void onLuzChange() {
-  // Do something when luz changes
   Serial.print("Luz changed to: ");
   Serial.println(luz);
 }
 
 void onRgbColorChange() {
-  // Do something when rgbColor changes
   uint8_t r, g, b;
   rgbColor.getValue().getRGB(r, g, b);
   if (rgbColor.getSwitch()) {
@@ -137,8 +124,9 @@ void onRgbColorChange() {
   }
 }
 
-void onActualizacionPantallaChange() {
-  // Do something when actualizacionPantalla changes
+void onUpdateDisplayChange() {
+  if (!updateDisplay) return;
+  
   carrier.display.fillScreen(ST77XX_WHITE);
   carrier.display.setTextColor(ST77XX_RED);
   carrier.display.setTextSize(2);
@@ -172,22 +160,22 @@ void onActualizacionPantallaChange() {
   carrier.display.print("R2: ");
   carrier.display.print(relayState2);
 
-  actualizacionPantalla = false;
+  updateDisplay = false;
 }
 
 void onRele1Change() {
-  // Do something when rele_1 changes
   if (rele_1) {
     carrier.Relay1.open();
     relayState1 = "ON";
+    digitalWrite(externalLedPin, HIGH); 
   } else {
     carrier.Relay1.close();
     relayState1 = "OFF";
+    digitalWrite(externalLedPin, LOW); 
   }
 }
 
 void onRele2Change() {
-  // Do something when rele_2 changes
   if (rele_2) {
     carrier.Relay2.open();
     relayState2 = "ON";
@@ -196,6 +184,7 @@ void onRele2Change() {
     relayState2 = "OFF";
   }
 }
+
 
 ```
 
