@@ -33,7 +33,7 @@
 ## 4). RESULTADOS OBTENIDOS
 
 ###### Código
-
+```
 #include "thingProperties.h"
 #include <Arduino_MKRIoTCarrier.h>
 
@@ -197,6 +197,7 @@ void onRele2Change() {
   }
 }
 
+```
 
 <div style="border: 2px solid black; padding: 10px; display: inline-block;">
     <img src="https://i.postimg.cc/s2XLT7sP/Resultado.jpg" alt="Resultado" style="max-width: 100%;">
