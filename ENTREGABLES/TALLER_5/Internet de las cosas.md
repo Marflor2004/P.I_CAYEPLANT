@@ -92,7 +92,7 @@ Ahora, abrimos el Arduino Cloud y creamos una nueva "Thing" que llamamos "GRUPO 
   <img src=https://github.com/user-attachments/assets/1ce4f417-f2f8-4963-9d22-ac334ed083a2 width="600px"/>
 </div>
 
-<p align="center"> Imagen 4: Lista de variables configuradas en Arduino Cloud para nuestro proyecto</p>
+<p align="center"> Imagen 04: Lista de variables configuradas en Arduino Cloud para nuestro proyecto</p>
 
 
 **3.3 Creación del panel de control:**
