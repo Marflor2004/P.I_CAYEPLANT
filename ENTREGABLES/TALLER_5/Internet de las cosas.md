@@ -49,8 +49,68 @@ El IoT permite que los datos recolectados mediante sensores sean monitoreados de
 - Sensor PIR (Infrarrojo Pasivo)
 - Cables plug-and-play para todos los sensores
 
+### 3) METODOLOGÍA:
 
-### 3). CONFIGURACIÓN DEL SISTEMA
+*3.1 Preparación del hardware:*
+
+<p align="justify">
+Primero, montamos el Arduino MKR WiFi 1010 en el MKR IoT Carrier. Luego, conectamos el sensor de humedad al pin A5 del carrier. Finalmente, conectamos el cable micro USB a nuestro ordenador.
+  
+<div align="center"; style="display: flex; justify-content: space-between;">
+  <img src=https://github.com/user-attachments/assets/01871b1d-8b03-4869-b8ab-5a8f56776a7f width="600px"/>
+</div>
+
+<p align="center">Imagen 01: Arduino MKR WiFi 1010 montado en el MKR IoT Carrier Y sensor de humedad conectado al pin A5 del MKR IoT Carrier</p>
+
+*3.2 Configuración del Arduino Cloud:*
+
+<p align="justify">
+Ahora, abrimos el Arduino Cloud y creamos una nueva "Thing" que llamamos "GRUPO 07". Configuramos las siguientes variables en la nube:
+
+<div align="center"; style="display: flex; justify-content: space-between;">
+  <img src=https://github.com/user-attachments/assets/8b733a87-e056-4a9f-a4d9-2fce9746c130 width="600px"/>
+</div>
+<p align="center">Imagen 02: Entrando a la ventana de Thing</p>
+
+<div align="center"; style="display: flex; justify-content: space-between;">
+  <img src=https://github.com/user-attachments/assets/787f7f7e-690c-4d50-9411-7537b5924ca9 width="600px"/>
+</div>
+<p align="center">Imagen 03: Creación de una nueva 'Thing' llamada 'GRUPO 07' en Arduino Cloud</p>
+
+humedad (float)
+temperatura (float)
+luz (int)
+humedadValor (int)
+relé_1 (Boolean)
+relé_2 (Boolean)
+rgbColor (Color)
+actualizaciónPantalla (Boolean)
+
+No olvidamos configurar las credenciales de nuestra red WiFi en el panel Network.
+
+3.3 Creación del panel de control:
+
+En el Arduino Cloud, creamos un nuevo dashboard y lo llamamos "Actividad 8". Añadimos los siguientes widgets y los vinculamos a nuestras variables:
+
+- Un widget de porcentaje para humedad (rango 0-100)
+- Un indicador para temperatura (rango -40 a 100)
+- Un widget de valor para luz
+- Un widget de porcentaje para humedadValor (rango 0-100)
+- Un switch para relé_1
+- Un switch para relé_2
+- Un widget de luz coloreada para rgbColor
+- Un switch para actualizaciónPantalla
+3.4 Programación del sketch:
+Ahora, programamos nuestro sketch. Primero, incluimos las bibliotecas necesarias e inicializamos los objetos. En el setup(), inicializamos la comunicación serial, las propiedades y la conexión a la nube.
+En el loop(), programamos el control de los relés basado en los switches del dashboard. También leemos los valores de los sensores (luz, temperatura, humedad, humedad del suelo) y mapeamos el valor de humedad del suelo a un rango de 0-100.
+Implementamos las funciones de callback para los cambios en los widgets del dashboard, como el control de los LEDs RGB.
+3.5 Carga y prueba:
+  
+Verificamos y cargamos el sketch en nuestra placa Arduino. Abrimos el Serial Monitor para verificar que la conexión con Arduino Cloud se ha establecido correctamente. Interactuamos con los widgets del dashboard y observamos los cambios en los sensores y actuadores para asegurarnos de que todo funciona como esperamos.
+
+
+  
+### 4). CONFIGURACIÓN DEL SISTEMA
 - Abrir Arduino Cloud y conectar el dispositivo:
   <div style="border: 2px solid black; padding: 10px; display: inline-block;">
     <img src="https://i.postimg.cc/650JzCDq/Dispositivo.jpg" alt="Resultado" style="max-width: 100%;">
