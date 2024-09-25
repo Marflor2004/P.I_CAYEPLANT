@@ -97,7 +97,7 @@ Ahora, abrimos el Arduino Cloud y creamos una nueva "Thing" que llamamos "GRUPO 
 
 **3.3 Creación del panel de control:**
 
-En el Arduino Cloud, creamos un nuevo dashboard y lo llamamos "Actividad 8". Añadimos los siguientes widgets y los vinculamos a nuestras variables:
+En el Arduino Cloud, creamos un nuevo dashboard y lo llamamos "GRUPO 07". Añadimos los siguientes widgets y los vinculamos a nuestras variables:
 
 - Un widget de porcentaje para humedad (rango 0-100)
 - Un indicador para temperatura (rango -40 a 100)
