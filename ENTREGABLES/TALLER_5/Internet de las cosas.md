@@ -66,6 +66,17 @@ Primero, montamos el Arduino MKR WiFi 1010 en el MKR IoT Carrier. Luego, conecta
 
 <p align="justify">
 Ahora, abrimos el Arduino Cloud y creamos una nueva "Thing" que llamamos "GRUPO 07". Configuramos las siguientes variables en la nube:
+  
+- Humedad (float)
+- Temperatura (float)
+- Luz (int)
+- HumedadValor (int)
+- Relé_1 (Boolean)
+- Relé_2 (Boolean)
+- rgbColor (Color)
+- actualizaciónPantalla (Boolean)
+
+> No olvidamos configurar las credenciales de nuestra red WiFi en el panel Network.
 
 <div align="center"; style="display: flex; justify-content: space-between;">
   <img src=https://github.com/user-attachments/assets/8b733a87-e056-4a9f-a4d9-2fce9746c130 width="600px"/>
@@ -77,18 +88,14 @@ Ahora, abrimos el Arduino Cloud y creamos una nueva "Thing" que llamamos "GRUPO 
 </div>
 <p align="center">Imagen 03: Creación de una nueva 'Thing' llamada 'GRUPO 07' en Arduino Cloud</p>
 
-humedad (float)
-temperatura (float)
-luz (int)
-humedadValor (int)
-relé_1 (Boolean)
-relé_2 (Boolean)
-rgbColor (Color)
-actualizaciónPantalla (Boolean)
+<div align="center"; style="display: flex; justify-content: space-between;">
+  <img src=https://github.com/user-attachments/assets/1ce4f417-f2f8-4963-9d22-ac334ed083a2 width="600px"/>
+</div>
 
-No olvidamos configurar las credenciales de nuestra red WiFi en el panel Network.
+<p align="center"> Imagen 4: Lista de variables configuradas en Arduino Cloud para nuestro proyecto</p>
 
-3.3 Creación del panel de control:
+
+**3.3 Creación del panel de control:**
 
 En el Arduino Cloud, creamos un nuevo dashboard y lo llamamos "Actividad 8". Añadimos los siguientes widgets y los vinculamos a nuestras variables:
 
