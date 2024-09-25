@@ -51,7 +51,7 @@ El IoT permite que los datos recolectados mediante sensores sean monitoreados de
 
 ### 3) METODOLOGÍA:
 
-*3.1 Preparación del hardware:*
+**3.1 Preparación del hardware:**
 
 <p align="justify">
 Primero, montamos el Arduino MKR WiFi 1010 en el MKR IoT Carrier. Luego, conectamos el sensor de humedad al pin A5 del carrier. Finalmente, conectamos el cable micro USB a nuestro ordenador.
@@ -62,7 +62,7 @@ Primero, montamos el Arduino MKR WiFi 1010 en el MKR IoT Carrier. Luego, conecta
 
 <p align="center">Imagen 01: Arduino MKR WiFi 1010 montado en el MKR IoT Carrier Y sensor de humedad conectado al pin A5 del MKR IoT Carrier</p>
 
-*3.2 Configuración del Arduino Cloud:*
+**3.2 Configuración del Arduino Cloud:**
 
 <p align="justify">
 Ahora, abrimos el Arduino Cloud y creamos una nueva "Thing" que llamamos "GRUPO 07". Configuramos las siguientes variables en la nube:
