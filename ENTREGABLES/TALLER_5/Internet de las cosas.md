@@ -60,7 +60,7 @@ Primero, montamos el Arduino MKR WiFi 1010 en el MKR IoT Carrier. Luego, conecta
   <img src=https://github.com/user-attachments/assets/01871b1d-8b03-4869-b8ab-5a8f56776a7f width="600px"/>
 </div>
 
-<p align="center">Imagen 01: Arduino MKR WiFi 1010 montado en el MKR IoT Carrier Y sensor de humedad conectado al pin A5 del MKR IoT Carrier</p>
+<p align="center">Imagen 01: Arduino MKR WiFi 1010 montado en el MKR IoT Carrier </p>
 
 **3.2 Configuración del Arduino Cloud:**
 
