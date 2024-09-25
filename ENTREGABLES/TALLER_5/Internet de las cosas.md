@@ -29,6 +29,25 @@ El IoT permite que los datos recolectados mediante sensores sean monitoreados de
 
 ### 2). MATERIALES UTILIZADOS: 
 
+- Componentes del Kit
+- Placa Arduino MKR WiFi 1010
+- MKR IoT Carrier (diseñado específicamente para este kit), que incluye:
+- Dos relés de 24 V
+- Soporte para tarjeta SD
+- Cinco botones táctiles
+- Conectores plug-and-play para diversos sensores
+- Sensor de temperatura
+- Sensor de humedad
+- Sensor de presión
+- Sensor RGBC (Color y luz ambiental), gestos y proximidad
+- IMU (Unidad de Medición Inercial)
+- Pantalla RGB de 1.20”
+- Soporte para batería recargable de iones de litio 18650 (batería no incluida)
+- Cinco LEDs RGB
+- Revestimiento de plástico
+- Cable micro USB
+- Sensor PIR (Infrarrojo Pasivo)
+- Cables plug-and-play para todos los sensores
 
 
 ### 3). CONFIGURACIÓN DEL SISTEMA
