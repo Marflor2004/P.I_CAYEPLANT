@@ -390,23 +390,6 @@ Verificamos y cargamos el sketch en nuestra placa Arduino. Abrimos el Serial Mon
 
 <p align="center"> Imagen 10 :MKR IoT Carrier en funcionamiento con LEDs encendidos y datos en pantalla </p>
 
-  
-### 4). CONFIGURACIÓN DEL SISTEMA
-- Abrir Arduino Cloud y conectar el dispositivo:
-  <div style="border: 2px solid black; padding: 10px; display: inline-block;">
-    <img src="https://i.postimg.cc/650JzCDq/Dispositivo.jpg" alt="Resultado" style="max-width: 100%;">
-</div>
-
-- Crear un nuevo Sketch:
-  
-  Esto hará posible programar el dispositivo y visualizar los datos en tiempo real.
-  <div style="border: 2px solid black; padding: 10px; display: inline-block;">
-    <img src="https://i.postimg.cc/ydV0h49k/Sketch.jpg)" alt="Resultado" style="max-width: 100%;">
-</div>
-
- <div style="border: 2px solid black; padding: 10px; display: inline-block;">
-    <img src="https://i.postimg.cc/PqHDhsS2/Things.jpg" alt="Resultado" style="max-width: 100%;">
-</div>
 
 
 ## 5). CONCLUSIONES
