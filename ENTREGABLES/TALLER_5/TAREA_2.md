@@ -84,9 +84,9 @@ void loop() {
 [![Whats-App-Image-2024-09-25-at-9-53-38-PM.jpg](https://i.postimg.cc/MHX3mwkc/Whats-App-Image-2024-09-25-at-9-53-38-PM.jpg)](https://postimg.cc/Mf2Yzhpx)
 
 
-## *Envío a servidor en digital ocean*
+## ACTIVIDAD 3: Configuración del ESP32 para el envío de datos a un servidor 
+#### *Envío a servidor en digital ocean*
 
- 
     |  Se configuró el ESP32 para enviar datos a un servidor alojado en Digital Ocean. Este proceso incluyó varios pasos esenciales para asegurar la correcta comunicación entre el dispositivo y el servidor. Primero, se creó un servidor en Digital Ocean y se configuraron las credenciales necesarias para la conexión. Luego, se utilizó un código específico en Arduino IDE para programar el ESP32, que abarca la conexión a la red Wi-Fi y la definición de los parámetros del servidor. A continuación, se presenta el código utilizado para el ESP32                                                     |
 
   <p align="center">
@@ -94,7 +94,7 @@ void loop() {
  
 </p>
 
-### *Código*
+#### *Código*
 
   ```cpp
 era esto : #include <WiFi.h>
@@ -153,7 +153,7 @@ void loop() {
 }
 ```
 
-### *Envío MQTT Mostrando la Información del Monitor Serial*
+#### *Envío MQTT Mostrando la Información del Monitor Serial*
 
     |  Se implementó un sistema de comunicación utilizando el protocolo MQTT, que es especialmente eficiente para aplicaciones IoT debido a su bajo consumo de ancho de banda y su arquitectura basada en publicador/suscriptor. Utilizando la biblioteca AsyncMqttClient, se configuró el ESP32 para conectarse a un broker MQTT, lo que permitió enviar datos en formato JSON.                                                             |
  <p align="center">
@@ -161,7 +161,7 @@ void loop() {
  
 </p>
 
- ### *Código*
+ #### *Código*
 
 ```cpp
 #include <WiFi.h>
