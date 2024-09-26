@@ -403,8 +403,6 @@ Verificamos y cargamos el sketch en nuestra placa Arduino. Abrimos el Serial Mon
 
 ### 4) EVIDENCIAS:
 
-https://github.com/user-attachments/assets/a3c892da-853d-45b5-914f-805ef8bf2000
-
 ### 5)  DISCUSIÓN:
 
 <p align="justify">
@@ -426,7 +424,7 @@ En conclusión, nuestro el proyecto realizó  de agricultura urbana basado en Io
 La capacidad de adaptar las condiciones de cultivo en tiempo real, basándose en datos precisos, representa un paso significativo hacia una agricultura urbana más sostenible y productiva. Como concluyen Goap et al. (2018), "The integration of IoT in urban agriculture not only enhances crop management but also paves the way for more sustainable urban food systems, addressing challenges of food security in growing urban populations" [4].
 Este proyecto sienta las bases para futuras expansiones y mejoras, sugiriendo un amplio potencial para la aplicación de tecnologías IoT en diversos escenarios de agricultura urbana.
 
-### 6) REFERENCIAS BIBLIOGRÁFICAS:
+### 7) REFERENCIAS BIBLIOGRÁFICAS:
 
 <p align="justify">  
 [1] Alvear-Puertas, V., Rosero-Montalvo, P., Peluffo-Ordóñez, D., & Pijal-Rojas, J. (2017). Internet de las Cosas y Visión Artificial, Funcionamiento y Aplicaciones: Revisión de Literatura. Enfoque UTE, 8(Supl. 1), 244-256. https://doi.org/10.29019/enfoqueute.v8n1.121
