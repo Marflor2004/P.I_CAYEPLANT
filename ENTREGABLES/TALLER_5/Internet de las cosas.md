@@ -135,7 +135,90 @@ En el loop(), programamos el control de los relés basado en los switches del da
   <img src=https://github.com/user-attachments/assets/d1eb9afc-7125-4fe8-8a99-a1eb96043138 width="600px"/>
 </div>
 
-<p align="center"> Imagen 08: Código de inicialización en el setup() </p>
+<p align="center"> Imagen 08: Ventana de nuestro sketch_GRUPO 07 y bibliotecas instaladas </p>
+
+
+void setup() {
+  Serial.begin(9600);
+  initProperties();  // Asegúrate de que thingProperties.h está bien incluido
+  // Configurar la conexión a IoT Cloud
+  ArduinoCloud.begin(ArduinoIoTPreferredConnection);
+  
+  CARRIER_CASE = true;  // Activa el uso del estuche del MKR IoT Carrier
+  carrier.begin();      // Inicializa el carrier
+  
+  pinMode(externalLedPin, OUTPUT);  // Definir el pin del LED externo como salida
+  
+  setDebugMessageLevel(4);   // Obtener información y errores de la nube
+  ArduinoCloud.printDebugInfo();
+  
+  while (!ArduinoCloud.connected()) {
+    ArduinoCloud.update();
+    carrier.display.setTextSize(3);
+    carrier.display.setCursor(20, 70);
+    carrier.display.println("Waiting For");
+    carrier.display.setCursor(5, 110);
+    carrier.display.println("Connection...");
+    delay(500);
+  }
+}
+
+<p align="center"> Codigo 01 : Código de inicialización en el setup() </p>
+
+void loop() {
+  ArduinoCloud.update();
+  if (carrier.Light.colorAvailable()) {
+    int none; // Variable temporal
+    carrier.Light.readColor(none, none, none, luz);
+  }
+  temperatura = carrier.Env.readTemperature();
+  humedad = carrier.Env.readHumidity();
+  int rawMoistValue = analogRead(moistPin);
+  humedadValor = map(rawMoistValue, 0, 1023, 100, 0);
+}
+
+<p align="center"> Codigo 02 : Código principal en el loop() </p>
+
+
+void onHumedadChange() {
+  Serial.print("Humedad changed to: ");
+  Serial.println(humedad);
+}
+
+void onTemperaturaChange() {
+  Serial.print("Temperatura changed to: ");
+  Serial.println(temperatura);
+}
+
+void onRgbColorChange() {
+  uint8_t r, g, b;
+  rgbColor.getValue().getRGB(r, g, b);
+  if (rgbColor.getSwitch()) {
+    carrier.leds.fill(carrier.leds.Color(g, r, b), 0, 5);
+    carrier.leds.show();
+  } else {
+    carrier.leds.fill(0, 0, 5);
+    carrier.leds.show();
+  }
+}
+
+void onUpdateDisplayChange() {
+  // ... (código para actualizar la pantalla)
+}
+
+void onRele1Change() {
+  if (rele_1) {
+    carrier.Relay1.open();
+    relayState1 = "ON";
+    digitalWrite(externalLedPin, HIGH); 
+  } else {
+    carrier.Relay1.close();
+    relayState1 = "OFF";
+    digitalWrite(externalLedPin, LOW); 
+  }
+}
+
+<p align="center"> Codigo 03 :Funciones de callback para los widgets del dashboard </p>
 
 **3.5 Carga y prueba:**
 
