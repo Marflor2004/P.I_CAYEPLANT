@@ -43,7 +43,38 @@ El objetivo de este ejercicio es configurar el ESP32 como un escáner de redes W
 Figura: visualización de redes 
 
 ## codigo: 
+```cpp
+#include "WiFi.h"  // Incluye la biblioteca WiFi para manejar la conectividad Wi-Fi
 
+const char* ssid = "Galaxy12345";  // Reemplaza con el nombre de tu hotspot
+const char* password = "12345678";  // Reemplaza con la contraseña de tu hotspot
+
+void setup() {
+    Serial.begin(115200);  // Inicializa la comunicación serial a 115200 baudios
+
+    // Configura el ESP32 en modo estación (cliente) y desconecta de una AP si estaba previamente conectado
+    WiFi.mode(WIFI_STA);
+    WiFi.disconnect();
+    delay(100);  // Espera 100 ms para asegurar que la desconexión esté completa
+
+    Serial.println("Conectando a la red...");
+    WiFi.begin(ssid, password);  // Inicia la conexión al hotspot
+
+    while (WiFi.status() != WL_CONNECTED) {
+        delay(1000);  // Espera 1 segundo
+        Serial.print(".");  // Muestra un punto para indicar que está intentando conectarse
+    }
+
+    Serial.println("");
+    Serial.println("Conexión exitosa!");
+    Serial.print("Dirección IP asignada: ");
+    Serial.println(WiFi.localIP());  // Imprime la dirección IP asignada
+}
+
+void loop() {
+    // Puedes añadir lógica aquí si necesitas hacer algo en el loop
+} actividad
+```
 ## *MATERIALES*
 | Potenciómetro |  ESP32 | 
 | :------------ |:---------------:| 
