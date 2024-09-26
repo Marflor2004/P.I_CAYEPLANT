@@ -21,14 +21,14 @@
 * Quispe Mamani Lizzeth Rossmery
 * Yalli Espinoza Milena Nicol
 
-  ## INTRODUCCIÓN:
+  ## 1). INTRODUCCIÓN:
 El Internet de las cosas (IoT),  se ha consolidado como una de las tecnologías más relevantes de los últimos años. Su capacidad para conectar millones de dispositivos a nivel mundial plantea desafíos considerables en aspectos como el costo, la conectividad y el consumo energético (Zhang et al., 2023). Este avance tecnológico tiene como objetivo monitorear diversas facetas de la vida diaria (Sharma et al., 2023). Asimismo, se extiende a campos como la visión artificial, la conservación ambiental y el análisis meteorológico, entre otros.
 
 El informe presente se focaliza en la configuración y programación de dispositivos IoT, utilizando plataformas como Arduino MKR y ESP32. Se explora la conexión de sensores que permiten la adquisición de datos de variables ambientales como temperatura, humedad, luminosidad y movimiento. Posteriormente, estos datos se envían a plataformas IoT mediante protocolos de comunicación, tales como Wi-Fi o MQTT, optimizando el proceso de monitoreo y respuesta en tiempo real.
 
 El ecosistema IoT se compone de dispositivos que integran sistemas embebidos, como unidades centrales de procesamiento (CPU), sensores y módulos de conectividad (Li et al., 2020). Estos dispositivos recopilan, transmiten y responden a la información obtenida de su entorno, facilitando el intercambio de datos entre sensores y otros dispositivos mediante pasarelas IoT o dispositivos de frontera. La información recolectada puede ser transferida a la nube para un análisis más detallado o procesada localmente para una respuesta inmediata.
 
-## Lectura de un Potenciómetro con ESP32 
+## 2). Lectura de un Potenciómetro con ESP32 
 # OBJETIVO: 
 El objetivo fundamental del ejercicio es mejorar la precisión en la lectura de un potenciómetro con el ESP32 mediante el uso de un promediado de datos y la conversión de los valores del ADC a voltaje. Esto optimiza la estabilidad de las mediciones y permite interpretar correctamente los niveles de señal analógica. Adicionalmente, se exploran las funcionalidades de la biblioteca WiFi.h para conectar el dispositivo a redes Wi-Fi, lo que posibilita la integración en proyectos de monitoreo remoto, automatización del hogar e interacción con servidores web.
 
@@ -36,7 +36,7 @@ El objetivo fundamental del ejercicio es mejorar la precisión en la lectura de 
 
 [![Whats-App-Image-2024-09-25-at-9-53-38-PM.jpg](https://i.postimg.cc/MHX3mwkc/Whats-App-Image-2024-09-25-at-9-53-38-PM.jpg)](https://postimg.cc/Mf2Yzhpx)
 
-# Scanner WIFI con ESP32
+# 3). Scanner WIFI con ESP32
 ## OBJETIVO: 
 El objetivo de este ejercicio es configurar el ESP32 como un escáner de redes Wi-Fi para detectar y analizar las redes cercanas. Con esto, puedo identificar la cantidad de redes disponibles, sus nombres (SSID), la intensidad de la señal (RSSI) y el tipo de cifrado que utilizan. Los resultados se imprimirán en el monitor serie cada 5 segundos, lo que me permitirá evaluar el entorno de conectividad y analizar la calidad de las redes para proyectos de monitoreo o diagnóstico de señal.
 [![Whats-App-Image-2024-09-19-at-2-50-26-PM.jpg](https://i.postimg.cc/Y2JTz49M/Whats-App-Image-2024-09-19-at-2-50-26-PM.jpg)](https://postimg.cc/hh1CStT5)
