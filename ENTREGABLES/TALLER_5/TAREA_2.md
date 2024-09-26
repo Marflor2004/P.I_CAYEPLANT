@@ -21,7 +21,7 @@
 * Quispe Mamani Lizzeth Rossmery
 * Yalli Espinoza Milena Nicol
 
-  ## 1). INTRODUCCIÓN:
+## 1). INTRODUCCIÓN:
 El Internet de las cosas (IoT),  se ha consolidado como una de las tecnologías más relevantes de los últimos años. Su capacidad para conectar millones de dispositivos a nivel mundial plantea desafíos considerables en aspectos como el costo, la conectividad y el consumo energético (Zhang et al., 2023). Este avance tecnológico tiene como objetivo monitorear diversas facetas de la vida diaria (Sharma et al., 2023). Asimismo, se extiende a campos como la visión artificial, la conservación ambiental y el análisis meteorológico, entre otros.
 
 El informe presente se focaliza en la configuración y programación de dispositivos IoT, utilizando plataformas como Arduino MKR y ESP32. Se explora la conexión de sensores que permiten la adquisición de datos de variables ambientales como temperatura, humedad, luminosidad y movimiento. Posteriormente, estos datos se envían a plataformas IoT mediante protocolos de comunicación, tales como Wi-Fi o MQTT, optimizando el proceso de monitoreo y respuesta en tiempo real.
