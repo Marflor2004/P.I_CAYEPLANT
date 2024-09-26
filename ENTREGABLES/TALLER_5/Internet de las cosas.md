@@ -394,6 +394,7 @@ Verificamos y cargamos el sketch en nuestra placa Arduino. Abrimos el Serial Mon
 
 
 
+
 ## 5) CONCLUSIONES:
 
 ## 6) REFERENCIAS BIBLIOGRÁFICAS:
