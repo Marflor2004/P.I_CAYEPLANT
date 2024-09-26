@@ -29,7 +29,10 @@ El informe presente se focaliza en la configuración y programación de disposit
 El ecosistema IoT se compone de dispositivos que integran sistemas embebidos, como unidades centrales de procesamiento (CPU), sensores y módulos de conectividad (Li et al., 2020). Estos dispositivos recopilan, transmiten y responden a la información obtenida de su entorno, facilitando el intercambio de datos entre sensores y otros dispositivos mediante pasarelas IoT o dispositivos de frontera. La información recolectada puede ser transferida a la nube para un análisis más detallado o procesada localmente para una respuesta inmediata.
 
 ## Lectura de un Potenciómetro con ESP32 
+# OBJETIVO: 
+El objetivo fundamental del ejercicio es mejorar la precisión en la lectura de un potenciómetro con el ESP32 mediante el uso de un promediado de datos y la conversión de los valores del ADC a voltaje. Esto optimiza la estabilidad de las mediciones y permite interpretar correctamente los niveles de señal analógica. Adicionalmente, se exploran las funcionalidades de la biblioteca WiFi.h para conectar el dispositivo a redes Wi-Fi, lo que posibilita la integración en proyectos de monitoreo remoto, automatización del hogar e interacción con servidores web.
 
+[![Whats-App-Image-2024-09-19-at-2-44-04-PM.jpg](https://i.postimg.cc/HsRR3rkT/Whats-App-Image-2024-09-19-at-2-44-04-PM.jpg)](https://postimg.cc/Lnkx86PW)
 
 
 ## *MATERIALES*
