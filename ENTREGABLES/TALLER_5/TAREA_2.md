@@ -1,3 +1,219 @@
+<p align="left">
+  <img src="https://semanadelcannabis.cayetano.edu.pe/assets/img/logo-upch.png" width="250">
+ 
+</p>
+<div align="center">
+  
+# ENTREGABLE 05: Familiarización con IoT en Arduino ESP32
+</div>
+
+         |  Objetivo: Obtener una comprensión práctica y teórica del Internet de las Cosas (IoT), enfocándonos en la configuración y programación de dispositivos IoT utilizando el ESP32. Esta experiencia permitió fortalecer nuestros conocimientos sobre conectividad y manejo de datos en entornos IoT.                                                              |
+
+###### Docentes a cargo:
+ - Mg. U. Lewis de la Cruz Rodríguez
+ - > umbert.de.la.cruz@upch.pe
+ - Ing. Renzo Chan Rios
+ - > renzo.chan@upch.pe
+
+#### INTEGRANTES: 
+* Flores Mescco Fiorella Ingrid
+* Gutierrez Huaman Mar Flor
+* Quispe Mamani Lizzeth Rossmery
+* Yalli Espinoza Milena Nicol
+  
+## *MATERIALES*
+| Potenciómetro |  ESP32 | 
+| :------------ |:---------------:| 
+| [![Potenci-metro.jpg](https://i.postimg.cc/jjB43RDj/Potenci-metro.jpg)](https://postimg.cc/xkymcDyr)| [![sp32.jpg](https://i.postimg.cc/fRL7wVXL/sp32.jpg)](https://postimg.cc/WhBq8b5L)|
+
+
+## *Envío a servidor en digital ocean*
+
+ 
+    |  Se configuró el ESP32 para enviar datos a un servidor alojado en Digital Ocean. Este proceso incluyó varios pasos esenciales para asegurar la correcta comunicación entre el dispositivo y el servidor. Primero, se creó un servidor en Digital Ocean y se configuraron las credenciales necesarias para la conexión. Luego, se utilizó un código específico en Arduino IDE para programar el ESP32, que abarca la conexión a la red Wi-Fi y la definición de los parámetros del servidor. A continuación, se presenta el código utilizado para el ESP32                                                     |
+
+  <p align="center">
+  <img src="https://i.postimg.cc/852DCfjV/Evidencia-1.jpg)](https://postimg.cc/xJ3BxCvs)" width="1050">
+ 
+</p>
+
+### *Código*
+
+  ```cpp
+era esto : #include <WiFi.h>
+#include <HTTPClient.h>
+
+const char* ssid = "Redmi Note 11";  // Nombre de usuario (SSID de tu red)
+const char* password = "hola1234";   // Contraseña de la red
+
+const char* serverName = "https://sea-turtle-app-8b8vl.ondigitalocean.app/receive-data";  // URL donde se enviarán los datos
+
+void setup() {
+  Serial.begin(115200);
+
+  // Conectar al WiFi
+  WiFi.begin(ssid, password);
+  Serial.print("Conectando a WiFi...");
+  
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
+    Serial.print(".");
+  }
+  Serial.println("Conectado a WiFi!");
+}
+
+void loop() {
+  if (WiFi.status() == WL_CONNECTED) {  // Verifica que el ESP32 esté conectado
+    HTTPClient http;
+
+    // Inicia la conexión con el servidor
+    http.begin(serverName);
+
+    // Especifica el tipo de contenido (opcional)
+    http.addHeader("Content-Type", "application/x-www-form-urlencoded");
+
+    // Dato a enviar, por ejemplo: "value=123"
+    String httpRequestData = "value=123";  // Aquí puedes cambiar el valor que deseas enviar
+
+    // Realiza la solicitud POST y captura la respuesta
+    int httpResponseCode = http.POST(httpRequestData);
+
+    // Verifica la respuesta
+    if (httpResponseCode > 0) {
+      String response = http.getString();  // Obtiene la respuesta del servidor
+      Serial.println("Respuesta del servidor: " + response);
+    } else {
+      Serial.println("Error en la solicitud POST: " + String(httpResponseCode));
+    }
+
+    // Finaliza la conexión
+    http.end();
+  } else {
+    Serial.println("Error: No se pudo conectar a WiFi");
+  }
+
+  delay(10000);  // Espera 10 segundos antes de enviar el próximo dato
+}
+```
+
+### *Envío MQTT Mostrando la Información del Monitor Serial*
+
+    |  Se implementó un sistema de comunicación utilizando el protocolo MQTT, que es especialmente eficiente para aplicaciones IoT debido a su bajo consumo de ancho de banda y su arquitectura basada en publicador/suscriptor. Utilizando la biblioteca AsyncMqttClient, se configuró el ESP32 para conectarse a un broker MQTT, lo que permitió enviar datos en formato JSON.                                                             |
+ <p align="center">
+  <img src="https://i.postimg.cc/XJMDGfcx/Evidencia-2.jpg)](https://postimg.cc/Ty9cBWsW)" width="1050">
+ 
+</p>
+
+ ### *Código*
+
+```cpp
+#include <WiFi.h>
+#include <AsyncMqttClient.h>
+
+#define WIFI_SSID "Redmi Note 11"
+#define WIFI_PASSWORD "hola1234"
+
+#define MQTT_HOST IPAddress(108, 181, 203, 181)
+#define MQTT_PORT 1883
+#define MQTT_PUB_DATA "upch/equipo2"  // Modificar el topico segun su equipo
+
+AsyncMqttClient mqttClient;
+int QoS = 0;
+TimerHandle_t mqttReconnectTimer;
+TimerHandle_t wifiReconnectTimer;
+
+/***********************************************
+                    Variables
+************************************************/
+float tempVal = 30.5;
+
+/***********************************************
+                    Funciones
+************************************************/
+void connectToWifi() {
+  Serial.println("Conectando a Wi-Fi...");
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+}
+
+void connectToMqtt() {
+  Serial.println("Conectando a MQTT...");
+  mqttClient.connect();
+}
+
+void WiFiEvent(WiFiEvent_t event) {
+  Serial.printf("[Evento-WiFi] evento: %d\n", event);
+  switch (event) {
+    case IP_EVENT_STA_GOT_IP:  // Cambiado a IP_EVENT_STA_GOT_IP
+      Serial.println("Wi-Fi conectado");
+      Serial.println("Dirección IP: ");
+      Serial.println(WiFi.localIP());
+      connectToMqtt();
+      break;
+    case WIFI_EVENT_STA_DISCONNECTED:  // Cambiado a WIFI_EVENT_STA_DISCONNECTED
+      Serial.println("Wi-Fi perdido");
+      xTimerStop(mqttReconnectTimer, 0);
+      xTimerStart(wifiReconnectTimer, 0);
+      break;
+  }
+}
+
+void onMqttConnect(bool sessionPresent) {
+  Serial.println("Conectado a MQTT.");
+  Serial.print("Sesion presente: ");
+  Serial.println(sessionPresent);
+}
+
+void onMqttDisconnect(AsyncMqttClientDisconnectReason reason) {
+  Serial.println("Desconectado de MQTT.");
+  if (WiFi.isConnected()) {
+    xTimerStart(mqttReconnectTimer, 0);
+  }
+}
+
+void onMqttPublish(uint16_t packetId) {
+  Serial.println("Publicacion confirmada.");
+  Serial.print("  packetId: ");
+  Serial.println(packetId);
+}
+
+void setup() {
+  Serial.begin(115200);
+  while (!Serial) { /*espera hasta conectarse*/ }
+
+  mqttReconnectTimer = xTimerCreate("mqttTimer", pdMS_TO_TICKS(2000), pdFALSE, (void*)0, reinterpret_cast<TimerCallbackFunction_t>(connectToMqtt));
+  wifiReconnectTimer = xTimerCreate("wifiTimer", pdMS_TO_TICKS(2000), pdFALSE, (void*)0, reinterpret_cast<TimerCallbackFunction_t>(connectToWifi));
+
+  WiFi.onEvent(WiFiEvent);
+
+  mqttClient.onConnect(onMqttConnect);
+  mqttClient.onDisconnect(onMqttDisconnect);
+  mqttClient.onPublish(onMqttPublish);
+  mqttClient.setServer(MQTT_HOST, MQTT_PORT);
+  mqttClient.setCredentials("devRCR", "D3s4rr0ll0"); // ESTO NO MODIFICAR
+
+  connectToWifi();
+}
+
+void loop() {
+  String jsonString = "{";
+  jsonString += "\"temp\": ";
+  jsonString += tempVal;
+  jsonString += "}";
+
+  uint16_t packetIdPub1 = mqttClient.publish(MQTT_PUB_DATA, QoS, true, jsonString.c_str());
+  Serial.println("Publicando datos: " + jsonString);
+  Serial.printf("Publicando en el topico %s con QoS %d, packetId: ", MQTT_PUB_DATA, QoS);
+  Serial.println(packetIdPub1);
+  Serial.print("\r\n");
+
+  delay(5000); // Espera de 5 segundos antes de publicar nuevamente
+}
+
+```
+
+
+## *CONCLUSIÓN*
+La actividad nos brindó la oportunidad de experimentar de manera práctica con el ESP32, facilitando un aprendizaje significativo sobre la implementación del Internet de las Cosas. A través de este ejercicio, logramos no solo enviar datos, sino también entender mejor el potencial de los dispositivos conectados y su aplicación en diversas áreas.
 ## ACTIVIDAD 2 
 
 #### INTEGRANTES: 
