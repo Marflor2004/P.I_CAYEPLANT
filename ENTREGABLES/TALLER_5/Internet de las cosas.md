@@ -416,7 +416,7 @@ El sistema realizado demostró ser particularmente eficaz en el mantenimiento de
 
 
 
-<h2 style="text-align: right;">Este es mi subtítulo</h2>
+
 ### 6) CONCLUSIONES:
 
 <p align="justify">  
