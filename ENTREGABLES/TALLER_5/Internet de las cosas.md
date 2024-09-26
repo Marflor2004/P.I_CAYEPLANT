@@ -415,6 +415,8 @@ La capacidad de recopilar datos en tiempo real y controlar remotamente el entorn
 El sistema realizado demostró ser particularmente eficaz en el mantenimiento de condiciones óptimas para las plantas, ilustrando cómo la tecnología puede adaptarse a las necesidades específicas de diferentes cultivos. Esto se alinea con las observaciones de Brewster et al. (2017), quienes afirman que "tailored IoT solutions can significantly improve the management of urban agricultural systems, leading to more sustainable and productive urban farming practices" [3].
 
 
+
+<h2 style="text-align: right;">Este es mi subtítulo</h2>
 ### 6) CONCLUSIONES:
 
 <p align="justify">  
