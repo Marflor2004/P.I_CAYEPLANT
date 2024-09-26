@@ -78,9 +78,9 @@ Ahora, abrimos el Arduino Cloud y creamos una nueva "Thing" que llamamos "GRUPO 
 <p align="center">Imagen 03: Creación de una nueva 'Thing' llamada 'GRUPO 07' en Arduino Cloud</p>
 
 <div align="center"; style="display: flex; justify-content: space-between;">
-  <img src=https://github.com/user-attachments/assets/30a0db13-c8b4-49ba-a692-913681b73f47 width="600px"/>
+  <img src=https://github.com/user-attachments/assets/bd607b88-23bb-4bf9-88bc-255f894e7be4 width="600px"/>
 </div>
-<p align="center">Imagen 04: Evidencia de la creación y conexión con la red de WiFI</p>
+<p align="center">Imagen 04: Evidencia de la creación de la carpeta </p>
 
 <div align="center"; style="display: flex; justify-content: space-between;">
   <img src=https://github.com/user-attachments/assets/1ce4f417-f2f8-4963-9d22-ac334ed083a2 width="600px"/>
