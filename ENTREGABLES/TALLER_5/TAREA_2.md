@@ -32,7 +32,7 @@ El ecosistema IoT se compone de dispositivos que integran sistemas embebidos, co
 
 Hoy en día, existe una gran cantidad de microcontroladores y tarjetas de desarrollo orientadas al Internet de las Cosas (IoT). No obstante, en esta actividad nos enfocamos en el ESP32 Dev Kit 1. Este microcontrolador se destaca por su bajo costo y consumo energético, y cuenta con tecnología Wi-Fi y Bluetooth que permite el control de distintos sensores, lo que lo hace una opción económica y eficaz para proyectos de IoT.
 
-## 2.1). Lectura de un Potenciómetro con ESP32 
+## 2.1). ACTIVIDAD: Lectura de un Potenciómetro con ESP32 
 ### OBJETIVO: 
 El objetivo fundamental del ejercicio es mejorar la precisión en la lectura de un potenciómetro con el ESP32 mediante el uso de un promediado de datos y la conversión de los valores del ADC a voltaje. Esto optimiza la estabilidad de las mediciones y permite interpretar correctamente los niveles de señal analógica. Adicionalmente, se exploran las funcionalidades de la biblioteca WiFi.h para conectar el dispositivo a redes Wi-Fi, lo que posibilita la integración en proyectos de monitoreo remoto, automatización del hogar e interacción con servidores web.
 
@@ -43,7 +43,7 @@ Figura: visualización del código
 [![Whats-App-Image-2024-09-25-at-9-53-38-PM.jpg](https://i.postimg.cc/MHX3mwkc/Whats-App-Image-2024-09-25-at-9-53-38-PM.jpg)](https://postimg.cc/Mf2Yzhpx)
 Figura: montaje delm potenciometro 
 
-## 2.2). Scanner WIFI con ESP32
+## 2.2). ACTIVIDAD: Scanner WIFI con ESP32
 ### OBJETIVO: 
 El objetivo de este ejercicio es configurar el ESP32 como un escáner de redes Wi-Fi para detectar y analizar las redes cercanas. Con esto, puedo identificar la cantidad de redes disponibles, sus nombres (SSID), la intensidad de la señal (RSSI) y el tipo de cifrado que utilizan. Los resultados se imprimirán en el monitor serie cada 5 segundos, lo que me permitirá evaluar el entorno de conectividad y analizar la calidad de las redes para proyectos de monitoreo o diagnóstico de señal.
 [![Whats-App-Image-2024-09-19-at-2-50-26-PM.jpg](https://i.postimg.cc/Y2JTz49M/Whats-App-Image-2024-09-19-at-2-50-26-PM.jpg)](https://postimg.cc/hh1CStT5)
