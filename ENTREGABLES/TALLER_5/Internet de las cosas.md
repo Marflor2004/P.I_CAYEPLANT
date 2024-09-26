@@ -403,10 +403,8 @@ Verificamos y cargamos el sketch en nuestra placa Arduino. Abrimos el Serial Mon
 
 
 <p align="justify">
-_______________________
-
-
-### 4) EVIDENCIAS:
+_____________________________________________________________________________________________________________
+### 4.  EVIDENCIAS:
 
 https://github.com/user-attachments/assets/a3c892da-853d-45b5-914f-805ef8bf2000
 
