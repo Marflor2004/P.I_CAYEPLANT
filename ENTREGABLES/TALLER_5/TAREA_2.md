@@ -39,6 +39,7 @@ El objetivo fundamental del ejercicio es mejorar la precisión en la lectura de 
 | Potenciómetro |  ESP32 | 
 | :------------ |:---------------:| 
 | [![Potenci-metro.jpg](https://i.postimg.cc/jjB43RDj/Potenci-metro.jpg)](https://postimg.cc/xkymcDyr)| [![sp32.jpg](https://i.postimg.cc/fRL7wVXL/sp32.jpg)](https://postimg.cc/WhBq8b5L)|
+[![Whats-App-Image-2024-09-25-at-9-53-38-PM.jpg](https://i.postimg.cc/MHX3mwkc/Whats-App-Image-2024-09-25-at-9-53-38-PM.jpg)](https://postimg.cc/Mf2Yzhpx)
 
 
 ## *Envío a servidor en digital ocean*
