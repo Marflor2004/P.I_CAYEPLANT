@@ -109,8 +109,9 @@ En el Arduino Cloud, creamos un nuevo dashboard y lo llamamos "GRUPO 07". Añadi
 <p align="center"> Imagen 06: Entrando a la ventana de Dashboard</p>
 
 <div align="center"; style="display: flex; justify-content: space-between;">
-  <img src=https://github.com/user-attachments/assets/25c3a767-3c76-4301-9cee-30a1a00320f0 width="600px"/>
+  <img src=https://github.com/user-attachments/assets/573878cf-aff1-4b28-b834-cd1ab22a1286 width="600px"/>
 </div>
+
 
 <p align="center"> Imagen 07: Dashboard completo en Arduino Cloud con todos los widgets configurados </p>
 
@@ -376,6 +377,10 @@ void onRele2Change() {
 <p align="justify">
 Verificamos y cargamos el sketch en nuestra placa Arduino. Abrimos el Serial Monitor para verificar que la conexión con Arduino Cloud se ha establecido correctamente. Interactuamos con los widgets del dashboard y observamos los cambios en los sensores y actuadores para asegurarnos de que todo funciona como esperamos.
 
+
+<div align="center"; style="display: flex; justify-content: space-between;">
+  <img src=https://github.com/user-attachments/assets/25c3a767-3c76-4301-9cee-30a1a00320f0 width="600px"/>
+</div>
 
   
 ### 4). CONFIGURACIÓN DEL SISTEMA
