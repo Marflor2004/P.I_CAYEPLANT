@@ -28,7 +28,10 @@ El informe presente se focaliza en la configuración y programación de disposit
 
 El ecosistema IoT se compone de dispositivos que integran sistemas embebidos, como unidades centrales de procesamiento (CPU), sensores y módulos de conectividad (Li et al., 2020). Estos dispositivos recopilan, transmiten y responden a la información obtenida de su entorno, facilitando el intercambio de datos entre sensores y otros dispositivos mediante pasarelas IoT o dispositivos de frontera. La información recolectada puede ser transferida a la nube para un análisis más detallado o procesada localmente para una respuesta inmediata.
 
-  
+## Lectura de un Potenciómetro con ESP32 
+
+
+
 ## *MATERIALES*
 | Potenciómetro |  ESP32 | 
 | :------------ |:---------------:| 
