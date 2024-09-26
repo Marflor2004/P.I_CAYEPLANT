@@ -401,9 +401,13 @@ Verificamos y cargamos el sketch en nuestra placa Arduino. Abrimos el Serial Mon
 
 <p align="center"> Imagen 12 : Circuito usado para encender el led en un protobard </p>
 
+<div align="center"; style="display: flex; justify-content: space-between;">
+  <img src=https://github.com/user-attachments/assets/a0406964-7aad-4329-b092-5fb444533b6c width="600px"/>
+
+<p align="center"> Imagen 13 :El señor de la huemdad en prueba</p>
 
 
-## 4) EVIDENCIAS:
+### 4) EVIDENCIAS:
 
 
 
@@ -412,9 +416,9 @@ https://github.com/user-attachments/assets/a3c892da-853d-45b5-914f-805ef8bf2000
 
 
 
-## 5) CONCLUSIONES:
+### 5) CONCLUSIONES:
 
-## 6) REFERENCIAS BIBLIOGRÁFICAS:
+### 6) REFERENCIAS BIBLIOGRÁFICAS:
 [1] Alvear-Puertas, V., Rosero-Montalvo, P., Peluffo-Ordóñez, D., & Pijal-Rojas, J. (2017). Internet de las Cosas y Visión Artificial, Funcionamiento y Aplicaciones: Revisión de Literatura. Enfoque UTE, 8(Supl. 1), 244-256. https://doi.org/10.29019/enfoqueute.v8n1.121
 
 
