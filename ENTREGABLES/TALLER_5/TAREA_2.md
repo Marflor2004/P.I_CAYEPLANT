@@ -89,7 +89,7 @@ void loop() {
 [![Whats-App-Image-2024-09-25-at-9-53-38-PM.jpg](https://i.postimg.cc/MHX3mwkc/Whats-App-Image-2024-09-25-at-9-53-38-PM.jpg)](https://postimg.cc/Mf2Yzhpx)
 
 
-## ACTIVIDAD 3: Configuración del ESP32 para el envío de datos a un servidor 
+## ACTIVIDAD: Configuración del ESP32 para el envío de datos a un servidor 
 #### *Envío a servidor en digital ocean*
 
     |  Se configuró el ESP32 para enviar datos a un servidor alojado en Digital Ocean. Este proceso incluyó varios pasos esenciales para asegurar la correcta comunicación entre el dispositivo y el servidor. Primero, se creó un servidor en Digital Ocean y se configuraron las credenciales necesarias para la conexión. Luego, se utilizó un código específico en Arduino IDE para programar el ESP32, que abarca la conexión a la red Wi-Fi y la definición de los parámetros del servidor. A continuación, se presenta el código utilizado para el ESP32                                                     |
@@ -134,8 +134,8 @@ void loop() {
     // Especifica el tipo de contenido (opcional)
     http.addHeader("Content-Type", "application/x-www-form-urlencoded");
 
-    // Dato a enviar, por ejemplo: "value=123"
-    String httpRequestData = "value=123";  // Aquí puedes cambiar el valor que deseas enviar
+    // Dato a enviar, por ejemplo: "G2"
+    String httpRequestData = "G2";  // Aquí puedes cambiar el valor que deseas enviar
 
     // Realiza la solicitud POST y captura la respuesta
     int httpResponseCode = http.POST(httpRequestData);
