@@ -43,8 +43,8 @@ Figura: visualización del código
 [![Whats-App-Image-2024-09-25-at-9-53-38-PM.jpg](https://i.postimg.cc/MHX3mwkc/Whats-App-Image-2024-09-25-at-9-53-38-PM.jpg)](https://postimg.cc/Mf2Yzhpx)
 Figura: montaje delm potenciometro 
 
-# 2.2). Scanner WIFI con ESP32
-## OBJETIVO: 
+## 2.2). Scanner WIFI con ESP32
+### OBJETIVO: 
 El objetivo de este ejercicio es configurar el ESP32 como un escáner de redes Wi-Fi para detectar y analizar las redes cercanas. Con esto, puedo identificar la cantidad de redes disponibles, sus nombres (SSID), la intensidad de la señal (RSSI) y el tipo de cifrado que utilizan. Los resultados se imprimirán en el monitor serie cada 5 segundos, lo que me permitirá evaluar el entorno de conectividad y analizar la calidad de las redes para proyectos de monitoreo o diagnóstico de señal.
 [![Whats-App-Image-2024-09-19-at-2-50-26-PM.jpg](https://i.postimg.cc/Y2JTz49M/Whats-App-Image-2024-09-19-at-2-50-26-PM.jpg)](https://postimg.cc/hh1CStT5)
 Figura: visualización de redes 
