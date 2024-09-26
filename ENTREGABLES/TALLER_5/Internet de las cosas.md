@@ -22,12 +22,12 @@
 * Yalli Espinoza Milena Nicol
 
   
-### 1). INTRODUCCIÓN:
+### 1) INTRODUCCIÓN:
 
 El IoT permite que los datos recolectados mediante sensores sean monitoreados de manera remota, lo que facilita la creación de bases de datos que permiten realizar análisis estadísticos, identificar tendencias y evaluar probabilidades. Esto resulta fundamental para comprender el comportamiento de personas y entornos, así como para optimizar procesos y detectar áreas de mejora en sistemas electrónicos integrales[1].
 
 
-### 2). MATERIALES UTILIZADOS: 
+### 2) MATERIALES UTILIZADOS: 
 
 - Arduino MKR WiFi 1010
 - MKR IoT Carrier
@@ -406,13 +406,18 @@ ____
 ### 4) EVIDENCIAS:
 
 
-
 https://github.com/user-attachments/assets/a3c892da-853d-45b5-914f-805ef8bf2000
 
 
+### 5) DISCUSIÓN:
 
 
-### 5) CONCLUSIONES:
+
+
+
+
+
+### 6) CONCLUSIONES:
 
 ### 6) REFERENCIAS BIBLIOGRÁFICAS:
 [1] Alvear-Puertas, V., Rosero-Montalvo, P., Peluffo-Ordóñez, D., & Pijal-Rojas, J. (2017). Internet de las Cosas y Visión Artificial, Funcionamiento y Aplicaciones: Revisión de Literatura. Enfoque UTE, 8(Supl. 1), 244-256. https://doi.org/10.29019/enfoqueute.v8n1.121
