@@ -390,6 +390,8 @@ Verificamos y cargamos el sketch en nuestra placa Arduino. Abrimos el Serial Mon
 
 <p align="center"> Imagen 10 :MKR IoT Carrier en funcionamiento con LEDs encendidos y datos en pantalla </p>
 
+**3.5 Evidencias:**
+
 
 
 ## 5). CONCLUSIONES
