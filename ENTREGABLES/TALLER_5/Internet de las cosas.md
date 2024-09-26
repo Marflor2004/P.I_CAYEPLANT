@@ -390,13 +390,13 @@ Verificamos y cargamos el sketch en nuestra placa Arduino. Abrimos el Serial Mon
 
 <p align="center"> Imagen 10 :MKR IoT Carrier en funcionamiento con LEDs encendidos y datos en pantalla </p>
 
-**3.5 Evidencias:**
+## 4) EVIDENCIAS:
 
 
 
-## 5). CONCLUSIONES
+## 5) CONCLUSIONES:
 
-## 6). REFERENCIAS BIBLIOGRÁFICAS
+## 6) REFERENCIAS BIBLIOGRÁFICAS:
 [1] Alvear-Puertas, V., Rosero-Montalvo, P., Peluffo-Ordóñez, D., & Pijal-Rojas, J. (2017). Internet de las Cosas y Visión Artificial, Funcionamiento y Aplicaciones: Revisión de Literatura. Enfoque UTE, 8(Supl. 1), 244-256. https://doi.org/10.29019/enfoqueute.v8n1.121
 
 
