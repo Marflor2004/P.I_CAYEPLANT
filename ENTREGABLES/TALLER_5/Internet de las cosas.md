@@ -401,15 +401,11 @@ Verificamos y cargamos el sketch en nuestra placa Arduino. Abrimos el Serial Mon
 
 <p align="center"> Imagen 12 : Circuito usado para encender el led en un protobard </p>
 
-____
-
-### 4) EVIDENCIAS:
-
+4.  EVIDENCIAS:
 
 https://github.com/user-attachments/assets/a3c892da-853d-45b5-914f-805ef8bf2000
 
-
-### 5) DISCUSIÓN:
+5.  DISCUSIÓN:
 
 
 
