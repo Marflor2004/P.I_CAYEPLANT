@@ -434,6 +434,8 @@ Este proyecto sienta las bases para futuras expansiones y mejoras, sugiriendo un
 
 <p align="justify">  
 [3] Brewster, C., Roussaki, I., Kalatzis, N., Doolin, K., & Ellis, K. (2017). IoT in Agriculture: Designing a Europe-Wide Large-Scale Pilot. IEEE Communications Magazine, 55(9), 26-33.
+  
+ <p align="justify">   
 [4] Goap, A., Sharma, D., Shukla, A. K., & Krishna, C. R. (2018). An IoT based smart irrigation management system using Machine learning and open source technologies. Computers and Electronics in Agriculture, 155, 41-49.
 
 
