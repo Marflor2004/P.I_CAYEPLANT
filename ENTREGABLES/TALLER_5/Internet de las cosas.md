@@ -89,10 +89,15 @@ Ahora, abrimos el Arduino Cloud y creamos una nueva "Thing" que llamamos "GRUPO 
 <p align="center">Imagen 03: Creación de una nueva 'Thing' llamada 'GRUPO 07' en Arduino Cloud</p>
 
 <div align="center"; style="display: flex; justify-content: space-between;">
+  <img src=https://github.com/user-attachments/assets/30a0db13-c8b4-49ba-a692-913681b73f47 width="600px"/>
+</div>
+<p align="center">Imagen 04: Evidencia de la creación y conexión con la red de WiFI</p>
+
+<div align="center"; style="display: flex; justify-content: space-between;">
   <img src=https://github.com/user-attachments/assets/1ce4f417-f2f8-4963-9d22-ac334ed083a2 width="600px"/>
 </div>
 
-<p align="center"> Imagen 04: Lista de variables configuradas en Arduino Cloud para nuestro proyecto</p>
+<p align="center"> Imagen 05: Lista de variables configuradas en Arduino Cloud para nuestro proyecto</p>
 
 
 **3.3 Creación del panel de control:**
@@ -107,6 +112,27 @@ En el Arduino Cloud, creamos un nuevo dashboard y lo llamamos "GRUPO 07". Añadi
 - Un switch para relé_2
 - Un widget de luz coloreada para rgbColor
 - Un switch para actualizaciónPantalla
+
+<div align="center"; style="display: flex; justify-content: space-between;">
+  <img src=https://github.com/user-attachments/assets/4dc069ad-645d-4e65-aa0d-fedd9d77dbc0 width="600px"/>
+</div>
+
+<p align="center"> Imagen 06: Entrando a la ventana de Dashboard</p>
+
+<div align="center"; style="display: flex; justify-content: space-between;">
+  <img src=https://github.com/user-attachments/assets/25c3a767-3c76-4301-9cee-30a1a00320f0 width="600px"/>
+</div>
+
+<p align="center"> Imagen 07: Dashboard completo en Arduino Cloud con todos los widgets configurados </p>
+
+
+
+
+
+
+
+
+
 3.4 Programación del sketch:
 Ahora, programamos nuestro sketch. Primero, incluimos las bibliotecas necesarias e inicializamos los objetos. En el setup(), inicializamos la comunicación serial, las propiedades y la conexión a la nube.
 En el loop(), programamos el control de los relés basado en los switches del dashboard. También leemos los valores de los sensores (luz, temperatura, humedad, humedad del suelo) y mapeamos el valor de humedad del suelo a un rango de 0-100.
