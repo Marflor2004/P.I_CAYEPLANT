@@ -424,7 +424,7 @@ El sistema realizado demostró ser particularmente eficaz en el mantenimiento de
 ### 6) CONCLUSIONES:
 
 <p align="justify">  
-En conclusión, nuestro el proyecto realizó  de agricultura urbana basado en IoT se implementó con éxito, demostrando la viabilidad y el potencial de integrar tecnologías inteligentes en prácticas agrícolas urbanas. El sistema no solo permitió un monitoreo preciso de las condiciones ambientales, sino que también facilitó un control remoto eficiente, aspectos cruciales para la optimización de la agricultura en espacios urbanos limitados.
+En conclusión, nuestro proyecto realizado de agricultura urbana basado en IoT se implementó con éxito, demostrando la viabilidad y el potencial de integrar tecnologías inteligentes en prácticas agrícolas urbanas. El sistema no solo permitió un monitoreo preciso de las condiciones ambientales, sino que también facilitó un control remoto eficiente, aspectos cruciales para la optimización de la agricultura en espacios urbanos limitados.
   
 <p align="justify">  
 La capacidad de adaptar las condiciones de cultivo en tiempo real, basándose en datos precisos, representa un paso significativo hacia una agricultura urbana más sostenible y productiva. Como concluyen Goap et al. (2018), "The integration of IoT in urban agriculture not only enhances crop management but also paves the way for more sustainable urban food systems, addressing challenges of food security in growing urban populations" [4].
