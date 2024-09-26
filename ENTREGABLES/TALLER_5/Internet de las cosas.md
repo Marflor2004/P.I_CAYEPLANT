@@ -401,11 +401,7 @@ Verificamos y cargamos el sketch en nuestra placa Arduino. Abrimos el Serial Mon
 
 <p align="center"> Imagen 12 : Circuito usado para encender el led en un protobard </p>
 
-<div align="center"; style="display: flex; justify-content: space-between;">
-  <img src=https://github.com/user-attachments/assets/a0406964-7aad-4329-b092-5fb444533b6c width="600px"/>
-
-<p align="center"> Imagen 13 :El señor de la huemdad en prueba</p>
-
+____
 
 ### 4) EVIDENCIAS:
 
