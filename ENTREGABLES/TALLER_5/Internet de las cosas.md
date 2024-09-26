@@ -34,7 +34,7 @@ El IoT permite que los datos recolectados mediante sensores sean monitoreados de
 - Sensor de humedad
 - Cable micro USB
 - Tierra de una planta 
-- Maceta con la tierra
+- Maceta con la tierra de la tierra de la planta
 - Computadora con acceso a internet
 - Cuenta de Arduino Cloud
 
