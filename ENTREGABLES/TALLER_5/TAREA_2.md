@@ -37,11 +37,11 @@ Hoy en día, existe una gran cantidad de microcontroladores y tarjetas de desarr
 El objetivo fundamental del ejercicio es mejorar la precisión en la lectura de un potenciómetro con el ESP32 mediante el uso de un promediado de datos y la conversión de los valores del ADC a voltaje. Esto optimiza la estabilidad de las mediciones y permite interpretar correctamente los niveles de señal analógica. Adicionalmente, se exploran las funcionalidades de la biblioteca WiFi.h para conectar el dispositivo a redes Wi-Fi, lo que posibilita la integración en proyectos de monitoreo remoto, automatización del hogar e interacción con servidores web.
 
 [![Whats-App-Image-2024-09-19-at-2-44-04-PM.jpg](https://i.postimg.cc/HsRR3rkT/Whats-App-Image-2024-09-19-at-2-44-04-PM.jpg)](https://postimg.cc/Lnkx86PW)
-Figura: visualización del código 
+Figura 1: visualización del código 
 
 
 [![Whats-App-Image-2024-09-25-at-9-53-38-PM.jpg](https://i.postimg.cc/MHX3mwkc/Whats-App-Image-2024-09-25-at-9-53-38-PM.jpg)](https://postimg.cc/Mf2Yzhpx)
-Figura: montaje delm potenciometro 
+Figura 2: montaje delm potenciometro 
 
 ## 2.2). ACTIVIDAD: Scanner WIFI con ESP32
 ### OBJETIVO: 
@@ -49,7 +49,7 @@ El objetivo de este ejercicio es configurar el ESP32 como un escáner de redes W
 [![Whats-App-Image-2024-09-19-at-2-50-26-PM.jpg](https://i.postimg.cc/Y2JTz49M/Whats-App-Image-2024-09-19-at-2-50-26-PM.jpg)](https://postimg.cc/hh1CStT5)
 Figura: visualización de redes 
 
-## codigo: 
+## código: 
 ```cpp
 #include "WiFi.h"  // Incluye la biblioteca WiFi para manejar la conectividad Wi-Fi
 
