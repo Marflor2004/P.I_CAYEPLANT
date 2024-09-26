@@ -33,8 +33,8 @@ El IoT permite que los datos recolectados mediante sensores sean monitoreados de
 - MKR IoT Carrier
 - Sensor de humedad
 - Cable micro USB
-- Una planta con su tierra
-- Maceta con la tierra de la de la planta
+- Una planta 
+- Maceta para la planta
 - Computadora con acceso a internet
 - Cuenta de Arduino Cloud
 
@@ -412,21 +412,27 @@ El desarrollo exitoso de nuestro sistema de agricultura urbana basado en IoT dem
 La capacidad de recopilar datos en tiempo real y controlar remotamente el entorno de cultivo a través de Arduino Cloud representa un avance significativo en la gestión de sistemas de agricultura urbana. Como señalan Mesas-Carrascosa et al. (2015), "IoT technologies offer new opportunities for smart farming, allowing for real-time monitoring and control of crop parameters, which can lead to increased efficiency and productivity" [2].
 
 <p align="justify">  
-Nuestro sistema demostró ser particularmente eficaz en el mantenimiento de condiciones óptimas para las plantas, ilustrando cómo la tecnología puede adaptarse a las necesidades específicas de diferentes cultivos. Esto se alinea con las observaciones de Brewster et al. (2017), quienes afirman que "tailored IoT solutions can significantly improve the management of urban agricultural systems, leading to more sustainable and productive urban farming practices" [3].
+El sistema realizado demostró ser particularmente eficaz en el mantenimiento de condiciones óptimas para las plantas, ilustrando cómo la tecnología puede adaptarse a las necesidades específicas de diferentes cultivos. Esto se alinea con las observaciones de Brewster et al. (2017), quienes afirman que "tailored IoT solutions can significantly improve the management of urban agricultural systems, leading to more sustainable and productive urban farming practices" [3].
 
 
 ### 6) CONCLUSIONES:
 
 <p align="justify">  
-En conclusión, nuestro proyecto de agricultura urbana basado en IoT se implementó con éxito, demostrando la viabilidad y el potencial de integrar tecnologías inteligentes en prácticas agrícolas urbanas. El sistema no solo permitió un monitoreo preciso de las condiciones ambientales, sino que también facilitó un control remoto eficiente, aspectos cruciales para la optimización de la agricultura en espacios urbanos limitados.
+En conclusión, nuestro el proyecto realizó  de agricultura urbana basado en IoT se implementó con éxito, demostrando la viabilidad y el potencial de integrar tecnologías inteligentes en prácticas agrícolas urbanas. El sistema no solo permitió un monitoreo preciso de las condiciones ambientales, sino que también facilitó un control remoto eficiente, aspectos cruciales para la optimización de la agricultura en espacios urbanos limitados.
   
 <p align="justify">  
 La capacidad de adaptar las condiciones de cultivo en tiempo real, basándose en datos precisos, representa un paso significativo hacia una agricultura urbana más sostenible y productiva. Como concluyen Goap et al. (2018), "The integration of IoT in urban agriculture not only enhances crop management but also paves the way for more sustainable urban food systems, addressing challenges of food security in growing urban populations" [4].
 Este proyecto sienta las bases para futuras expansiones y mejoras, sugiriendo un amplio potencial para la aplicación de tecnologías IoT en diversos escenarios de agricultura urbana.
 
 ### 6) REFERENCIAS BIBLIOGRÁFICAS:
+
+<p align="justify">  
 [1] Alvear-Puertas, V., Rosero-Montalvo, P., Peluffo-Ordóñez, D., & Pijal-Rojas, J. (2017). Internet de las Cosas y Visión Artificial, Funcionamiento y Aplicaciones: Revisión de Literatura. Enfoque UTE, 8(Supl. 1), 244-256. https://doi.org/10.29019/enfoqueute.v8n1.121
+  
+<p align="justify">  
 [2] Mesas-Carrascosa, F. J., Verdú Santano, D., Meroño, J. E., Sánchez de la Orden, M., & García-Ferrer, A. (2015). Open source hardware to monitor environmental parameters in precision agriculture. Biosystems Engineering, 137, 73-83.
+
+<p align="justify">  
 [3] Brewster, C., Roussaki, I., Kalatzis, N., Doolin, K., & Ellis, K. (2017). IoT in Agriculture: Designing a Europe-Wide Large-Scale Pilot. IEEE Communications Magazine, 55(9), 26-33.
 [4] Goap, A., Sharma, D., Shukla, A. K., & Krishna, C. R. (2018). An IoT based smart irrigation management system using Machine learning and open source technologies. Computers and Electronics in Agriculture, 155, 41-49.
 
