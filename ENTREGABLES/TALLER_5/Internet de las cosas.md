@@ -390,6 +390,19 @@ Verificamos y cargamos el sketch en nuestra placa Arduino. Abrimos el Serial Mon
 
 <p align="center"> Imagen 10 :MKR IoT Carrier en funcionamiento con LEDs encendidos y datos en pantalla </p>
 
+<div align="center"; style="display: flex; justify-content: space-between;">
+  <img src=https://github.com/user-attachments/assets/9de1c35f-35dd-4fe0-a176-be443fd3b994 width="600px"/>
+
+  <p align="center"> Imagen 11 : Circuito usado para encender el led en un protobard </p>
+  
+<div align="center"; style="display: flex; justify-content: space-between;">
+  <img src=https://github.com/user-attachments/assets/2feff75e-eebf-4111-8f79-a299f430d51f width="600px"/>
+
+
+<p align="center"> Imagen 12 : Circuito usado para encender el led en un protobard </p>
+
+
+
 ## 4) EVIDENCIAS:
 
 
