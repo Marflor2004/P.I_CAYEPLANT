@@ -4,7 +4,7 @@
 </p>
 <div align="center">
   
-# ENTREGABLE 05: Exploración y familiarización del Internet de las Cosas (IoT)
+# ENTREGABLE 05: Exploración y familiarización del Internet de las Cosas (IoT) - Actividad 01
 </div>
 
          |  Objetivo:  Convertir el MKR IoT Carrier en un dispositivo agrícola urbano, utilizando sensores y relés para monitorear y controlar el entorno de una planta. Se configuró un panel en Arduino Cloud para leer datos en tiempo real y activar dispositivos de alta potencia.                                                                                   |
