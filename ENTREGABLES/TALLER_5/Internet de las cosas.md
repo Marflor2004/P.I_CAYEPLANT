@@ -377,10 +377,18 @@ void onRele2Change() {
 <p align="justify">
 Verificamos y cargamos el sketch en nuestra placa Arduino. Abrimos el Serial Monitor para verificar que la conexión con Arduino Cloud se ha establecido correctamente. Interactuamos con los widgets del dashboard y observamos los cambios en los sensores y actuadores para asegurarnos de que todo funciona como esperamos.
 
+<div align="center"; style="display: flex; justify-content: space-between;">
+  <img src=https://github.com/user-attachments/assets/978e7188-92ea-490d-bde2-2c0579e79664="600px"/>
+</div>
+
+<p align="center"> Imagen 09 : Serial Monitor mostrando conexión exitosa con Arduino Cloud </p>
+
 
 <div align="center"; style="display: flex; justify-content: space-between;">
   <img src=https://github.com/user-attachments/assets/25c3a767-3c76-4301-9cee-30a1a00320f0 width="600px"/>
 </div>
+
+<p align="center"> Imagen 10 :MKR IoT Carrier en funcionamiento con LEDs encendidos y datos en pantalla </p>
 
   
 ### 4). CONFIGURACIÓN DEL SISTEMA
