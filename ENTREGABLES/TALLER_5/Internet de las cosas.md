@@ -125,20 +125,21 @@ En el Arduino Cloud, creamos un nuevo dashboard y lo llamamos "GRUPO 07". Añadi
 
 <p align="center"> Imagen 07: Dashboard completo en Arduino Cloud con todos los widgets configurados </p>
 
+**3.4 Programación del sketch:**
 
-
-
-
-
-
-
-
-3.4 Programación del sketch:
+<p align="justify">
 Ahora, programamos nuestro sketch. Primero, incluimos las bibliotecas necesarias e inicializamos los objetos. En el setup(), inicializamos la comunicación serial, las propiedades y la conexión a la nube.
-En el loop(), programamos el control de los relés basado en los switches del dashboard. También leemos los valores de los sensores (luz, temperatura, humedad, humedad del suelo) y mapeamos el valor de humedad del suelo a un rango de 0-100.
-Implementamos las funciones de callback para los cambios en los widgets del dashboard, como el control de los LEDs RGB.
-3.5 Carga y prueba:
-  
+En el loop(), programamos el control de los relés basado en los switches del dashboard. También leemos los valores de los sensores (luz, temperatura, humedad, humedad del suelo) y mapeamos el valor de humedad del suelo a un rango de 0-100. Implementamos las funciones de callback para los cambios en los widgets del dashboard, como el control de los LEDs RGB.
+
+<div align="center"; style="display: flex; justify-content: space-between;">
+  <img src=https://github.com/user-attachments/assets/d1eb9afc-7125-4fe8-8a99-a1eb96043138 width="600px"/>
+</div>
+
+<p align="center"> Imagen 08: Código de inicialización en el setup() </p>
+
+**3.5 Carga y prueba:**
+
+<p align="justify">
 Verificamos y cargamos el sketch en nuestra placa Arduino. Abrimos el Serial Monitor para verificar que la conexión con Arduino Cloud se ha establecido correctamente. Interactuamos con los widgets del dashboard y observamos los cambios en los sensores y actuadores para asegurarnos de que todo funciona como esperamos.
 
 
