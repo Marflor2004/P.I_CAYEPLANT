@@ -161,7 +161,7 @@ void loop() {
 
     |  Se implementó un sistema de comunicación utilizando el protocolo MQTT, que es especialmente eficiente para aplicaciones IoT debido a su bajo consumo de ancho de banda y su arquitectura basada en publicador/suscriptor. Utilizando la biblioteca AsyncMqttClient, se configuró el ESP32 para conectarse a un broker MQTT, lo que permitió enviar datos en formato JSON.                                                             |
  <p align="center">
-  <img src="https://i.postimg.cc/XJMDGfcx/Evidencia-2.jpg)](https://postimg.cc/Ty9cBWsW)" width="1050">
+  <img src="https://i.postimg.cc/k5T7q7VF/Evidencia1.jpg)](https://postimg.cc/DW49ckP8)" width="1050">
  
 </p>
 
@@ -171,103 +171,113 @@ void loop() {
 #include <WiFi.h>
 #include <AsyncMqttClient.h>
 
-#define WIFI_SSID "Redmi Note 11"
-#define WIFI_PASSWORD "hola1234"
+#define WIFI_SSID "Mar240118"         // Nombre de tu red Wi-Fi
+#define WIFI_PASSWORD "73212209@"        // Contraseña de tu red Wi-Fi
 
-#define MQTT_HOST IPAddress(108, 181, 203, 181)
+#define MQTT_HOST IPAddress(161, 132, 37, 210)  // Dirección del broker MQTT
 #define MQTT_PORT 1883
-#define MQTT_PUB_DATA "upch/equipo2"  // Modificar el topico segun su equipo
+#define MQTT_PUB_DATA "upch/equipo2"            // Tópico para el equipo
 
 AsyncMqttClient mqttClient;
 int QoS = 0;
 TimerHandle_t mqttReconnectTimer;
 TimerHandle_t wifiReconnectTimer;
 
-/***********************************************
+/*****************
                     Variables
-************************************************/
+****************/
 float tempVal = 30.5;
+bool mqttConnected = false;  // Nueva variable para verificar si la conexión a MQTT está establecida
 
-/***********************************************
+/*****************
                     Funciones
-************************************************/
+****************/
 void connectToWifi() {
   Serial.println("Conectando a Wi-Fi...");
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
 }
 
 void connectToMqtt() {
-  Serial.println("Conectando a MQTT...");
-  mqttClient.connect();
+  if (WiFi.isConnected()) {  // Verifica si Wi-Fi está conectado antes de intentar conectar a MQTT
+    Serial.println("Conectando a MQTT...");
+    mqttClient.connect();
+  }
 }
 
 void WiFiEvent(WiFiEvent_t event) {
   Serial.printf("[Evento-WiFi] evento: %d\n", event);
   switch (event) {
-    case IP_EVENT_STA_GOT_IP:  // Cambiado a IP_EVENT_STA_GOT_IP
+    case IP_EVENT_STA_GOT_IP:  // Cuando el ESP32 obtiene una IP
       Serial.println("Wi-Fi conectado");
       Serial.println("Dirección IP: ");
       Serial.println(WiFi.localIP());
-      connectToMqtt();
+      connectToMqtt();  // Conecta a MQTT una vez que hay conexión Wi-Fi
       break;
-    case WIFI_EVENT_STA_DISCONNECTED:  // Cambiado a WIFI_EVENT_STA_DISCONNECTED
-      Serial.println("Wi-Fi perdido");
-      xTimerStop(mqttReconnectTimer, 0);
-      xTimerStart(wifiReconnectTimer, 0);
+    case WIFI_EVENT_STA_DISCONNECTED:  // Cuando el ESP32 se desconecta de Wi-Fi
+      Serial.println("Wi-Fi desconectado");
+      xTimerStop(mqttReconnectTimer, 0);  // Detiene el temporizador de reconexión a MQTT
+      xTimerStart(wifiReconnectTimer, 0); // Inicia el temporizador de reconexión a Wi-Fi
       break;
   }
 }
 
 void onMqttConnect(bool sessionPresent) {
   Serial.println("Conectado a MQTT.");
-  Serial.print("Sesion presente: ");
+  Serial.print("Sesión presente: ");
   Serial.println(sessionPresent);
+  mqttConnected = true;  // Marca que la conexión a MQTT está activa
 }
 
 void onMqttDisconnect(AsyncMqttClientDisconnectReason reason) {
   Serial.println("Desconectado de MQTT.");
+  mqttConnected = false;  // Marca que la conexión a MQTT está inactiva
   if (WiFi.isConnected()) {
-    xTimerStart(mqttReconnectTimer, 0);
+    xTimerStart(mqttReconnectTimer, 0);  // Intenta reconectar a MQTT si Wi-Fi está conectado
   }
 }
 
 void onMqttPublish(uint16_t packetId) {
-  Serial.println("Publicacion confirmada.");
+  Serial.println("Publicación confirmada.");
   Serial.print("  packetId: ");
   Serial.println(packetId);
 }
 
 void setup() {
   Serial.begin(115200);
-  while (!Serial) { /*espera hasta conectarse*/ }
+  while (!Serial) { /* Espera hasta conectarse */ }
 
   mqttReconnectTimer = xTimerCreate("mqttTimer", pdMS_TO_TICKS(2000), pdFALSE, (void*)0, reinterpret_cast<TimerCallbackFunction_t>(connectToMqtt));
   wifiReconnectTimer = xTimerCreate("wifiTimer", pdMS_TO_TICKS(2000), pdFALSE, (void*)0, reinterpret_cast<TimerCallbackFunction_t>(connectToWifi));
 
-  WiFi.onEvent(WiFiEvent);
+  WiFi.onEvent(WiFiEvent);  // Asigna el evento de conexión Wi-Fi
 
-  mqttClient.onConnect(onMqttConnect);
-  mqttClient.onDisconnect(onMqttDisconnect);
-  mqttClient.onPublish(onMqttPublish);
-  mqttClient.setServer(MQTT_HOST, MQTT_PORT);
+  mqttClient.onConnect(onMqttConnect);  // Callback para conexión MQTT
+  mqttClient.onDisconnect(onMqttDisconnect);  // Callback para desconexión MQTT
+  mqttClient.onPublish(onMqttPublish);  // Callback para confirmación de publicación
+  mqttClient.setServer(MQTT_HOST, MQTT_PORT);  // Configura el broker MQTT
   mqttClient.setCredentials("devRCR", "D3s4rr0ll0"); // ESTO NO MODIFICAR
 
-  connectToWifi();
+  connectToWifi();  // Inicia la conexión a Wi-Fi
 }
 
 void loop() {
-  String jsonString = "{";
-  jsonString += "\"temp\": ";
-  jsonString += tempVal;
-  jsonString += "}";
+  // Solo intenta publicar si la conexión a MQTT está activa
+  if (mqttConnected) {  // Agrega verificación de conexión MQTT antes de publicar
+    String jsonString = "{";
+    jsonString += "\"temp\": ";
+    jsonString += tempVal;
+    jsonString += "}";
 
-  uint16_t packetIdPub1 = mqttClient.publish(MQTT_PUB_DATA, QoS, true, jsonString.c_str());
-  Serial.println("Publicando datos: " + jsonString);
-  Serial.printf("Publicando en el topico %s con QoS %d, packetId: ", MQTT_PUB_DATA, QoS);
-  Serial.println(packetIdPub1);
-  Serial.print("\r\n");
+    uint16_t packetIdPub1 = mqttClient.publish(MQTT_PUB_DATA, QoS, true, jsonString.c_str()); // Publica el JSON
+    Serial.println("Publicando datos: " + jsonString);
+    Serial.printf("Publicando en el tópico %s con QoS %d, packetId: ", MQTT_PUB_DATA, QoS);
+    Serial.println(packetIdPub1);
+    Serial.print("\r\n");
+  } else {
+    Serial.println("Esperando conexión MQTT...");  // Mensaje de depuración si no hay conexión MQTT
+  }
 
-  delay(5000); // Espera de 5 segundos antes de publicar nuevamente
+  delay(5000); // Espera de 5 segundos antes de intentar publicar nuevamente
 }
 
 ```
