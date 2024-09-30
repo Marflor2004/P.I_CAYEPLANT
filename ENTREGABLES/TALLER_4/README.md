@@ -92,7 +92,6 @@ El objetivo principal de este proyecto es crear una planta interactiva con la ca
 |                          | Leyes| Ley de Promoción de las Inversiones para el Crecimiento Económico y el Desarrollo Sostenible LEY Nº 30327. Asegurarse de que el dispositivo cumpla con las normativas locales y los estándares pertinentes para su fabricación y funcionamiento. |                                                                                                               |
 | Sostenibilidad           | Equilibrio ecológico| El equipo total del macetero inteligente,integra tácticas de producción sostenible, además, incluyen materiales reciclados como por ejemplo el macetero per se, de la planta |                                                                                           
 ## 3) DIAGRAMA DE CIRCUITOS ELECTRÓNICOS:
-
 #### M5Stack Atom Matrix
 *Descripción: Es un microcontrolador basado en ESP32 con una matriz de LED 5x5, ideal para proyectos IoT, automatización y sensores. Incluye conectividad Wi-Fi y Bluetooth.*
 - [Enlace al componente](https://easyeda.com/component/e0f2617baaf74262977347b0f7a93205)
@@ -112,6 +111,14 @@ El objetivo principal de este proyecto es crear una planta interactiva con la ca
 *Descripción: Este regulador buck reduce la tensión de entrada y proporciona una salida estable. Es útil para alimentar componentes como sensores y el ESP32 a voltajes más bajos y seguros.*
 - [Enlace al componente](https://www.theengineeringprojects.com/2020/09/lm2596-buck-converter-datasheet-pinout-features-applications.html).
 
+![Diagrama esquemático](https://github.com/Marflor2004/CrackDetect/blob/main/ENTREGABLES/TALLER_4/Esquem%C3%A1tico.jpg)
+
+</p>
+<div align="center">
+  Fuente: Elaborado por el grupo N°:7
+</div>
+
+         |  El circuito electrónico tiene como objetivo principal monitorear y controlar el ambiente de la planta inteligente. Los sensores recolectan datos que el microcontrolador procesa para tomar decisiones, como regar la planta o ajustar la iluminación, garantizando así condiciones óptimas para el crecimiento de las plantas. Este sistema permite la automatización y mejora la eficiencia en el cuidado de las plantas.                                                                                    |
 
 
 ## 4) MODELADO 3D:
