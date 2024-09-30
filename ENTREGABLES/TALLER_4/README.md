@@ -91,17 +91,28 @@ El objetivo principal de este proyecto es crear una planta interactiva con la ca
 | Planificación            | Costo| Un aproximado de 90 soles |                                                                                                               |
 |                          | Leyes| Ley de Promoción de las Inversiones para el Crecimiento Económico y el Desarrollo Sostenible LEY Nº 30327. Asegurarse de que el dispositivo cumpla con las normativas locales y los estándares pertinentes para su fabricación y funcionamiento. |                                                                                                               |
 | Sostenibilidad           | Equilibrio ecológico| El equipo total del macetero inteligente,integra tácticas de producción sostenible, además, incluyen materiales reciclados como por ejemplo el macetero per se, de la planta |                                                                                           
-## 3) DIAGRAMA DE CIRCUITOS ELÉCTRICOS:
+## 3) DIAGRAMA DE CIRCUITOS ELECTRÓNICOS:
 
-A continuación, presentamos el diagrama eléctrico de la planta interactiva. El diseño incluye los siguientes elementos:
+#### M5Stack Atom Matrix
+*Descripción: Es un microcontrolador basado en ESP32 con una matriz de LED 5x5, ideal para proyectos IoT, automatización y sensores. Incluye conectividad Wi-Fi y Bluetooth.*
+- [Enlace al componente](https://easyeda.com/component/e0f2617baaf74262977347b0f7a93205)
+- [Documentación oficial](https://docs.m5stack.com/en/core/ATOM%20Matrix)
+  
+#### Capacitive Soil Moisture Sensor v1.2
+*Descripción: Este sensor capacitivo mide la humedad del suelo sin oxidarse, ya que no tiene partes metálicas expuestas. Ideal para proyectos de monitoreo de plantas*
+- [Enlace al componente](https://easyeda.com/components/Capacitive-Soil-Moisture-Sensor-v1-2_d5a816a6bab84d07a15c73d8d056d861)
+- [Documentación oficial](https://media.digikey.com/pdf/data%20sheets/dfrobot%20pdfs/sen0193_web.pdf)
 
-- Controlador central (Arduino Nano o similar): Conectado a los sensores de luz, humedad y temperatura, será el encargado de procesar los datos y activar las emociones en función de los estímulos externos.
+#### Sensor de luz BH1750 (GY-302)
+*Descripción: El sensor BH1750 es un medidor digital de luz ambiente que mide la intensidad de la luz en lux y puede utilizarse para ajustar automáticamente la iluminación o el crecimiento de las plantas.*
+- [Enlace al componente](https://easyeda.com/component/BH1750-ea243013e9a94c9cbe7a12299ec2aeed)
+- [Documentación oficial](https://www.mouser.com/datasheet/2/348/bh1750fvi-e-186247.pdf?srsltid=AfmBOooLdeD7OcCdxs-5Fv5oypMNYeaEw_alkJbjntrxK36hfGx-TguX)
+  
+#### Regulador de voltaje LM2596
+*Descripción: Este regulador buck reduce la tensión de entrada y proporciona una salida estable. Es útil para alimentar componentes como sensores y el ESP32 a voltajes más bajos y seguros.*
+- [Enlace al componente](https://www.theengineeringprojects.com/2020/09/lm2596-buck-converter-datasheet-pinout-features-applications.html).
 
-- Conexiones a LEDs y pantalla: El controlador también estará conectado a los LEDs, que representarán las emociones de la planta. Si usamos una pantalla LED opcional, también se conectará a este controlador para mostrar información relevante al usuario.
 
-- Alimentación eléctrica: Usaremos una batería recargable, que alimentará tanto los sensores como los LEDs y la unidad de control.
-
-- Comunicación Bluetooth o WiFi: Este componente permitirá la interacción entre la planta y una aplicación móvil, donde el usuario podrá visualizar el estado de la planta y recibir recomendaciones sobre su cuidado.
 
 ## 4) MODELADO 3D:
 
