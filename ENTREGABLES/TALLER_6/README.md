@@ -4,7 +4,7 @@
 </p>
 
 
-# ENTREGABLE 05: Mecánica
+# ENTREGABLE 06: Mecánica
 ACTIVIDAD A REALIZAR: Realizar una simulación de esfuerzos mecánicos (Estáticos) a al menos un componente de su estructura. Si no cuenta con
 componentes mecánicos, realizar el ejemplo del video :
 https://youtu.be/4bkl783NxEA?si=B67MQfUBpHeHVxBx
@@ -19,7 +19,7 @@ https://youtu.be/4bkl783NxEA?si=B67MQfUBpHeHVxBx
 * Gutierrez Huaman Mar Flor
 * Quispe Mamani Lizzeth Rossmery
 * Yalli Espinoza Milena Nicol
-* Luis
+* Luiz Ignacio Quineche Casana
 
 ### 1) INTRODUCCIÓN:
 El presente informe detalla la simulación de esfuerzos mecánicos (estáticos) en un componente estructural utilizando el software SimScale. La simulación fue realizada para analizar el comportamiento mecánico del componente bajo una carga estática, aplicando el material PET (tereftalato de polietileno) en lugar de los materiales metálicos convencionales, como el acero. PET es un polímero ampliamente utilizado en la industria debido a su bajo peso, buena resistencia mecánica y propiedades químicas. Esta simulación tiene como objetivo evaluar la distribución de los esfuerzos y los desplazamientos generados en el componente, identificando áreas críticas donde se concentran mayores tensiones, lo cual es crucial para la mejora del diseño estructural. Se siguieron los pasos indicados en el video de referencia, adaptando el modelo al material PET, lo que permitirá comprender cómo los materiales plásticos se comportan bajo cargas estáticas en estructuras.
