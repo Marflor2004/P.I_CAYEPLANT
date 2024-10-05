@@ -47,7 +47,7 @@ link del onshape realizado: https://cad.onshape.com/documents/b70fefb4e2a77fcdcd
 
 3.3)Condiciones de Contorno: Se definieron las restricciones y cargas en el componente. Uno de los extremos del soporte fue completamente restringido (fijación), mientras que en el otro extremo se aplicó una carga estática puntual de acuerdo con los parámetros establecidos en el video tutorial.
 
-[![Whats-App-Image-2024-10-05-at-2-37-42-PM.jpg](https://i.postimg.cc/2y0gmmKD/Whats-App-Image-2024-10-05-at-2-37-42-PM.jpg)](https://postimg.cc/RJngLrms)
+[![Whats-App-Image-2024-10-05-at-3-00-57-PM.jpg](https://i.postimg.cc/jS6q0nh0/Whats-App-Image-2024-10-05-at-3-00-57-PM.jpg)](https://postimg.cc/VJ6PX6TD)
 
 3.4)Generación de la Malla: Se realizó el mallado del modelo utilizando una malla de tipo tetraédrico, con un refinamiento en las zonas de interés, como los puntos de aplicación de la carga y las áreas cercanas a las restricciones. Se optó por una malla más densa para garantizar una mayor precisión en los resultados.
 [![Whats-App-Image-2024-10-05-at-2-37-42-PM.jpg](https://i.postimg.cc/2y0gmmKD/Whats-App-Image-2024-10-05-at-2-37-42-PM.jpg)](https://postimg.cc/RJngLrms)
@@ -55,8 +55,9 @@ link del onshape realizado: https://cad.onshape.com/documents/b70fefb4e2a77fcdcd
 Ejecución de la Simulación: Se ejecutó la simulación estática en SimScale, lo que permitió observar la distribución de esfuerzos y desplazamientos a lo largo del componente, nuestro modelo es de 1.462MPa. Los resultados mostraron una concentración de esfuerzos en las zonas cercanas a la aplicación de la carga, con valores máximos de esfuerzo von Mises en áreas específicas que se identificaron para un análisis posterior.
 [![Whats-App-Image-2024-10-05-at-2-53-18-PM-1.jpg](https://i.postimg.cc/66hh3M5y/Whats-App-Image-2024-10-05-at-2-53-18-PM-1.jpg)](https://postimg.cc/PNPDVzDj)
 
-Post-procesamiento: Finalmente, se analizaron los resultados obtenidos. El mapa de esfuerzos von Mises mostró que, si bien hubo deformación en el material PET, este no superó el límite elástico, lo que indica que el componente bajo las condiciones simuladas no fallaría estructuralmente. Además, se generaron gráficos de desplazamiento total para visualizar cómo el componente se deformaba bajo la carga aplicada.
-[![Whats-App-Image-2024-10-05-at-3-00-57-PM.jpg](https://i.postimg.cc/jS6q0nh0/Whats-App-Image-2024-10-05-at-3-00-57-PM.jpg)](https://postimg.cc/VJ6PX6TD)
+# CONCLUSIÓN 
+
+En la simulación de esfuerzos mecánicos utilizando SimScale, el componente estructural hecho de PET fue sometido a una carga estática para evaluar su comportamiento bajo condiciones de esfuerzo. El análisis mostró que, a pesar de las deformaciones esperadas debido a la menor rigidez del PET en comparación con el acero, el material no superó su límite elástico bajo la carga aplicada. La distribución de los esfuerzos von Mises indicó que las áreas críticas fueron identificadas correctamente, lo que confirma la validez del análisis y la viabilidad del PET como material alternativo para ciertas aplicaciones estructurales.
 
 
 
