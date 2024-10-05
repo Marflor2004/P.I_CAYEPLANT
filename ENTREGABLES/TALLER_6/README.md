@@ -55,6 +55,9 @@ link del onshape realizado: https://cad.onshape.com/documents/b70fefb4e2a77fcdcd
 Ejecución de la Simulación: Se ejecutó la simulación estática en SimScale, lo que permitió observar la distribución de esfuerzos y desplazamientos a lo largo del componente, nuestro modelo es de 1.462MPa. Los resultados mostraron una concentración de esfuerzos en las zonas cercanas a la aplicación de la carga, con valores máximos de esfuerzo von Mises en áreas específicas que se identificaron para un análisis posterior.
 [![Whats-App-Image-2024-10-05-at-2-53-18-PM-1.jpg](https://i.postimg.cc/66hh3M5y/Whats-App-Image-2024-10-05-at-2-53-18-PM-1.jpg)](https://postimg.cc/PNPDVzDj)
 
+
+link de Ensamblaje: https://www.simscale.com/workbench/?pid=6175589121224224616&rru=a1d7e2cf-8c61-46d1-971f-45ed151cda5c&ci=f93508b3-0f69-48f1-a40a-7b05100d8d94&mt=SIMULATION_RESULT&ct=SOLUTION_FIELD
+
 # CONCLUSIÓN 
 
 En la simulación de esfuerzos mecánicos utilizando SimScale, el componente estructural hecho de PET fue sometido a una carga estática para evaluar su comportamiento bajo condiciones de esfuerzo. El análisis mostró que, a pesar de las deformaciones esperadas debido a la menor rigidez del PET en comparación con el acero, el material no superó su límite elástico bajo la carga aplicada. La distribución de los esfuerzos von Mises indicó que las áreas críticas fueron identificadas correctamente, lo que confirma la validez del análisis y la viabilidad del PET como material alternativo para ciertas aplicaciones estructurales.
