@@ -34,11 +34,11 @@ Simulación por Elementos Finitos (FEM): La técnica de elementos finitos descom
 ## 3) METODOLIGÍA DE PASOS: 
 
 Metodología (Pasos Seguidos)
-Selección del Componente: Se utilizó el mismo modelo estructural propuesto en el video tutorial (soporte o bracket), que fue importado a SimScale para realizar la simulación de esfuerzos estáticos.
-link del onshape realizado : https://cad.onshape.com/documents/b70fefb4e2a77fcdcdc02574/w/8184c593fc84d5693a1ad904/e/ce82a6d15d1231326a5cc8a7
+3.1). Selección del Componente: Se utilizó el mismo modelo estructural propuesto en el video tutorial (soporte o bracket), que fue importado a SimScale para realizar la simulación de esfuerzos estáticos.
+link del onshape realizado: https://cad.onshape.com/documents/b70fefb4e2a77fcdcdc02574/w/8184c593fc84d5693a1ad904/e/ce82a6d15d1231326a5cc8a7
 [![Whats-App-Image-2024-10-05-at-2-22-01-PM.jpg](https://i.postimg.cc/XqpVSZD3/Whats-App-Image-2024-10-05-at-2-22-01-PM.jpg)](https://postimg.cc/N2vhR0cP)
 
-Definición del Material: En lugar del material metálico sugerido en el video (acero), se seleccionó PET como material principal para la simulación. Las propiedades del PET, como el módulo de elasticidad, coeficiente de Poisson y límite de fluencia, fueron asignadas de acuerdo con valores estándares tomados de fuentes confiables.
+3.2)Definición del Material: En lugar del material metálico sugerido en el video (acero), se seleccionó PET como material principal para la simulación. Las propiedades del PET, como el módulo de elasticidad, coeficiente de Poisson y límite de fluencia, fueron asignadas de acuerdo con valores estándares tomados de fuentes confiables.
 
 Condiciones de Contorno: Se definieron las restricciones y cargas en el componente. Uno de los extremos del soporte fue completamente restringido (fijación), mientras que en el otro extremo se aplicó una carga estática puntual de acuerdo con los parámetros establecidos en el video tutorial.
 
