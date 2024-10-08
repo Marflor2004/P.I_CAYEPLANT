@@ -8,7 +8,7 @@
 Explora los componentes que dan vida a nuestra planta inteligente. Desde sensores hasta la pantalla M5 Matrix, cada pieza es esencial para crear esta experiencia única. 🔌💡
 
 **Componentes principales:**
-* M5 Matrix Display 📺
+* Atom matrix M5 Display 📺
 * Sensores de humedad 💧
 * Sensores de luz ☀️
 * Conexiones y esquemáticos 🔌
