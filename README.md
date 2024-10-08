@@ -1,8 +1,6 @@
 # 🌿 CayePlant ☺️
 
-  <img src="https://semanadelcannabis.cayetano.edu.pe/assets/img/logo-upch.png" width="210">
- 
-</p>s
+  <img src="https://semanadelcannabis.cayetano.edu.pe/assets/img/logo-upch.png" width="210"></p>s
 
 ## PROYECTO: Sistema de detección de fugas de agua en parques usando IA
 <p align="center" style="margin-top: 50px; margin-bottom: 50px; font-family: Arial, sans-serif;">
