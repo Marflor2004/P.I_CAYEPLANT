@@ -152,7 +152,7 @@ Descubre todos los aspectos de CayePlant a través de nuestra documentación com
    - Integraciones
    - Guías de instalación
 
-5. **[🔍 Código del Proyecto](misterio)**
+5. **[🔍 Código del proyecto](misterio)**
    - Implementación completa
    - Ejemplos de uso
    - Tests y pruebas
