@@ -126,7 +126,7 @@ CayePlant puede decirte cosas como:
 
 Descubre todos los aspectos de CayePlant a través de nuestra documentación completa:
 
-### 📂 Secciones Principales
+### 📂 Secciones principales
 
 1. **[📋 Documentación](https://github.com/Marflor2004/CrackDetect/tree/main/DOCUMENTACI%C3%93N)**
    - Detalles técnicos del proyecto
