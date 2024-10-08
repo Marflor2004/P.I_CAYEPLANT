@@ -125,9 +125,50 @@ CayePlant puede decirte cosas como:
   Cultivando conexiones inteligentes 🌱
 
   Desarrollado con 💚 por el equipo CayePlant
+## 📚 Explora Nuestro Proyecto
 
+Descubre todos los aspectos de CayePlant a través de nuestra documentación completa:
 
-### Menu
+### 📂 Secciones Principales
+
+1. **[📋 Documentación](link/to/documentation)**
+   - Detalles técnicos del proyecto
+   - Guías de usuario
+   - Investigación y fundamentos
+   - Proceso de desarrollo
+
+2. **[🔧 Hardware](link/to/hardware)**
+   - Esquemas de conexión
+   - Lista de componentes
+   - Guías de ensamblaje
+   - Configuración del M5 Matrix
+
+3. **[📊 PI1-Entregables](link/to/deliverables)**
+   - Hitos del proyecto
+   - Presentaciones
+   - Informes de avance
+   - Documentación académica
+
+4. **[💻 Software](link/to/software)**
+   - Código fuente
+   - Scripts de configuración
+   - Integraciones
+   - Guías de instalación
+
+5. **[🔍 Código del Proyecto](link/to/code)**
+   - Implementación completa
+   - Ejemplos de uso
+   - Tests y pruebas
+   - Documentación del código
+
+### 🚀 ¿Por Dónde Empezar?
+
+- **Nuevos Visitantes**: Comienza por la [Documentación](link) para entender el proyecto
+- **Desarrolladores**: Revisa el [Código del Proyecto](link) y la sección de [Software](link)
+- **Makers**: Explora la sección de [Hardware](link) para la implementación física
+- **Académicos**: Consulta los [PI1-Entregables](link) para el contexto completo
+
+## Interesado en ver nuestro contenido: 
 1. [Documentación](https://github.com/Marflor2004/CrackDetect/tree/main/DOCUMENTACI%C3%93N)
 2. [Hadware](https://github.com/Marflor2004/CrackDetect/tree/main/HADWARE)
 3. [PI1-Entregables](https://github.com/Marflor2004/CrackDetect/tree/main/PI1%20_ENTREGABLES)
