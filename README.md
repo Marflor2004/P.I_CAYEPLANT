@@ -92,7 +92,7 @@ CayePlant puede decirte cosas como:
 | Nombre | Especialización | Responsabilidades |
 |--------|----------------|------------------|
 | Flores Mescco Fiorella Ingrid | Especialista IoT & Sistemas | • Integración de componentes IoT<br>• Arquitectura del sistema<br>• Configuración de red y conectividad<br>• Optimización de rendimiento |
-| Gutiérrez Huamán Mar Flor |  Especialista en Hardware & Electrónica Especialista en Comunicaciones & WhatsApp | • Diseño de circuitos<br>• Implementación de sensores<br>• Configuración del M5 Matrix<br>• Prototipado y ensamblaje |
+| Gutiérrez Huamán Mar Flor |  Especialista en Hardware & Electrónica | • Diseño de circuitos<br>• Implementación de sensores<br>• Configuración del M5 Matrix<br>• Prototipado y ensamblaje |
 | Quineche Casana Luiz Ignacio | Especialista en Comunicaciones & WhatsApp | • Integración de API de WhatsApp<br>• Desarrollo del sistema de chat<br>• Implementación de respuestas automáticas<br>• Gestión de comunicaciones|
 | Quispe Mamani Lizzeth Rossmery | Especialista en experiencia de usuario | • Diseño de expresiones emocionales<br>• Experiencia de interacción<br>• Interfaz de WhatsApp<br>• Diseño visual del producto |
 | Yalli Espinoza Milena Nicol| Especialista en IA & Desarrollo | • Procesamiento de lenguaje natural<br>• Algoritmos de respuesta<br>• Personalidad de CayePlant<br>• Modelos conversacionales |
