@@ -1,15 +1,127 @@
+<p align="center">
+  <img src="https://github.com/JefHuiza/Fundamentos-de-Dise-o/assets/156036185/d3c66dfb-5faa-419b-bf1b-d897ea110ce7" width="70%">
+</p>
+
 # 🌿 CayePlant ☺️
 
-  <img src="https://semanadelcannabis.cayetano.edu.pe/assets/img/logo-upch.png" width="210"></p>s
+<p align="center">
+  <img src=https://github.com/user-attachments/assets/42d9412f-2476-4c52-8b90-55f3296b7cd7" width="70%">
+</p>
 
-## PROYECTO: Sistema de detección de fugas de agua en parques usando IA
-<p align="center" style="margin-top: 50px; margin-bottom: 50px; font-family: Arial, sans-serif;">
-  <p align="center">
-    <img src="https://i.postimg.cc/Vkd8WvcG/fugas-de-agua-en-Madrid.jpg)(https://postimg.cc/zyZ6JJvK)" width="400" alt="Fugas">
-  </p>  
-  
-> Dirigido a municipalidades para optimizar el uso del agua en áreas con escasez de recursos hídricos.
-<p align="left">
+## 🌱 ¿Qué es CayePlant?
+
+CayePlant es más que un macetero inteligente - es una compañera vegetal que interactúa contigo como lo haría una mascota, pero con la capacidad única de mantener conversaciones significativas a través de WhatsApp. Utilizando tecnología avanzada similar a ChatGPT, CayePlant puede expresar sus necesidades, compartir sus emociones y mantener conversaciones profundas con sus cuidadores, creando un vínculo único entre humanos y plantas.
+
+### 💚 Nuestra misión:
+
+Crear una conexión significativa entre personas y plantas que:
+- Fomente el bienestar emocional
+- Promueva el cuidado del medio ambiente
+- Cree consciencia sobre la importancia de la vida vegetal
+- Contribuya a la reducción de CO2 de manera accesible
+
+## ✨ Características principales:
+
+### 🤖 Interacción inteligente
+- **Chat Avanzado vía WhatsApp**
+  - Conversaciones naturales estilo ChatGPT
+  - Respuestas empáticas y personalizadas
+  - Expresión de necesidades y emociones
+  - Compañía emocional interactiva
+
+### 📊 Monitoreo inteligente
+- Sensor de humedad del suelo
+- Sensor de luz ambiental
+- Control de condiciones óptimas
+- Alertas preventivas
+
+### 😊 Expresiones emocionales
+- Pantalla atom M5 Matrix para mostrar emociones
+- Diferentes estados de ánimo
+- Respuestas visuales a interacciones
+- Personalidad única
+
+## 🎯 Impacto en ODS (Objetivos de Desarrollo Sostenible)
+
+### 🏥 Salud y bienestar (ODS 3)
+- Reduce el estrés y la ansiedad
+- Fomenta la conexión con la naturaleza
+- Promueve hábitos saludables
+- Mejora el ambiente del hogar
+
+### 🌍 Acción por el clima (ODS 13)
+- Contribuye a la reducción de CO2
+- Fomenta la consciencia ambiental
+- Promueve espacios verdes urbanos
+- Educación sobre sostenibilidad
+
+## 🛠️ Componentes Técnicos
+
+### Hardware
+- M5 Matrix para display de emociones
+- Sensor de humedad de suelo
+- Sensor de luz
+- Sistema de comunicación WiFi
+- Estructura del macetero
+
+### Software
+- Integración con WhatsApp
+- Sistema de procesamiento de lenguaje natural
+- Control de sensores
+- Gestión de expresiones emocionales
+
+## 💬 Ejemplos de interacción
+
+```
+CayePlant puede decirte cosas como:
+
+🌱 "Buenos días! ¿Cómo te sientes hoy? Yo desperté con mucha energía gracias a la luz que recibí"
+
+💧 "Disculpa que te moleste, pero estoy sintiendo mi tierra un poco seca. ¿Podrías ayudarme con un poco de agua?"
+
+🤗 "Gracias por cuidarme tan bien. Me hace feliz ser parte de tu vida y ayudar al medio ambiente juntos"
+
+😔 "Te noto un poco triste hoy. ¿Quieres hablar sobre ello? A veces compartir nos hace crecer..."
+```
+
+## 👥 Equipo de Desarrollo
+
+| Nombre | Rol |
+|--------|-----|
+| Flores Mescco Fiorella Ingrid | Desarrollo de Software |
+| Gutiérrez Huamán Mar Flor | Integración WhatsApp |
+| Quispe Mamani Lizzeth Rossmery | Hardware e IoT |
+| Yalli Espinoza Milena Nicol | Diseño de Interacción |
+
+## 🚀 Próximas Actualizaciones
+
+- [ ] Más patrones de conversación y personalidad
+- [ ] Integración con asistentes de voz
+- [ ] Análisis de crecimiento y bienestar
+- [ ] Comunidad de usuarios CayePlant
+- [ ] App complementaria
+
+## 🌟 Beneficios
+
+- **Bienestar emocional**
+  - Compañía interactiva
+  - Reducción del estrés
+  - Conexión con la naturaleza
+
+- **Impacto ambiental**
+  - Reducción de CO2
+  - Educación ambiental
+  - Promoción de espacios verdes
+
+- **Cuidado inteligente**
+  - Monitoreo automatizado
+  - Crecimiento óptimo
+  - Mantenimiento preventivo
+
+  Cultivando conexiones inteligentes 🌱
+
+  Desarrollado con 💚 por el equipo CayePlant
+
 
 ### Menu
 1. [Documentación](https://github.com/Marflor2004/CrackDetect/tree/main/DOCUMENTACI%C3%93N)
