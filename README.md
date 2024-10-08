@@ -59,7 +59,7 @@ Crear una conexión significativa entre personas y plantas que:
 ## 🛠️ Componentes Técnicos
 
 ### Hardware
-- M5 Matrix para display de emociones
+- Atom matrix M5 para display de emociones
 - Sensor de humedad de suelo
 - Sensor de luz
 - Sistema de comunicación WiFi
