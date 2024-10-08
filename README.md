@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/8dd34029-bea5-4863-8487-67a4c716f5ec" width="70%">
 </p>
-
+<p align="center">Figura 01: Dibujo de la idea del producto de CayePlant| Fuente: Creación propia</p>
 
 ## 🌱 ¿Qué es CayePlant?
 
