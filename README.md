@@ -1,4 +1,4 @@
-# CrackDetect
+# 🌿 CayePlant
 
   <img src="https://semanadelcannabis.cayetano.edu.pe/assets/img/logo-upch.png" width="210">
  
