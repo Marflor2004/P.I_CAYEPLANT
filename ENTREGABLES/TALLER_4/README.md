@@ -107,9 +107,14 @@ El objetivo principal de este proyecto es crear una planta interactiva con la ca
 - [Enlace al componente](https://easyeda.com/component/BH1750-ea243013e9a94c9cbe7a12299ec2aeed)
 - [Documentación oficial](https://www.mouser.com/datasheet/2/348/bh1750fvi-e-186247.pdf?srsltid=AfmBOooLdeD7OcCdxs-5Fv5oypMNYeaEw_alkJbjntrxK36hfGx-TguX)
   
-#### Regulador de voltaje LM2596
-*Este regulador buck reduce la tensión de entrada y proporciona una salida estable. Es útil para alimentar componentes como sensores y el ESP32 a voltajes más bajos y seguros.*
-- [Enlace al componente](https://www.theengineeringprojects.com/2020/09/lm2596-buck-converter-datasheet-pinout-features-applications.html).
+#### Regulador de voltaje MT3608 Elevador de Voltaje Boost Step Up 6W 2A
+*El MT3608 Elevador de Voltaje Boost Step-Up 6W 2A tiene como función entregar un voltaje de salida (5V a 28V) superior al voltaje de entrada( 2V a 24V) soportando corrientes de salida de hasta 2A.*
+- [Enlace al componente](https://uelectronics.com/producto/modulo-regulador-mt3608-step-up-5-28v-2a/?srsltid=AfmBOop1EhvKYXsmaljdzFaOj48vN7w-0VVUk81rvgmMehwnLxWGHOa2).
+- [Documentación oficial]( https://www.digikey.com/en/product-highlight/a/ams/oslon-pure-1414-leds?dclid=CMLa3M3z_YgDFTjhlAkd9sIK7Q)
+
+#### Batería Lipo 450mAh / 3.7V - 601248
+*Batería Lipo (Polymer Lithium) de alta calidad y capacidad de 450mAh, modelo 601248. Este tipo de baterías proporciona una fuente de alimentación muy eficiente, a la vez que son muy ligeras y soportan altos picos de corriente.*
+- [Enlace al componente](https://tienda.bricogeek.com/baterias-lipo/1608-bateria-lipo-450mah.html).
 
 ![Diagrama esquemático](https://github.com/Marflor2004/CrackDetect/blob/main/ENTREGABLES/TALLER_4/Esquem%C3%A1tico.jpg)
 
