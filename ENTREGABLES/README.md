@@ -1,7 +1,9 @@
 <p align="center">
-  <img src="https://semanadelcannabis.cayetano.edu.pe/assets/img/logo-upch.png" width="250">
- 
+  <img src="https://github.com/JefHuiza/Fundamentos-de-Dise-o/assets/156036185/d3c66dfb-5faa-419b-bf1b-d897ea110ce7" width="70%">
 </p>
+
+
+## 🌱☺️¡Bienvenidos a CayePLant!☺️🌱 
 
 # *Subir los entregables*🫠👩‍🎓📌
 
@@ -20,8 +22,10 @@
 
 - Flores Mescco Fiorella Ingrid
 - Guitierrez Huaman Mar Flor
+- Quineche Casana Luiz Ignacio
 - Quispe Mamani Lizzeth Rossmery 
 - Yalli Espinoza Milena Nicol
+
 
 
 
