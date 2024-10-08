@@ -5,7 +5,7 @@
 # 🌿 CayePlant ☺️
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2e03f941-2156-4fc7-a30f-4821ce78dcc9" width="70%">
+  <img src="https://github.com/user-attachments/assets/8dd34029-bea5-4863-8487-67a4c716f5ec" width="70%">
 </p>
 
 
