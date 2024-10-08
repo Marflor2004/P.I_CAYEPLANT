@@ -3,9 +3,9 @@
 </p>
 
 
-## 🌱☺️¡Bienvenidos a CayePLant!☺️🌱 
+# 🌱☺️ *¡Bienvenidos a CayePLant!* ☺️🌱 
 
-# *Subir los entregables*🫠👩‍🎓📌
+## Subir los entregables🫠👩‍🎓📌
 
 - Mg.U. Lewis de la Cruz Rodríguez
 > umbert.de.la.cruz@upch.pe
