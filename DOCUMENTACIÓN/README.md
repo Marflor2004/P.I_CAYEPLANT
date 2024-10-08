@@ -1,15 +1,37 @@
-<p align="left">
-  <img src="https://semanadelcannabis.cayetano.edu.pe/assets/img/logo-upch.png" width="250">
- 
+<p align="center">
+  <img src="https://github.com/JefHuiza/Fundamentos-de-Dise-o/assets/156036185/d3c66dfb-5faa-419b-bf1b-d897ea110ce7" width="70%">
 </p>
 
-# PROYECTO: "CrackDetect"
 
+### 📋 Documentación
+🌱 *¡Bienvenidos a la documentación de CayePlant!* 🌱
+Aquí encontrarás todo el sustento técnico y teórico de nuestro proyecto. Descubre cómo una planta puede convertirse en tu compañera interactiva. 🤖🌿
 
-> Somos un equipo con muchas habilidades y motivaciones para la implementación de soluciones tecnológicas, innovadoras y aplicables.
+**Contenido:**
+* Fundamentos teóricos 📚
+* Investigación de mercado 📊
+* Análisis de viabilidad 📈
+* Documentación técnica 🔧
+* Manual de usuario 📱
 
+**Docentes:**
+* Mg.U. Lewis de la Cruz Rodríguez
+umbert.de.la.cruz@upch.pe
+* Dr.Harry Rivera Tito
+harry.rivera@upch.pe
+* Mg.Moisés Meza Rodríguez
+moises.meza@upch.pe
+* Mg.Marcos Retamozo Ramos
+marcos.retamozo@upch.pe
+* Dr.Pierre Ramos Apestegui
+pierre.ramos@upch.pe
 
-### Situación: 
+**Integrantes:**
+* Flores Mescco Fiorella Ingrid
+* Guitierrez Huaman Mar Flor
+* Quineche Casana Luiz Ignacio
+* Quispe Mamani Lizzeth Rossmery
+* Yalli Espinoza Milena Nicol
 
 
 
