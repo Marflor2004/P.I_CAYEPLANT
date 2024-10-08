@@ -56,7 +56,7 @@ Crear una conexión significativa entre personas y plantas que:
 - Promueve espacios verdes urbanos
 - Educación sobre sostenibilidad
 
-## 🛠️ Componentes Técnicos
+## 🛠️ Componentes técnicos
 
 ### Hardware
 - Atom matrix M5 para display de emociones
