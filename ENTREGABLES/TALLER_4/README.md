@@ -112,6 +112,10 @@ El objetivo principal de este proyecto es crear una planta interactiva con la ca
 - [Enlace al componente](https://uelectronics.com/producto/modulo-regulador-mt3608-step-up-5-28v-2a/?srsltid=AfmBOop1EhvKYXsmaljdzFaOj48vN7w-0VVUk81rvgmMehwnLxWGHOa2).
 - [Documentación oficial]( https://www.digikey.com/en/product-highlight/a/ams/oslon-pure-1414-leds?dclid=CMLa3M3z_YgDFTjhlAkd9sIK7Q)
 
+#### Cargador de baterías de Litio 18650 con TP4056
+El Módulo TP4056 Cargador De Batería Litio Lipo es un minúsculo módulo perfecto para la carga de baterías LiPo o Li-ion de una sola celda de 3.7V 1 Ah o superior como las 16550 o las 18650 y ahora incluye su circuito de protección, para que se tus baterías no reciban ningún daño.
+- [Enlace al componente](https://www.teslaelectronic.com.pe/producto/cargador-de-baterias-de-litio-18650-con-tp4056-y-usb-c/)
+  
 #### Batería Lipo 450mAh / 3.7V - 601248
 *Batería Lipo (Polymer Lithium) de alta calidad y capacidad de 450mAh, modelo 601248. Este tipo de baterías proporciona una fuente de alimentación muy eficiente, a la vez que son muy ligeras y soportan altos picos de corriente.*
 - [Enlace al componente](https://tienda.bricogeek.com/baterias-lipo/1608-bateria-lipo-450mah.html).
