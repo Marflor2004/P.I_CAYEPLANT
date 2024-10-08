@@ -5,8 +5,9 @@
 # 🌿 CayePlant ☺️
 
 <p align="center">
-  <img src=https://github.com/user-attachments/assets/42d9412f-2476-4c52-8b90-55f3296b7cd7" width="70%">
+  <img src="https://github.com/user-attachments/assets/2e03f941-2156-4fc7-a30f-4821ce78dcc9" width="70%">
 </p>
+
 
 ## 🌱 ¿Qué es CayePlant?
 
