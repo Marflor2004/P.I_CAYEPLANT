@@ -85,7 +85,7 @@ CayePlant puede decirte cosas como:
 😔 "Te noto un poco triste hoy. ¿Quieres hablar sobre ello? A veces compartir nos hace crecer..."
 ```
 
-## 👥 Equipo de Desarrollo
+## 👥 Equipo de desarrollo
 
 | Nombre | Rol |
 |--------|-----|
@@ -94,7 +94,7 @@ CayePlant puede decirte cosas como:
 | Quispe Mamani Lizzeth Rossmery | Hardware e IoT |
 | Yalli Espinoza Milena Nicol | Diseño de Interacción |
 
-## 🚀 Próximas Actualizaciones
+## 🚀 Próximas actualizaciones
 
 - [ ] Más patrones de conversación y personalidad
 - [ ] Integración con asistentes de voz
