@@ -15,7 +15,7 @@ INTEGRANTES:
 * Flores Mescco Fiorella Ingrid
 * Gutierrez Huaman Mar Flor
 * Quineche Casana Luiz Ignacio
-* Quispe Mamani Lizzeth Rossmer 
+* Quispe Mamani Lizzeth Rossmery
 * Yalli Espinoza Milena Nicol
 
 # CayePlant PCB 🌱☺️
