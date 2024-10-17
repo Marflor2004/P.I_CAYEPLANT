@@ -1,7 +1,6 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4e5dc337-a4f7-4252-9974-ba36d74a6c02" width="70%">
+  <img src="https://github.com/JefHuiza/Fundamentos-de-Dise-o/assets/156036185/d3c66dfb-5faa-419b-bf1b-d897ea110ce7" width="70%">
 </p>
-
 # 🌿 CayePlant ☺️ - GRUPO 07
 
 <p align="center">
