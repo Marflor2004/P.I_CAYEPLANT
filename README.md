@@ -4,7 +4,7 @@
 # 🌿 CayePlant ☺️ - GRUPO 07
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8dd34029-bea5-4863-8487-67a4c716f5ec" width="70%">
+  <img src="https://github.com/user-attachments/assets/4e5dc337-a4f7-4252-9974-ba36d74a6c02" width="70%">
 </p>
 <p align="center">Figura 01: Dibujo de la idea del producto de CayePlant | Fuente: Creación propia</p>
 
