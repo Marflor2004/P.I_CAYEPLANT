@@ -89,7 +89,9 @@ CayePlant es un macetero inteligente que combina IoT, IA y comunicación interac
 
 <p align="center">Figura 01: Diagrama de flujo | Fuente: Creación propia</p>
 
-1. **Twilio API recibe la información** del microcontrolador (ESP32/ATOM MATRIX M5) cuando se detecta un evento (como baja humedad en la planta).
-2. **Twilio envía el mensaje** al número de WhatsApp registrado.
+1. **Twilio API recibe la información del microcontrolador** (ESP32/Atom Matrix M5) cuando uno de los sensores, como 
+   el de humedad capacitivo, detecta niveles críticos de humedad en el sustrato de la planta, lo que desencadena el 
+   envío de una notificación a través de WhatsApp.
+2. **Twilio, al recibir los datos procesados del microcontrolador** , se encarga de enviar automáticamente un mensaje de alerta al número de WhatsApp previamente registrado, informando al usuario sobre las condiciones específicas de la planta, como la necesidad urgente de agua, asegurando así una interacción inmediata y efectiva.
 3. **El usuario recibe la notificación** en su WhatsApp en tiempo real.
 
