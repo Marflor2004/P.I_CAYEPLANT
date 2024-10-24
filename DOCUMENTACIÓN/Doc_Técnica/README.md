@@ -6,7 +6,7 @@ Docentes a cargo:
 * Ing. Renzo Chan Rios
 * renzo.chan@upch.pe
 
-INTEGRANTES:
+Integrantes:
 * Flores Mescco Fiorella Ingrid
 * Gutierrez Huaman Mar Flor
 * Quineche Casana Luiz Ignacio
@@ -23,7 +23,7 @@ CayePlant es un macetero inteligente que combina IoT, IA y comunicación interac
 #### TRL 1 - Principios básicos observados y reportados
 - **Estado**: Completado
 - **Evidencias**:
-  - Investigación básica sobre interacción planta-humano
+  - Investigación básica sobre interacción planta-usuario
   - Estudio de viabilidad de sensores IoT
   - Análisis de tecnologías de comunicación
   - Investigación sobre interfaces emocionales
@@ -106,28 +106,9 @@ CayePlant es un macetero inteligente que combina IoT, IA y comunicación interac
 - OpenAI GPT-4
 - Base de datos para histórico
 
-#### 3.3.2 Componentes de software
-```python
-# Estructura básica del sistema
-class CayePlant:
-    def __init__(self):
-        self.twilio_client = Client(TWILIO_SID, TWILIO_TOKEN)
-        self.openai = OpenAI(OPENAI_KEY)
-        self.sensor_manager = SensorManager()
-        self.db = Database()
+#### 3.3.2 Diagrama 
 
-    def process_message(self, message):
-        # Procesamiento de mensajes
-        pass
 
-    def generate_response(self, context):
-        # Generación de respuestas con GPT-4
-        pass
-
-    def send_message(self, number, message):
-        # Envío de mensajes vía Twilio
-        pass
-```
 
 #### 3.3.3 Flujo de comunicación
 1. Recepción de mensajes
