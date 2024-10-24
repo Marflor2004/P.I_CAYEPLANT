@@ -33,6 +33,7 @@ CayePlant es un macetero inteligente que combina IoT, IA y comunicación interac
   - Análisis de tecnologías de comunicación
   - Investigación sobre interfaces emocionales
   - Fundamentación teórica
+    
 ## 3. Análisis técnico de componentes
 
 ### 3.1 Sensor de humedad capacitivo v1.2
@@ -44,11 +45,10 @@ CayePlant es un macetero inteligente que combina IoT, IA y comunicación interac
 - Profundidad: 38mm
 - Dimensiones: 98mm x 23mm
 
-#### Principio de funcionamiento
-1. Placas capacitivas aisladas
-2. Medición dieléctrica del suelo
-3. Conversión capacitancia-señal
-4. Procesamiento analógico
+#### Principio de funcionamiento:
+
+<p align="justify">
+El sensor de humedad capacitivo v1.2 opera mediante un sofisticado sistema de medición basado en la capacitancia. El dispositivo utiliza dos placas conductoras aisladas que, al entrar en contacto con el suelo, forman un condensador cuya capacitancia varía según el contenido de agua presente. El suelo actúa como material dieléctrico entre las placas, y sus propiedades dieléctricas cambian significativamente con el contenido de humedad. Cuando el suelo está más húmedo, su constante dieléctrica aumenta, resultando en una mayor capacitancia medida. Esta variación en la capacitancia es convertida en una señal analógica proporcional mediante un circuito integrado especializado, que posteriormente genera una lectura en el rango de 0 a 1023, donde valores más altos indican mayor contenido de humedad.
 
 ### 3.2 Sensor de luz BH1750
 
@@ -59,12 +59,10 @@ CayePlant es un macetero inteligente que combina IoT, IA y comunicación interac
 - Resolución: 1 lux
 - Precisión: ±20%
 
-#### Principio de funcionamiento
-1. Fotodiodo de silicio
-2. Conversión luz-corriente
-3. Procesamiento digital
-4. Compensación automática
-5. Filtrado de interferencias
+#### Principio de funcionamiento:
+
+<p align="justify">
+El sensor de luz BH1750 emplea un sistema de detección fotométrica altamente preciso basado en un fotodiodo de silicio. Cuando la luz incide sobre el fotodiodo, se genera una corriente eléctrica proporcional a la intensidad luminosa. Esta corriente es procesada por un convertidor analógico-digital interno que transforma la señal en valores digitales de iluminancia expresados en lux. El sensor incorpora circuitos de compensación automática que ajustan la lectura según la temperatura y otros factores ambientales, asegurando mediciones consistentes en diversas condiciones. Además, cuenta con un sistema de filtrado que reduce las interferencias causadas por fuentes de luz artificial y variaciones rápidas de iluminación, proporcionando lecturas estables y confiables en un amplio rango de condiciones de iluminación.
    
 ### 3.3 Sistema de comunicación e IA
 
