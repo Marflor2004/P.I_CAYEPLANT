@@ -1,1 +1,1 @@
-* "Principios básicos observados y reportados"
+* *"Principios básicos observados y reportados"*
