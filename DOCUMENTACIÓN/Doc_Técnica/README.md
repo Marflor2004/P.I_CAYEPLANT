@@ -35,7 +35,7 @@ CayePlant es un macetero inteligente que combina IoT, IA y comunicación interac
 
 ## 3. Análisis técnico de componentes
 
-### 3.1 Sensor de Humedad Capacitivo v1.2
+### 3.1 Sensor de humedad capacitivo v1.2
 
 #### Especificaciones técnicas
 - Voltaje: 3.3V - 5V DC
