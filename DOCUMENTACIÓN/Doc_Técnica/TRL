@@ -1,5 +1,7 @@
+
 ** TWILIO API **
 
-* Contexto *
+*Contexto *
+
 Twilio API es una plataforma que permite integrar capacidades de comunicación en aplicaciones mediante API (Application Programming Interface). Estas capacidades incluyen el envío de mensajes de texto (SMS), llamadas telefónicas y mensajería a través de aplicaciones como WhatsApp.
 
