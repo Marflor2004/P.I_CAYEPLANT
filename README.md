@@ -163,14 +163,18 @@ Cultivando conexiones inteligentes 🌱
 Desarrollado con 💚 por el equipo CayePlant
 
 6.**💻 PRINCIPIOS_TECHNOLOGY READINESS LEVELS (TRL)**
-*"DESARROLLO DE CONOCIMIENTO"
+
+  *"DESARROLLO DE CONOCIMIENTO"
+  
   - TR1:"Principios básicos observados y reportados"
   - TR2:"Concepto y/o aplicación tecnológica formulada"
   - TR3:"Función crítica analítica y experimental y/o prueba de concepto – PRUEBA DE CONCEPTO"
+    
   * "DESARROLLO DE LA TECNOLOGÍA"
   - TR4:"Validación tecnológica en entorno de laboratorio -PRUEBAS DE BAJA FIDELIDAD"
   - TR5:"Validación tecnológica en entorno de laboratorio -PRUEBAS DE ALTA FIDELIDAD"
   - TR6:"Demostración de funcionamiento del prototipo en un entorno de laboratorio o de planta piloto"
+    
   *"COMERCIALIZACIÓN"
   - TR7:"Demostración de sistema o prototipo en un entorno real"
   - TR8:" Sistema completo y certificado a través de pruebas y demostraciones"
