@@ -29,41 +29,6 @@ CayePlant es un macetero inteligente que combina IoT, IA y comunicación interac
   - Investigación sobre interfaces emocionales
   - Fundamentación teórica
 
-#### TRL 2 - Concepto y aplicación tecnológica formulada
-- **Estado**: Completado
-- **Evidencias**:
-  - Diseño conceptual del macetero
-  - Especificación de componentes
-  - Arquitectura del sistema
-  - Definición de casos de uso
-  - Formulación del concepto "mascota vegetal"
-
-### 2.2 Proyección de TRL futuros
-
-#### TRL 3 - Prueba de Concepto
-- Desarrollo de prototipo básico
-- Implementación inicial de comunicación
-- Pruebas preliminares
-- Validación conceptual
-
-#### TRL 4-5 - Validación en laboratorio
-- Prototipo funcional completo
-- Pruebas exhaustivas
-- Validación de integración
-- Optimización de sistemas
-
-#### TRL 6-7 - Demostración en entorno real
-- Pruebas piloto
-- Optimización basada en feedback
-- Validación ambiental
-- Refinamiento de diseño
-
-#### TRL 8-9 - Comercialización
-- Certificaciones
-- Producción inicial
-- Implementación de distribución
-- Lanzamiento comercial
-
 ## 3. Análisis técnico de componentes
 
 ### 3.1 Sensor de Humedad Capacitivo v1.2
