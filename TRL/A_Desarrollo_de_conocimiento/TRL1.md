@@ -39,11 +39,14 @@ CayePlant es un macetero inteligente que combina IoT, IA y comunicación interac
 ### 3.1 Sensor de humedad capacitivo v1.2
 
 
-Función Física	Medio Físico	Función Química	Interacción
-Medición de la capacitancia del suelo	Suelo (tierra o sustrato)	Interacción de agua con el suelo	Cuando el sensor se inserta en el suelo, el agua actúa como un dieléctrico, cambiando la capacitancia medida. Este cambio se debe a que la capacitancia depende de la constante dieléctrica del medio, que aumenta con la cantidad de agua presente.
-Detección de cambios en humedad	Agua presente en el suelo	Ionización y polaridad de moléculas de agua	La humedad altera la distribución de carga en el suelo, afectando su conductividad. A medida que aumenta la humedad, las moléculas de agua facilitan la movilidad de iones en el suelo, lo que cambia su conductividad eléctrica.
-Transmisión de señal eléctrica	Circuito electrónico interno	Reacción de los electrodos con iones en el suelo	El sensor convierte la capacitancia medida en una señal eléctrica. Esta señal se amplifica y digitaliza en el circuito interno, lo que permite la transmisión de datos al microcontrolador para su procesamiento.
-Uso de electrodos para captar humedad	Electrodos metálicos (cobre/acero inoxidable)	Corrosión potencial debido a la conductividad del suelo	La interacción entre los electrodos y los iones presentes en el suelo puede provocar reacciones de corrosión. La presencia de agua y sales en el suelo puede acelerar este proceso, afectando la durabilidad del sensor y la precisión de las mediciones.
+| Función Fisica | Medio Fisico  | Función Quimica |Interacción|
+|--------|----------------|------------------|---------------|
+| Medición de la capacitancia del suelo| Suelo (tierra o sustrato) |Interacción de agua con el suelo |Cuando el sensor se inserta en el suelo, el agua actúa como un dieléctrico, cambiando la capacitancia medida. Este cambio se debe a que la capacitancia depende de la constante dieléctrica del medio, que aumenta con la cantidad de agua presente.|
+|Detección de cambios en humedad | Agua presente en el suelo | Ionización y polaridad de moléculas de agua |La humedad altera la distribución de carga en el suelo, afectando su conductividad. A medida que aumenta la humedad, las moléculas de agua facilitan la movilidad de iones en el suelo, lo que cambia su conductividad eléctrica.|
+| Transmisión de señal eléctrica| Circuito electrónico interno | Reacción de los electrodos con iones en el suelo|El sensor convierte la capacitancia medida en una señal eléctrica. Esta señal se amplifica y digitaliza en el circuito interno, lo que permite la transmisión de datos al microcontrolador para su procesamiento.|
+| Uso de electrodos para captar humedad | Electrodos metálicos (cobre/acero inoxidable) | Corrosión potencial debido a la conductividad del suelo |La interacción entre los electrodos y los iones presentes en el suelo puede provocar reacciones de corrosión. La presencia de agua y sales en el suelo puede acelerar este proceso, afectando la durabilidad del sensor y la precisión de las mediciones.|
+
+
 
 ### 3.2 Sensor de luz BH1750
 
