@@ -193,7 +193,7 @@ CayePlant es un macetero inteligente que combina IoT, IA y comunicación interac
 
 ### 2.1 TRL Actual
    * "DESARROLLO DE LA CONOCIMIENTO"
-  - TRL1:"Principios básicos observados y reportados"  **[🔍(TRL/A_Desarrollo_de_conocimiento/TRL1.md))**
+  - TRL1:"Principios básicos observados y reportados"  **[🔍(TRL/A_Desarrollo_de_conocimiento/TRL1.md)**
   - TR2:"Concepto y/o aplicación tecnológica formulada"
   - TR3:"Función crítica analítica y experimental y/o prueba de concepto – PRUEBA DE CONCEPTO"
     
