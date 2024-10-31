@@ -49,18 +49,14 @@ CayePlant es un macetero inteligente que combina IoT, IA y comunicación interac
 
 
 ### 3.2 Sensor de luz BH1750
+| **Función Química**                  | **Medio Físico**              | **Función Física**                     | **Interacción**                                                   |
+|--------------------------------------|-------------------------------|----------------------------------------|------------------------------------------------------------------|
+| Conversión de luz en señal eléctrica  | Luz (fotones)                 | Medición de intensidad de luz         | El sensor utiliza fotoceldas (fotodiodos) que convierten la energía de los fotones en corriente eléctrica. Cuanto más intensa sea la luz, mayor será la corriente generada. |
+| Reacción fotoeléctrica                | Semiconductores (materiales como Si) | Producción de señal proporcional a la luz | La interacción de la luz con los electrones en el material semiconductor produce electrones libres, que crean una corriente eléctrica proporcional a la cantidad de luz recibida. |
+| Interacción con la atmósfera         | Aire y condiciones ambientales | Influencia en la medición de luz      | Factores como la humedad y partículas en el aire pueden afectar la cantidad de luz que llega al sensor, alterando las mediciones. |
+| Respuesta a diferentes longitudes de onda | Luz visible e infrarroja      | Detección de distintos tipos de luz   | El sensor es sensible a diferentes longitudes de onda, permitiendo medir la luz en el rango visible y parte del infrarrojo, afectando las lecturas según el tipo de luz ambiental. |
 
-#### Especificaciones Técnicas
-- Voltaje: 3V - 5V
-- Interface: I2C
-- Rango: 1-65535 lux
-- Resolución: 1 lux
-- Precisión: ±20%
 
-#### Principio de funcionamiento:
-
-<p align="justify">
-El sensor de luz BH1750 emplea un sistema de detección fotométrica altamente preciso basado en un fotodiodo de silicio. Cuando la luz incide sobre el fotodiodo, se genera una corriente eléctrica proporcional a la intensidad luminosa. Esta corriente es procesada por un convertidor analógico-digital interno que transforma la señal en valores digitales de iluminancia expresados en lux. El sensor incorpora circuitos de compensación automática que ajustan la lectura según la temperatura y otros factores ambientales, asegurando mediciones consistentes en diversas condiciones. Además, cuenta con un sistema de filtrado que reduce las interferencias causadas por fuentes de luz artificial y variaciones rápidas de iluminación, proporcionando lecturas estables y confiables en un amplio rango de condiciones de iluminación.
    
 ### 3.3 Sistema de comunicación e IA
 
