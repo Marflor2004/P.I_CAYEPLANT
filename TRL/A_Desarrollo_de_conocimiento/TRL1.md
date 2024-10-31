@@ -38,17 +38,12 @@ CayePlant es un macetero inteligente que combina IoT, IA y comunicación interac
 
 ### 3.1 Sensor de humedad capacitivo v1.2
 
-#### Especificaciones técnicas
-- Voltaje: 3.3V - 5V DC
-- Corriente: <5mA
-- Salida: Analógica (0-1023)
-- Profundidad: 38mm
-- Dimensiones: 98mm x 23mm
 
-#### Principio de funcionamiento:
-
-<p align="justify">
-El sensor de humedad capacitivo v1.2 opera mediante un sofisticado sistema de medición basado en la capacitancia. El dispositivo utiliza dos placas conductoras aisladas que, al entrar en contacto con el suelo, forman un condensador cuya capacitancia varía según el contenido de agua presente. El suelo actúa como material dieléctrico entre las placas, y sus propiedades dieléctricas cambian significativamente con el contenido de humedad. Cuando el suelo está más húmedo, su constante dieléctrica aumenta, resultando en una mayor capacitancia medida. Esta variación en la capacitancia es convertida en una señal analógica proporcional mediante un circuito integrado especializado, que posteriormente genera una lectura en el rango de 0 a 1023, donde valores más altos indican mayor contenido de humedad.
+Función Física	Medio Físico	Función Química	Interacción
+Medición de la capacitancia del suelo	Suelo (tierra o sustrato)	Interacción de agua con el suelo	Cuando el sensor se inserta en el suelo, el agua actúa como un dieléctrico, cambiando la capacitancia medida. Este cambio se debe a que la capacitancia depende de la constante dieléctrica del medio, que aumenta con la cantidad de agua presente.
+Detección de cambios en humedad	Agua presente en el suelo	Ionización y polaridad de moléculas de agua	La humedad altera la distribución de carga en el suelo, afectando su conductividad. A medida que aumenta la humedad, las moléculas de agua facilitan la movilidad de iones en el suelo, lo que cambia su conductividad eléctrica.
+Transmisión de señal eléctrica	Circuito electrónico interno	Reacción de los electrodos con iones en el suelo	El sensor convierte la capacitancia medida en una señal eléctrica. Esta señal se amplifica y digitaliza en el circuito interno, lo que permite la transmisión de datos al microcontrolador para su procesamiento.
+Uso de electrodos para captar humedad	Electrodos metálicos (cobre/acero inoxidable)	Corrosión potencial debido a la conductividad del suelo	La interacción entre los electrodos y los iones presentes en el suelo puede provocar reacciones de corrosión. La presencia de agua y sales en el suelo puede acelerar este proceso, afectando la durabilidad del sensor y la precisión de las mediciones.
 
 ### 3.2 Sensor de luz BH1750
 
