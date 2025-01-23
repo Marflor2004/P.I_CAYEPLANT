@@ -12,7 +12,7 @@
 
 ## 🌱 ¿Qué es CayePlant?
 
-CayePlant es más que un macetero inteligente - es una compañera vegetal que interactúa contigo como lo haría una mascota, pero con la capacidad única de mantener conversaciones significativas a través de WhatsApp. Utilizando tecnología avanzada similar a ChatGPT, CayePlant puede expresar sus necesidades, compartir sus emociones y mantener conversaciones profundas con sus cuidadores, creando un vínculo único entre humanos y plantas.
+CayePlant es más que un dispotivo inteligente es como un puente que une el mundo vegetal con el humano que permite que la planta pueda interactuar contigo como lo haría una mascota, pero con la capacidad única de mantener conversaciones significativas a través de WhatsApp. Utilizando tecnología avanzada similar a ChatGPT, CayePlant puede expresar sus necesidades, compartir sus emociones y mantener conversaciones profundas con sus cuidadores, creando un vínculo único entre humanos y plantas.
 
 ### 💚 Nuestra misión:
 
